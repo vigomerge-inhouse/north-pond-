@@ -79,7 +79,7 @@ export function OutdoorLiving() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative h-[65vh] min-h-[480px]">
+      <section className="relative h-[100svh] min-h-[600px]">
         <ImageWithFallback
           src={HeroImg}
           alt="Outdoor Living — Ranch Retreat"

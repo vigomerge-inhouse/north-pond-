@@ -92,7 +92,7 @@ export function Details() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative h-[50vh] min-h-[420px]">
+      <section className="relative h-[100svh] min-h-[600px]">
         <ImageWithFallback
           src={HeroImg}
           alt="Property Details — Ranch Retreat"

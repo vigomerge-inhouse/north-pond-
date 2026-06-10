@@ -129,7 +129,7 @@ export function Amenities() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative h-[55vh] min-h-[450px]">
+      <section className="relative h-[100svh] min-h-[600px]">
         <ImageWithFallback
           src={imgForest}
           alt="Amenities — Ranch Retreat"
