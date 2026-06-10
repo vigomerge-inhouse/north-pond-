@@ -10,6 +10,13 @@ import imgHg1 from "../../../imports/hg1.jpg";
 import imgHg3 from "../../../imports/hg3.jpg";
 import imgHg20 from "../../../imports/hg20.jpg";
 import imgKitchen from "../../../imports/livingrmkit.jpg";
+import WinterImg from "../../../imports/DetailPF.png";
+import HeroImg from "../../../imports/OutdoorLivingHero.png";
+import GImg from "../../../imports/DetailG.png";
+import WAImg from "../../../imports/LOCWA.jpg";
+import Hero1Img from "../../../imports/OLHero1.jpg";
+import OBImg from "../../../imports/OLOB.jpg";
+import SpringImg from "../../../imports/OLSpring.jpg";
 
 const driveTimes = [
   { value: "1hr", label: "Portland, ME", sub: "Maine's largest city" },
@@ -26,21 +33,21 @@ const areaHighlights = [
     sub: "Norway Lake & North Pond",
     body: "Two public boat ramps just 2 miles from the driveway. Norway Lake and North Pond offer boating, fishing, swimming, kayaking, and paddleboarding through all warm-weather months. This is Maine lake country at its finest.",
     stat: "2 miles away",
-    img: imgHg1,
+    img: WAImg,
   },
   {
     title: "Ski & Golf",
     sub: "World-Class Recreation",
     body: "Maine's premier ski areas including Sunday River and Shawnee Peak are within 45 minutes. Multiple championship golf courses are equally accessible. Four-season recreation is not just a promise — it's a reality here.",
     stat: "45 minutes",
-    img: imgForest,
+    img: HeroImg,
   },
   {
     title: "Portland, Maine",
     sub: "Maine's Cultural Hub",
     body: "Portland — Maine's largest city and one of America's most celebrated small cities — is just one hour away. World-class dining, arts, Old Port, Jetport, shopping, and Maine Medical Center are all within easy reach.",
     stat: "1 hour",
-    img: imgHome,
+    img: imgForest,
   },
   {
     title: "Oxford Hills Nature",
@@ -67,11 +74,11 @@ const areaHighlights = [
 
 const galleryImages = [
   { src: imgForest, label: "Private Woods" },
-  { src: imgHg1, label: "Forest Views" },
+  { src: OBImg, label: "Forest Views" },
   { src: imgH3, label: "Nature Trails" },
-  { src: imgHome, label: "Woodland Edge" },
+  { src: SpringImg, label: "Woodland Edge" },
   { src: imgHg3, label: "Country Access Road" },
-  { src: imgHg20, label: "Secluded Acres" },
+  { src: Hero1Img, label: "Secluded Acres" },
   { src: imgH5, label: "Nature Escape" },
 ];
 
@@ -81,13 +88,13 @@ export function Location() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative h-[65vh] min-h-[450px]">
+      <section className="relative h-[55vh] min-h-[450px]">
         <ImageWithFallback
-          src={imgHg1}
+          src={WinterImg}
           alt="Location — Norway, Maine"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/65" />
+        <div className="absolute left-0 top-0 h-full w-1/3 bg-gradient-to-r from-black/50 to-transparent" />
         <div className="absolute inset-0 flex flex-col items-start justify-end pb-16 px-6 sm:px-12 lg:px-20">
           <nav className="flex items-center gap-2 text-white/50 text-[11px] tracking-wider uppercase mb-4" style={{ fontFamily: "Inter, sans-serif" }}>
             <Link to="/" className="hover:text-white transition-colors">Home</Link>
@@ -140,7 +147,7 @@ export function Location() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {areaHighlights.map((item) => (
               <div key={item.title} className="group">
-                <div className="aspect-[16/9] overflow-hidden mb-4">
+                <div className="aspect-[14/9] overflow-hidden mb-4">
                   <ImageWithFallback
                     src={item.img}
                     alt={item.title}
@@ -204,10 +211,10 @@ export function Location() {
               </button>
             </div>
           </div>
-          <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex gap-4">
+           <div className="overflow-hidden" ref={emblaRef}>
+  <div className="flex -ml-4">
               {galleryImages.map((img, i) => (
-                <div key={i} className="flex-[0_0_80%] sm:flex-[0_0_45%] lg:flex-[0_0_28%]">
+                <div key={i} className="pl-4 flex-[0_0_80%] sm:flex-[0_0_45%] lg:flex-[0_0_28%]">
                   <div className="aspect-[4/3] overflow-hidden">
                     <ImageWithFallback src={img.src} alt={img.label} className="w-full h-full object-cover" />
                   </div>
