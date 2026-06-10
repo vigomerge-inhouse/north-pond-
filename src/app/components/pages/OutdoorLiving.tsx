@@ -18,6 +18,7 @@ import imgHg20 from "../../../imports/hg20.jpg";
 import imgKitchen from "../../../imports/livingrmkit.jpg";
 import GImg from "../../../imports/OLG.jpg";
 import OBImg from "../../../imports/OLOB.jpg";
+import OSImg from "../../../imports/OLOS.jpg"
 import OLNVImg from "../../../imports/OLNV.jpeg";
 import StorageImg from "../../../imports/OLStorage.jpg";
 
@@ -68,7 +69,7 @@ const gallery = [
   { src: StorageImg, label: "Storage" },
   { src: OBImg, label: "Outbuilding" },
   { src: imgKitchen, label: "Interior Access" },
-  { src: imgH5, label: "Outdoor Space" },
+  { src: OSImg, label: "Outdoor Space" },
   { src: OLNVImg, label: "Natural Views" },
 ];
 

@@ -76,6 +76,7 @@ const specs: SpecGroup[] = [
       { label: "Pets", value: "Dog-friendly · perimeter fence planned" },
       { label: "Landlord support", value: "Amenable to working with you to make this your home" },
       { label: "Lease", value: "Contact for terms and pricing details" },
+      { label: "Price", value: "3000$/month with extra utilities fee" },
     ],
   },
 ];
