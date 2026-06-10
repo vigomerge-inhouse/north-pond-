@@ -5,6 +5,7 @@ import imgHome from "../../../imports/Neat_and_clean_home_with_peace-1.jpg";
 import imgKitchen from "../../../imports/livingrmkit.jpg";
 import imgHg1 from "../../../imports/hg1.jpg";
 import imgH5 from "../../../imports/h5.jpg";
+import GarageImg from "../../../imports/AmentiesGarage.jpg";
 
 const amenityGroups = [
   {
@@ -119,7 +120,7 @@ const amenityGroups = [
   },
 ];
 
-const showcaseImages = [imgKitchen, imgH5, imgHg1, imgHome].map((src, i) => ({
+const showcaseImages = [imgKitchen, imgH5, imgHg1, GarageImg].map((src, i) => ({
   src,
   alt: ["Gourmet Kitchen", "Spa Bathroom", "Outdoor Living", "Ranch Exterior"][i],
 }));

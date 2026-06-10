@@ -9,6 +9,8 @@ import imgH5 from "../../../imports/h5.jpg";
 import imgHg1 from "../../../imports/hg1.jpg";
 import imgHg3 from "../../../imports/hg3.jpg";
 import imgHg20 from "../../../imports/hg20.jpg";
+import GarageImg from "../../../imports/AmentiesGarage.jpg";
+import OLImg from "../../../imports/OLHero1.jpg";
 
 const features = [
   {
@@ -57,7 +59,7 @@ const features = [
     sub: "Outdoor living",
     body: "True seclusion on two private acres with wrap-around porch and spacious deck. Landlord maintains the yard, provides winter snowplowing, and will install a dog-friendly perimeter fence.",
     bullets: ["Two fully private acres", "Wrap-around porch", "Spacious outdoor deck", "Yard maintenance & snowplowing included"],
-    img: imgHome,
+    img: OLImg,
   },
   {
     num: "07",
@@ -73,7 +75,7 @@ const features = [
     sub: "Storage & parking",
     body: "Secure two-car garage with generous all-weather storage for tools, hobbies, or seasonal gear. Clean and updated, it complements the modern ranch style.",
     bullets: ["2-car parking", "Generous all-weather storage", "Secure updated structure", "Seasonal gear & hobby use"],
-    img: imgHg1,
+    img: GarageImg,
   },
 ];
 
@@ -181,7 +183,7 @@ export function Features() {
 
           {/* Content */}
           <div className="lg:col-span-3">
-            <div className="aspect-[16/10] overflow-hidden mb-6">
+            <div className="aspect-[14/10] overflow-hidden mb-6">
               <ImageWithFallback
                 src={current.img}
                 alt={current.title}

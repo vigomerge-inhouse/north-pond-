@@ -3,6 +3,11 @@ import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
 import imgForest from "../../../imports/Private_Forest-1.jpg";
+import HeroImg from "../../../imports/OutdoorLivingHero.png";
+import Hero1Img from "../../../imports/OLHero1.jpg";
+import WinterImg from "../../../imports/DetailPF.png";
+import AutumnImg from "../../../imports/DetailHero.png";
+import SpringImg from "../../../imports/OLSpring.jpg";
 import imgHome from "../../../imports/Neat_and_clean_home_with_peace-1.jpg";
 import imgH3 from "../../../imports/h3.jpeg";
 import imgH5 from "../../../imports/h5.jpg";
@@ -29,7 +34,7 @@ const seasons = [
     name: "Spring",
     color: "bg-green-50",
     body: "Watch the property bloom with wildflowers, birdsong returns, and the woods fill with fresh green life. Ideal for starting your garden on the private 2-acre lot.",
-    img: imgHg1,
+    img: SpringImg,
   },
   {
     name: "Summer",
@@ -41,13 +46,13 @@ const seasons = [
     name: "Autumn",
     color: "bg-orange-50",
     body: "Maine's legendary foliage transforms the private woods into a palette of reds, oranges, and golds. The Oxford Hills region is renowned for spectacular fall color.",
-    img: imgForest,
+    img: AutumnImg,
   },
   {
     name: "Winter",
     color: "bg-slate-50",
     body: "Snow-covered acreage becomes a peaceful winter wonderland. Snowplowing is landlord-provided. Maine's premier ski resorts are just 45 minutes away.",
-    img: imgHome,
+    img: WinterImg,
   },
 ];
 
@@ -68,9 +73,9 @@ export function OutdoorLiving() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative h-[65vh] min-h-[450px]">
+      <section className="relative h-[65vh] min-h-[480px]">
         <ImageWithFallback
-          src={imgForest}
+          src={HeroImg}
           alt="Outdoor Living — Ranch Retreat"
           className="w-full h-full object-cover"
         />
@@ -108,7 +113,7 @@ export function OutdoorLiving() {
           <div className="relative">
             <div className="aspect-[4/3] overflow-hidden">
               <ImageWithFallback
-                src={imgHome}
+                src={Hero1Img}
                 alt="Outdoor living — wrap-around porch"
                 className="w-full h-full object-cover"
               />
@@ -153,7 +158,7 @@ export function OutdoorLiving() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {seasons.map((season) => (
               <div key={season.name} className={`${season.color} p-0 overflow-hidden`}>
-                <div className="aspect-[3/2] overflow-hidden">
+                <div className="aspect-[2/2] overflow-hidden">
                   <ImageWithFallback
                     src={season.img}
                     alt={season.name}

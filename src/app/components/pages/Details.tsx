@@ -1,9 +1,10 @@
 import { Link } from "react-router";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
-import imgForest from "../../../imports/Private_Forest-1.jpg";
-import imgHome from "../../../imports/Neat_and_clean_home_with_peace-1.jpg";
-import imgKitchen from "../../../imports/livingrmkit.jpg";
-import imgH3 from "../../../imports/h3.jpeg";
+import PVImg from "../../../imports/DetailPV.png";
+import IntImg from "../../../imports/DetailInt.png";
+import GImg from "../../../imports/DetailG.png";
+import PFImg from "../../../imports/DetailPF.png";
+import HeroImg from "../../../imports/DetailHero.png";
 
 type SpecRow = { label: string; value: string };
 type SpecGroup = { title: string; rows: SpecRow[] };
@@ -80,19 +81,19 @@ const specs: SpecGroup[] = [
 ];
 
 const galleryImages = [
-  { src: imgH3, label: "Property View" },
-  { src: imgKitchen, label: "Interior" },
-  { src: imgHome, label: "Grounds" },
-  { src: imgForest, label: "Private Forest" },
+  { src: PVImg, label: "Property View" },
+  { src: IntImg, label: "Interior" },
+  { src: GImg, label: "Grounds" },
+  { src: PFImg, label: "Private Forest" },
 ];
 
 export function Details() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative h-[45vh] min-h-[320px]">
+      <section className="relative h-[50vh] min-h-[420px]">
         <ImageWithFallback
-          src={imgH3}
+          src={HeroImg}
           alt="Property Details — Ranch Retreat"
           className="w-full h-full object-cover"
         />
