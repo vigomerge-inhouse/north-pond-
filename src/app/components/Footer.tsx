@@ -1,0 +1,149 @@
+import { Link } from "react-router";
+import { Mail, Phone, MapPin } from "lucide-react";
+
+export function Footer() {
+  return (
+    <footer className="bg-black text-white">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          {/* Brand */}
+          <div className="lg:col-span-2">
+            <div className="mb-4">
+              <p
+                className="text-[10px] tracking-[0.3em] uppercase text-gray-400 mb-0.5"
+                style={{ fontFamily: "Inter, sans-serif" }}
+              >
+                North Pond
+              </p>
+              <p
+                className="text-lg tracking-[0.15em] uppercase text-white"
+                style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}
+              >
+                Realty Trust
+              </p>
+            </div>
+            <p
+              className="text-gray-400 text-sm leading-relaxed max-w-xs"
+              style={{ fontFamily: "Inter, sans-serif" }}
+            >
+              Presenting Ranch Retreat — a masterfully renovated single-story
+              home on a private 2-acre parcel in the scenic Oxford Hills of
+              Norway, Maine. Immediately available for long-term rental.
+            </p>
+            <div className="mt-4">
+              <span className="inline-flex items-center gap-2 text-[11px] tracking-[0.1em] uppercase text-green-400">
+                <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
+                Available Now · Move-In Ready
+              </span>
+            </div>
+          </div>
+
+          {/* Property Pages */}
+          <div>
+            <p
+              className="text-[10px] tracking-[0.25em] uppercase text-gray-500 mb-4"
+              style={{ fontFamily: "Inter, sans-serif" }}
+            >
+              Property Pages
+            </p>
+            <ul className="space-y-2">
+              {[
+                { label: "Overview", path: "/" },
+                { label: "Features", path: "/features" },
+                { label: "Outdoor Living", path: "/outdoor-living" },
+                { label: "Location", path: "/location" },
+                { label: "Details", path: "/details" },
+              ].map((item) => (
+                <li key={item.path}>
+                  <Link
+                    to={item.path}
+                    className="text-[12px] tracking-wide text-gray-400 hover:text-white transition-colors"
+                    style={{ fontFamily: "Inter, sans-serif" }}
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+              <li>
+                <Link
+                  to="/schedule-showing"
+                  className="text-[12px] tracking-wide text-gray-300 hover:text-white transition-colors"
+                  style={{ fontFamily: "Inter, sans-serif" }}
+                >
+                  Schedule Showing →
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <p
+              className="text-[10px] tracking-[0.25em] uppercase text-gray-500 mb-4"
+              style={{ fontFamily: "Inter, sans-serif" }}
+            >
+              Contact
+            </p>
+            <ul className="space-y-3">
+              <li className="flex items-start gap-2.5">
+                <MapPin size={14} className="text-gray-500 mt-0.5 shrink-0" />
+                <span
+                  className="text-[12px] text-gray-400"
+                  style={{ fontFamily: "Inter, sans-serif" }}
+                >
+                  Crockett Ridge Road
+                  <br />
+                  Norway, Maine 04268
+                </span>
+              </li>
+              <li className="flex items-center gap-2.5">
+                <Mail size={14} className="text-gray-500 shrink-0" />
+                <a
+                  href="mailto:contact@northpondrealty.com"
+                  className="text-[12px] text-gray-400 hover:text-white transition-colors"
+                  style={{ fontFamily: "Inter, sans-serif" }}
+                >
+                  contact@northpondrealty.com
+                </a>
+              </li>
+              <li className="flex items-center gap-2.5">
+                <Phone size={14} className="text-gray-500 shrink-0" />
+                <a
+                  href="tel:12022583575"
+                  className="text-[12px] text-gray-400 hover:text-white transition-colors"
+                  style={{ fontFamily: "Inter, sans-serif" }}
+                >
+                  +1 (202) 258-3575
+                </a>
+              </li>
+            </ul>
+            <div className="mt-5">
+              <Link
+                to="/schedule-showing"
+                className="inline-block px-5 py-2.5 bg-white text-black text-[11px] tracking-[0.15em] uppercase hover:bg-gray-100 transition-colors"
+                style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}
+              >
+                Schedule Private Showing
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p
+            className="text-[11px] text-gray-600"
+            style={{ fontFamily: "Inter, sans-serif" }}
+          >
+            © 2026 North Pond Realty Trust · Developed By Vigomerge Inc
+          </p>
+          <p
+            className="text-[11px] text-gray-600"
+            style={{ fontFamily: "Inter, sans-serif" }}
+          >
+            All photography and content © North Pond Realty Trust
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}

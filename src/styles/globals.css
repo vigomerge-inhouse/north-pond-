@@ -1,0 +1,46 @@
+/* North Pond Realty Trust — Global Styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* 3D card base */
+.card-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card-3d:hover {
+  transform: perspective(800px) rotateY(-4deg) rotateX(2deg) translateY(-4px);
+  box-shadow: 8px 16px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Smooth image transitions */
+img {
+  display: block;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f9f9f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1d1d1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+/* Selection color */
+::selection {
+  background: #000;
+  color: #fff;
+}
