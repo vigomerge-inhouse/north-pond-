@@ -2,13 +2,15 @@ import { Link } from "react-router";
 import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
-import imgForest from "../../../imports/Private_Forest-1.jpg";
-import imgHome from "../../../imports/Neat_and_clean_home_with_peace-1.jpg";
-import imgKitchen from "../../../imports/livingrmkit.jpg";
-import imgH3 from "../../../imports/h3.jpeg";
-import imgH5 from "../../../imports/h5.jpg";
-import imgHg1 from "../../../imports/hg1.jpg";
-import imgHg3 from "../../../imports/hg3.jpg";
+import imgForest from "../../../imports/modernliving/Private_Forest-1.jpg";
+import imgHome from "../../../imports/modernliving/Neat_and_clean_home_with_peace-1.jpg";
+import imgKitchen from "../../../imports/modernliving/livingrmkit.jpg";
+import imgH3 from "../../../imports/modernliving/h3.jpeg";
+import imgH5 from "../../../imports/modernliving/h5.jpg";
+import imgHg1 from "../../../imports/modernliving/hg1.jpg";
+import imgHg3 from "../../../imports/modernliving/hg3.jpg";
+import inot from "../../../imports/modernliving/inot.jpg";
+import relax from "../../../imports/modernliving/relax.jpg";
 
 const sections = [
   {
@@ -18,7 +20,7 @@ const sections = [
     body: "Morning coffee at the island. Weekend cooking with friends. Sunday baking while the sun streams through large windows overlooking the yard. The brand-new kitchen with quartz countertops and premium stainless appliances is designed around how you actually live — not just how a kitchen looks in a photograph.",
     cta: "Schedule a Showing",
     ctaPath: "/schedule-showing",
-    img: imgKitchen,
+    img: imgHome,
     imgAlt: "Gourmet kitchen with quartz countertops",
     reverse: false,
   },
@@ -29,7 +31,7 @@ const sections = [
     body: "The flexible den and dining space adapts to your lifestyle. Use it as a dedicated home office with a serene view, a formal dining room for hosting, or an everyday family gathering space. The clean, bright finishes make it equally suited for focused work and relaxed living.",
     cta: "Schedule a Showing",
     ctaPath: "/schedule-showing",
-    img: imgH5,
+    img: relax,
     imgAlt: "Den and dining room",
     reverse: true,
   },
@@ -40,7 +42,7 @@ const sections = [
     body: "Step through the door onto a full wrap-around porch and the separation between inside and outside disappears. Your living space extends naturally into the Maine outdoors — four seasons of fresh air, birdsong, and privacy on two wooded acres.",
     cta: "Schedule a Showing",
     ctaPath: "/schedule-showing",
-    img: imgHome,
+    img: inot,
     imgAlt: "Wrap-around porch and outdoor living",
     reverse: false,
   },
@@ -72,13 +74,14 @@ export function ModernLiving() {
   return (
     <div>
       {/* Page Hero */}
-      <section className="relative h-[60vh] min-h-[400px]">
+      <section className="relative h-[100svh] min-h-[500px]">
+    
         <ImageWithFallback
           src={imgHg1}
           alt="Modern Living — Ranch Retreat"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60" />
+        
         <div className="absolute inset-0 flex flex-col items-start justify-end pb-16 px-6 sm:px-12 lg:px-20">
           <nav className="flex items-center gap-2 text-white/50 text-[11px] tracking-wider uppercase mb-4" style={{ fontFamily: "Inter, sans-serif" }}>
             <Link to="/" className="hover:text-white transition-colors">Home</Link>

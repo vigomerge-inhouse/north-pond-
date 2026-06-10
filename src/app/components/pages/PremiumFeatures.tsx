@@ -1,16 +1,21 @@
 import { Link } from "react-router";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
+//hero
+//import bd1 from "../../../imports/bd1.jpg";
 import imgKitchen from "../../../imports/livingrmkit.jpg";
-import imgH5 from "../../../imports/h5.jpg";
-import imgHg1 from "../../../imports/hg1.jpg";
-import imgHg3 from "../../../imports/hg3.jpg";
-import imgHg20 from "../../../imports/hg20.jpg";
+import imgH5 from "../../../imports/premium/h5.jpg";
+import imgHg1 from "../../../imports/premium/hg1.jpg";
+import imgHg3 from "../../../imports/premium/hg3.jpg";
+import imgHg20 from "../../../imports/premium/hg20.jpg";
+import pk1 from "../../../imports/premium/pk1.png";
+
+
 
 const premiumSections = [
   {
     label: "Premium",
     title: "Gourmet Kitchen",
-    img: imgKitchen,
+    img: pk1,
     imgAlt: "Gourmet kitchen — quartz countertops",
     bullets: [
       "Brand-new stainless-steel appliances",
@@ -93,13 +98,14 @@ export function PremiumFeatures() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative h-[55vh] min-h-[380px]">
+      <section className="relative h-[100svh] min-h-[500px]">
+    
         <ImageWithFallback
           src={imgKitchen}
           alt="Premium Features — Ranch Retreat"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/65" />
+       
         <div className="absolute inset-0 flex flex-col items-start justify-end pb-16 px-6 sm:px-12 lg:px-20">
           <nav className="flex items-center gap-2 text-white/50 text-[11px] tracking-wider uppercase mb-4" style={{ fontFamily: "Inter, sans-serif" }}>
             <Link to="/" className="hover:text-white transition-colors">Home</Link>

@@ -2,12 +2,26 @@ import { Link } from "react-router";
 import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight, Check } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
-import imgForest from "../../../imports/Private_Forest-1.jpg";
-import imgHome from "../../../imports/Neat_and_clean_home_with_peace-1.jpg";
-import imgKitchen from "../../../imports/livingrmkit.jpg";
-import imgH3 from "../../../imports/h3.jpeg";
-import imgH5 from "../../../imports/h5.jpg";
-import imgHg1 from "../../../imports/hg1.jpg";
+import imgForest from "../../../imports/property/Private_Forest-1.jpg";
+import imgHome from "../../../imports/property/Neat_and_clean_home_with_peace-1.jpg";
+import imgKitchen from "../../../imports/property/livingrmkit.jpg";
+import imgH3 from "../../../imports/property/h3.jpeg";
+import imgH5 from "../../../imports/property/h5.jpg";
+import imgHg1 from "../../../imports/property/hg1.jpg";
+
+//gallery
+import g1 from "../../../imports/property/g1.jpg";
+import g2 from "../../../imports/property/g2.jpg";
+import g3 from "../../../imports/property/g3.jpg";
+import g4 from "../../../imports/property/g4.jpg";
+import g5 from "../../../imports/property/g5.jpg";
+import g6 from "../../../imports/property/g6.jpg";
+import g7 from "../../../imports/property/g7.jpg";
+import g8 from "../../../imports/property/g8.png";
+import g9 from "../../../imports/property/g9.png";
+import g10 from "../../../imports/property/g10.jpg";
+
+
 
 const stats = [
   { value: "3", label: "Bedrooms", sub: "King + 2 Queen" },
@@ -22,7 +36,7 @@ const cards = [
   {
     title: "Fully Renovated Ranch",
     body: "Every inch of this single-story home has been masterfully renovated — from the foundation finishes to the roof. Brand-new appliances, flooring, fixtures, and systems throughout.",
-    img: imgKitchen,
+    img: g9,
   },
   {
     title: "Private 2-Acre Lot",
@@ -32,7 +46,7 @@ const cards = [
   {
     title: "Waterfront Access Nearby",
     body: "Norway Lake and North Pond are just 2 miles from the driveway. Public boat ramps, swimming, fishing, kayaking, and paddleboarding are all within easy reach.",
-    img: imgHg1,
+    img: g8,
   },
   {
     title: "Premier Location",
@@ -63,11 +77,21 @@ const checklist = [
 ];
 
 const galleryImages = [
-  { src: imgKitchen, label: "Brand New Kitchen" },
-  { src: imgH5, label: "Primary Suite" },
-  { src: imgHome, label: "Wrap-Around Porch" },
-  { src: imgForest, label: "Private Forest" },
-  { src: imgH3, label: "Country Living" },
+  //{ src: imgKitchen,  },
+  { src: imgH5,  },
+  { src: imgHome, },
+  //{ src: imgForest,  },
+  { src: imgH3,  },
+  { src: g8,  },
+  { src: g9,  },
+  { src: g1,  },
+  { src: g2,  },
+  { src: g3,  },
+  { src: g4,  },
+  { src: g5,  },
+  { src: g6,  },
+  { src: g7,  },
+  { src: g10,  },
 ];
 
 export function PropertyHighlights() {
@@ -76,13 +100,13 @@ export function PropertyHighlights() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative h-[55vh] min-h-[380px]">
+      <section className="relative h-[100svh] min-h-[500px]">
         <ImageWithFallback
-          src={imgH3}
+          src={g8}
           alt="Property Highlights — Ranch Retreat"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/60" />
+        
         <div className="absolute inset-0 flex flex-col items-start justify-end pb-16 px-6 sm:px-12 lg:px-20">
           <nav className="flex items-center gap-2 text-white/50 text-[11px] tracking-wider uppercase mb-4" style={{ fontFamily: "Inter, sans-serif" }}>
             <Link to="/" className="hover:text-white transition-colors">Home</Link>

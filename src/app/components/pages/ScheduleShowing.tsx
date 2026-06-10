@@ -2,8 +2,9 @@ import { useState } from "react";
 import { Link } from "react-router";
 import { Check, Phone, Mail, MapPin } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
-import imgHome from "../../../imports/Neat_and_clean_home_with_peace-1.jpg";
-import imgForest from "../../../imports/Private_Forest-1.jpg";
+import emailjs from "@emailjs/browser";
+import img1 from "../../../imports/schedule/img1.png";
+import img2 from "../../../imports/schedule/img2.jpg";
 
 type FormData = {
   firstName: string;
@@ -30,11 +31,11 @@ const timeOptions = [
 ];
 
 export function ScheduleShowing() {
-  const [form, setForm] = useState<FormData>({
-    firstName: "Jane",
-    lastName: "Smith",
-    email: "jane@email.com",
-    phone: "+1 (555) 000-0000",
+const [form, setForm] = useState<FormData>({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
     preferredDate: "",
     preferredTime: "",
     household: "1",
@@ -52,9 +53,31 @@ export function ScheduleShowing() {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    try {
+      await emailjs.send(
+        "service_ujoaycd",
+        "template_s7j9g18",
+        {
+          name: `${form.firstName} ${form.lastName}`,
+          firstName: form.firstName,
+          lastName: form.lastName,
+          email: form.email,
+          phone: form.phone,
+          date: form.preferredDate,
+          time: form.preferredTime,
+          household: form.household,
+          message: form.message,
+          hasPets: form.hasPets ? "Yes" : "No",
+        },
+        "Vu5r565yJJY1yQGTw"
+      );
+      setSubmitted(true);
+    } catch (error: any) {
+      console.error("EmailJS Error:", JSON.stringify(error));
+      alert("Something went wrong. Please try again.");
+    }
   };
 
   if (submitted) {
@@ -89,9 +112,9 @@ export function ScheduleShowing() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative h-[45vh] min-h-[300px]">
+      <section className="relative h-[100svh] min-h-[500px]">
         <ImageWithFallback
-          src={imgHome}
+          src={img1}
           alt="Schedule a Showing — Ranch Retreat"
           className="w-full h-full object-cover"
         />
@@ -116,7 +139,7 @@ export function ScheduleShowing() {
             <div className="sticky top-24">
               <div className="aspect-[4/3] overflow-hidden mb-6">
                 <ImageWithFallback
-                  src={imgForest}
+                  src={img2}
                   alt="Ranch Retreat — private wooded acres"
                   className="w-full h-full object-cover"
                 />
@@ -145,7 +168,7 @@ export function ScheduleShowing() {
               <div className="space-y-3">
                 <a href="tel:12022583575" className="flex items-center gap-3 text-sm text-gray-700 hover:text-black transition-colors" style={{ fontFamily: "Inter, sans-serif" }}>
                   <Phone size={14} className="text-gray-400" />
-                  +1 (202) 258-3575
+                  +1 12022583575
                 </a>
                 <a href="mailto:contact@northpondrealty.com" className="flex items-center gap-3 text-sm text-gray-700 hover:text-black transition-colors" style={{ fontFamily: "Inter, sans-serif" }}>
                   <Mail size={14} className="text-gray-400" />

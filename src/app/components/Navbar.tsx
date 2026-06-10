@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router";
 import { ChevronDown, Menu, X } from "lucide-react";
+import logo1 from "../../imports/logo/logo1.png";
 
 const navItems = [
   {
@@ -50,27 +51,22 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-white shadow-md" : "bg-white/95 backdrop-blur-sm"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-white shadow-md" : "bg-white/95 backdrop-blur-sm"
+        }`}
     >
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 font-extrabold">
+        <div className="flex items-center justify-between h-28 lg:h-30">
           {/* Logo */}
-          <Link to="/" className="flex flex-col leading-tight group">
-            <span
-              className="text-[10px] tracking-[0.3em] uppercase text-gray-400 group-hover:text-gray-600 transition-colors"
-              style={{ fontFamily: "Inter, sans-serif" }}
-            >
-              North Pond
-            </span>
-            <span
-              className="text-base tracking-[0.15em] uppercase text-black"
-              style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}
-            >
-              Realty Trust
-            </span>
-          </Link>
+<Link to="/" className="flex items-center gap-3">
+  <img
+    src={logo1}
+    alt="North Pond Realty Trust"
+    className="h-22 lg:h-24 w-auto object-contain"
+  />
+  <div className="flex flex-col leading-tight">
+    
+  </div>
+</Link>
 
           {/* Desktop Nav */}
           <div className="hidden lg:flex items-center gap-1">
@@ -84,7 +80,7 @@ export function Navbar() {
                 >
                   <button
                     className="flex items-center gap-1 px-4 py-2 text-[13px] tracking-[0.1em] uppercase text-gray-700 hover:text-black transition-colors"
-                    style={{ fontFamily: "Inter, sans-serif", fontWeight: 500 }}
+                    style={{ fontFamily: "Inter, sans-serif", fontWeight: 700 }}
                   >
                     {item.label}
                     <ChevronDown
@@ -99,11 +95,10 @@ export function Navbar() {
                           <Link
                             key={child.path}
                             to={child.path}
-                            className={`block px-5 py-3 text-[12px] tracking-[0.08em] uppercase transition-colors ${
-                              location.pathname === child.path
+                            className={`block px-5 py-3 text-[12px] tracking-[0.08em] uppercase transition-colors ${location.pathname === child.path
                                 ? "bg-black text-white"
                                 : "text-gray-700 hover:bg-gray-50 hover:text-black"
-                            }`}
+                              }`}
                             style={{ fontFamily: "Inter, sans-serif" }}
                           >
                             {child.label}
@@ -117,12 +112,11 @@ export function Navbar() {
                 <Link
                   key={item.label}
                   to={item.path!}
-                  className={`px-4 py-2 text-[13px] tracking-[0.1em] uppercase transition-colors ${
-                    location.pathname === item.path
+                  className={`px-4 py-2 text-[13px] tracking-[0.1em] uppercase transition-colors ${location.pathname === item.path
                       ? "text-black border-b-2 border-black"
                       : "text-gray-700 hover:text-black"
-                  }`}
-                  style={{ fontFamily: "Inter, sans-serif", fontWeight: 500 }}
+                    }`}
+                  style={{ fontFamily: "Inter, sans-serif", fontWeight: 700 }}
                 >
                   {item.label}
                 </Link>
@@ -131,7 +125,7 @@ export function Navbar() {
             <Link
               to="/schedule-showing"
               className="ml-4 px-5 py-2.5 bg-black text-white text-[12px] tracking-[0.15em] uppercase hover:bg-gray-900 transition-colors"
-              style={{ fontFamily: "Inter, sans-serif", fontWeight: 500 }}
+              style={{ fontFamily: "Inter, sans-serif", fontWeight: 700 }}
             >
               Schedule Showing
             </Link>
@@ -156,7 +150,7 @@ export function Navbar() {
                 <div key={item.label}>
                   <button
                     className="w-full flex items-center justify-between px-3 py-2.5 text-[12px] tracking-[0.1em] uppercase text-gray-700"
-                    style={{ fontFamily: "Inter, sans-serif", fontWeight: 500 }}
+                    style={{ fontFamily: "Inter, sans-serif", fontWeight: 700 }}
                     onClick={() =>
                       setMobileExpanded(
                         mobileExpanded === item.label ? null : item.label
@@ -189,7 +183,7 @@ export function Navbar() {
                   key={item.label}
                   to={item.path!}
                   className="block px-3 py-2.5 text-[12px] tracking-[0.1em] uppercase text-gray-700 hover:text-black"
-                  style={{ fontFamily: "Inter, sans-serif", fontWeight: 500 }}
+                  style={{ fontFamily: "Inter, sans-serif", fontWeight: 700 }}
                 >
                   {item.label}
                 </Link>
@@ -199,7 +193,7 @@ export function Navbar() {
               <Link
                 to="/schedule-showing"
                 className="block w-full text-center px-5 py-3 bg-black text-white text-[12px] tracking-[0.15em] uppercase"
-                style={{ fontFamily: "Inter, sans-serif", fontWeight: 500 }}
+                style={{ fontFamily: "Inter, sans-serif", fontWeight: 700 }}
               >
                 Schedule Showing
               </Link>

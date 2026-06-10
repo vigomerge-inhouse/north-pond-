@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import { Mail, Phone, MapPin } from "lucide-react";
+import logo2 from "../../imports/logo/logo2.png";
 
 export function Footer() {
   return (
@@ -8,22 +9,18 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="mb-4">
-              <p
-                className="text-[10px] tracking-[0.3em] uppercase text-gray-400 mb-0.5"
-                style={{ fontFamily: "Inter, sans-serif" }}
-              >
-                North Pond
-              </p>
-              <p
-                className="text-lg tracking-[0.15em] uppercase text-white"
-                style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}
-              >
-                Realty Trust
-              </p>
-            </div>
+            <div className="mb-4 flex items-center gap-3">
+  <img
+    src={logo2}
+    alt="North Pond Realty Trust"
+    className="h-28 lg:h-28 w-auto object-contain"
+  />
+  <div className="flex flex-col leading-tight">
+    
+  </div>
+</div>
             <p
-              className="text-gray-400 text-sm leading-relaxed max-w-xs"
+              className="text-gray-200 text-sm leading-relaxed max-w-xs"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
               Presenting Ranch Retreat — a masterfully renovated single-story
@@ -41,7 +38,7 @@ export function Footer() {
           {/* Property Pages */}
           <div>
             <p
-              className="text-[10px] tracking-[0.25em] uppercase text-gray-500 mb-4"
+              className="text-[12px] tracking-[0.25em] uppercase text-white mb-4 font-semibold"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
               Property Pages
@@ -57,7 +54,7 @@ export function Footer() {
                 <li key={item.path}>
                   <Link
                     to={item.path}
-                    className="text-[12px] tracking-wide text-gray-400 hover:text-white transition-colors"
+                    className="text-[13px] tracking-wide text-white hover:text-yellow-400 transition-colors font-semibold"
                     style={{ fontFamily: "Inter, sans-serif" }}
                   >
                     {item.label}
@@ -67,7 +64,7 @@ export function Footer() {
               <li>
                 <Link
                   to="/schedule-showing"
-                  className="text-[12px] tracking-wide text-gray-300 hover:text-white transition-colors"
+                  className="text-[13px] tracking-wide text-white hover:text-yellow-400 transition-colors font-semibold"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
                   Schedule Showing →
@@ -79,7 +76,7 @@ export function Footer() {
           {/* Contact */}
           <div>
             <p
-              className="text-[10px] tracking-[0.25em] uppercase text-gray-500 mb-4"
+              className="text-[10px] tracking-[0.25em] uppercase text-white mb-4 font-semibold"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
               Contact
@@ -88,7 +85,7 @@ export function Footer() {
               <li className="flex items-start gap-2.5">
                 <MapPin size={14} className="text-gray-500 mt-0.5 shrink-0" />
                 <span
-                  className="text-[12px] text-gray-400"
+                  className="text-[12px] text-gray-200"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
                   Crockett Ridge Road
@@ -100,7 +97,7 @@ export function Footer() {
                 <Mail size={14} className="text-gray-500 shrink-0" />
                 <a
                   href="mailto:contact@northpondrealty.com"
-                  className="text-[12px] text-gray-400 hover:text-white transition-colors"
+                  className="text-[12px] text-gray-200 hover:text-yellow-400 transition-colors"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
                   contact@northpondrealty.com
@@ -110,7 +107,7 @@ export function Footer() {
                 <Phone size={14} className="text-gray-500 shrink-0" />
                 <a
                   href="tel:12022583575"
-                  className="text-[12px] text-gray-400 hover:text-white transition-colors"
+                  className="text-[12px] text-gray-200 hover:text-yellow-400 transition-colors"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
                   +1 (202) 258-3575
@@ -131,13 +128,13 @@ export function Footer() {
 
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p
-            className="text-[11px] text-gray-600"
+            className="text-[11px] text-yellow-400 font-medium"
             style={{ fontFamily: "Inter, sans-serif" }}
           >
             © 2026 North Pond Realty Trust · Developed By Vigomerge Inc
           </p>
           <p
-            className="text-[11px] text-gray-600"
+            className="text-[11px] text-yellow-400 font-medium"
             style={{ fontFamily: "Inter, sans-serif" }}
           >
             All photography and content © North Pond Realty Trust

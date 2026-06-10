@@ -12,6 +12,7 @@ import { Location } from "./components/pages/Location";
 import { Details } from "./components/pages/Details";
 import { ScheduleShowing } from "./components/pages/ScheduleShowing";
 
+
 export const router = createBrowserRouter([
   {
     path: "/",

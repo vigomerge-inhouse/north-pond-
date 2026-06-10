@@ -3,27 +3,55 @@ import { Link } from "react-router";
 import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight, ArrowDown } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
-import imgForest from "../../../imports/Private_Forest-1.jpg";
-import imgHome from "../../../imports/Neat_and_clean_home_with_peace-1.jpg";
-import imgKitchen from "../../../imports/livingrmkit.jpg";
-import imgH3 from "../../../imports/h3.jpeg";
-import imgH5 from "../../../imports/h5.jpg";
-import imgHg1 from "../../../imports/hg1.jpg";
-import imgHg3 from "../../../imports/hg3.jpg";
+// ── HERO IMAGE IMPORTS ───────────────────────────────────────
+import hero3 from "../../../imports/hero/hero3.jpg";
+import h52 from "../../../imports/hero/h52.png";
+import hero2 from "../../../imports/hero/hero2.png";
+// ── GALLERY IMAGE IMPORTS ───────────────────────────────────────
+import lvkt from "../../../imports/hero/lvkt.jpg";
+import H51 from "../../../imports/hero/h51.png";
+import hg2 from "../../../imports/hero/hg2.png";
+import H52 from "../../../imports/hero/h52.png";
 import imgHg20 from "../../../imports/hg20.jpg";
+// ── PROPERTY HIGHLIGHTS STRIP IMAGE IMPORTS ───────────────────────────────────────
+import io from "../../../imports/hero/io.jpg";
+import pf from "../../../imports/hero/pf.jpeg";
+import ps from "../../../imports/hero/ps.jpg";
+//----view highlights strip images --------------
+import am1 from "../../../imports/hero/am1.jpg";
+import am2 from "../../../imports/hero/am2.jpg";
+import am3 from "../../../imports/hero/am3.jpg";
+import am4 from "../../../imports/hero/am4.png";
+
+
 
 const heroSlides = [
-  { src: imgForest, alt: "Private forest — Ranch Retreat", label: "Exceptional Country Living" },
-  { src: imgHome, alt: "Ranch home exterior", label: "Move-In Ready" },
-  { src: imgKitchen, alt: "Gourmet kitchen", label: "Brand New Kitchen" },
-  { src: imgH3, alt: "Property exterior", label: "Private 2-Acre Parcel" },
+  { src: hero3, alt: "Gourmet kitchen", label: "Brand New Kitchen" },
+  { src: h52, alt: "Private forest — Maine Retreat", label: "Exceptional Country Living" },
+  { src: hero2, alt: "Ranch home exterior", label: "Move-In Ready" },
 ];
 
 const stats = [
-  { value: "3", label: "Bedrooms", sub: "King + 2 Queen" },
-  { value: "2", label: "Full Baths", sub: "Primary & Guest" },
-  { value: "2", label: "Car Garage", sub: "Detached" },
-  { value: "2", label: "Private Acres", sub: "Wooded Lot" },
+{
+value: "1975",
+label: "Founded",
+sub: "North Pond Realty Trust"
+},
+{
+value: "Oxford",
+label: "County",
+sub: "Western Maine"
+},
+{
+value: "50+",
+label: "Years",
+sub: "Property Stewardship"
+},
+{
+value: "Trusted",
+label: "Legacy",
+sub: "Generations"
+},
 ];
 
 const driveStats = [
@@ -32,22 +60,21 @@ const driveStats = [
   { value: "3 hrs", label: "to Boston" },
   { value: "2 mi", label: "Boat Ramps" },
 ];
-
 const features = [
-  "3 Bed / 2 Bath",
-  "2-Acre lot",
-  "Full basement",
-  "Single story",
-  "Laundry pantry",
-  "Detached garage",
-  "Drilled well water",
-  "Quartz countertops",
+"Recreational Properties",
+"Buildable Shorefront Lots",
+"Mountain-View Parcels",
+"Timberland",
+"Farmland",
+"Woodlots",
+"Oxford Hills Region",
+"Western Maine",
 ];
 
 const galleryImages = [
-  { src: imgHg1, alt: "Exceptional Country Living" },
-  { src: imgH5, alt: "Brand New Kitchen" },
-  { src: imgHg3, alt: "Living Room to Kitchen" },
+  { src: H52, alt: "Exceptional Country Living" },
+  { src: hg2, alt: "Brand New Kitchen" },
+  { src: lvkt, alt: "Living Room to Kitchen" },
   { src: imgHg20, alt: "Guest Bathroom" },
 ];
 
@@ -92,28 +119,28 @@ export function Overview() {
               className="text-[11px] tracking-[0.3em] uppercase text-white/70 mb-3"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
-              Long-Term Rental · Norway, Maine · Oxford Hills
+              North Pond Realty Trust · Norway, Maine · Oxford Hills
             </p>
             <h1
               className="text-5xl sm:text-6xl lg:text-7xl text-white mb-2 leading-none"
               style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}
             >
-              Ranch Retreat
+             Welcome to North Pond Realty Trust
             </h1>
             <p
               className="text-xl sm:text-2xl text-white/80 mb-1 italic"
               style={{ fontFamily: "Cormorant Garamond, serif" }}
             >
-              Masterfully Renovated
+              Exceptional Land & Recreational Properties Since 1975
             </p>
             <p
               className="text-[12px] tracking-[0.2em] uppercase text-white/60 mb-8"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
-              Turnkey · Move-in Ready · Immediately Available
+              Serving Western Maine Since 1975
             </p>
             <div className="flex flex-wrap gap-3">
-              {["3 Bedrooms", "2 Full Baths", "2-Car Garage", "2 Private Acres", "Wrap-Around Porch", "Dog Friendly"].map(
+              {["Recreational Properties", "Shorefront Lots", "Mountain Views", "Timberland", "Farmland", "Woodlots"].map(
                 (tag) => (
                   <span
                     key={tag}
@@ -131,14 +158,14 @@ export function Overview() {
                 className="px-6 py-3 bg-white text-black text-[12px] tracking-[0.15em] uppercase hover:bg-gray-100 transition-colors"
                 style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}
               >
-                Explore the Property
+                Explore  Properties
               </Link>
               <Link
                 to="/schedule-showing"
                 className="px-6 py-3 border border-white text-white text-[12px] tracking-[0.15em] uppercase hover:bg-white/10 transition-colors"
                 style={{ fontFamily: "Inter, sans-serif", fontWeight: 500 }}
               >
-                Schedule a Showing
+                Contact Us
               </Link>
             </div>
           </div>
@@ -150,9 +177,8 @@ export function Overview() {
             <button
               key={i}
               onClick={() => emblaApi?.scrollTo(i)}
-              className={`h-0.5 transition-all duration-300 ${
-                i === selectedIndex ? "w-8 bg-white" : "w-3 bg-white/40"
-              }`}
+              className={`h-0.5 transition-all duration-300 ${i === selectedIndex ? "w-8 bg-white" : "w-3 bg-white/40"
+                }`}
             />
           ))}
         </div>
@@ -204,30 +230,35 @@ export function Overview() {
       <section className="py-20 px-6 sm:px-10 lg:px-16 max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <p
-              className="text-[10px] tracking-[0.3em] uppercase text-gray-400 mb-3"
+           <p
+              className="text-bold[20px] tracking-[0.3em] uppercase text-gray-400 mb-3"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
-              Norway, Maine · Est. 1797
+              North Pond Realty Trust
             </p>
+
+
             <h2
               className="text-4xl lg:text-5xl text-black mb-6 leading-tight"
               style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}
             >
-              Timeless charm,
+              Our Story,
               <br />
-              <em>completely reimagined</em>
+              <em>Since 1975</em>
             </h2>
             <p
               className="text-gray-600 leading-relaxed text-base mb-8"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
-              Discover the perfect blend of timeless ranch charm and contemporary
-              luxury in this masterfully renovated single-story home. Minutes
-              from Norway, Maine in the scenic Oxford Hills, with Norway Lake and
-              North Pond's public boat ramps just a two-mile drive away. Set on a
-              private 2-acre parcel just 300 feet from well-known Crockett Ridge
-              Road.
+             Our story begins in 1975 when North Pond Realty Trust quietly started acquiring and curating exceptional properties across Oxford County, Maine.
+
+It began with the purchase of land in the Norway, Maine drainage of North Pond—the 273-acre spring-fed pond that flows into Lake Pennesseewassee (Norway Lake).
+
+The second acquisition was a stunning mountain-view parcel in Andover, Maine, just 30 minutes from Sunday River Ski and Golf Resort.
+
+The rest is history.
+
+Today we offer carefully selected recreational properties, buildable shorefront lots, mountain-view parcels, timberland, farmland, and woodlots throughout the beautiful Oxford Hills of Western Maine.
             </p>
             <div className="grid grid-cols-2 gap-x-8 gap-y-2 mb-8">
               {features.map((f) => (
@@ -313,7 +344,7 @@ export function Overview() {
           <div className="relative">
             <div className="aspect-[4/3] overflow-hidden">
               <ImageWithFallback
-                src={imgH5}
+                src={H51}
                 alt="Modern living — master bathroom"
                 className="w-full h-full object-cover"
               />
@@ -338,7 +369,7 @@ export function Overview() {
           </div>
           <div>
             <p
-              className="text-[10px] tracking-[0.3em] uppercase text-gray-400 mb-3"
+              className="text-[27px] tracking-[0.2em] uppercase text-gray-400 mb-3"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
               The Experience
@@ -355,15 +386,15 @@ export function Overview() {
               className="text-gray-600 leading-relaxed mb-8"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
-              Experience contemporary comfort with thoughtfully designed spaces,
-              elegant interiors, and seamless functionality. Every detail is
-              crafted to enhance your lifestyle while creating a warm and inviting
-              atmosphere that feels like home the moment you walk through the
-              door.
+              Every room has been reimagined from scratch — thoughtfully designed
+              for comfort, warmth, and effortless daily living. From the rich
+              white oak hardwood floors underfoot to the soaring natural light
+              throughout, this home feels like home the moment you walk through
+              the door.
             </p>
             <ul className="space-y-2 mb-8">
               {[
-                "Thoughtfully designed spaces — every room reimagined from scratch",
+                "White oak hardwood floors throughout — warm, enduring, exceptional",
                 "Gourmet kitchen with quartz countertops and premium appliances",
                 "Spa-inspired bathrooms — soaking tub, marble shower",
                 "King-size primary suite with walk-in closet and natural light",
@@ -397,7 +428,7 @@ export function Overview() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <p
-              className="text-[10px] tracking-[0.3em] uppercase text-gray-400 mb-3"
+              className="text-bold[49px] tracking-[0.2em] uppercase text-gray-400 mb-3"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
               The Property
@@ -418,19 +449,19 @@ export function Overview() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
-                img: imgH3,
+                img: ps,
                 label: "Primary Suite",
                 desc: "King · Walk-in Closet · Ensuite Bath",
                 path: "/bedrooms",
               },
               {
-                img: imgForest,
+                img: io,
                 label: "Wrap-Around Porch",
                 desc: "Indoor-Outdoor Living · Full Perimeter",
                 path: "/outdoor-living",
               },
               {
-                img: imgHg1,
+                img: pf,
                 label: "Private Forest",
                 desc: "2 Wooded Acres · Wildlife & Privacy",
                 path: "/location",
@@ -486,7 +517,7 @@ export function Overview() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <p
-                className="text-[10px] tracking-[0.3em] uppercase text-gray-500 mb-3"
+                className="text-bold[17px] tracking-[0.3em] uppercase text-gray-500 mb-3"
                 style={{ fontFamily: "Inter, sans-serif" }}
               >
                 Amenities
@@ -503,17 +534,17 @@ export function Overview() {
                 className="text-gray-400 leading-relaxed mb-8"
                 style={{ fontFamily: "Inter, sans-serif" }}
               >
-                Enhance your daily lifestyle with premium amenities designed for
-                convenience and relaxation, including landscaped outdoor spaces,
-                secure parking, high-speed connectivity, recreational areas, and
-                modern community features.
+                Premium amenities designed for comfort and convenience — from
+                white oak hardwood floors and spa-inspired bathrooms to
+                landscaped outdoor spaces, secure parking, and high-speed
+                connectivity. Four-season living at its finest.
               </p>
               <div className="flex flex-wrap gap-2 mb-8">
                 {[
                   "2 Private Acres",
                   "Lake Access — 2 mi",
                   "3 Bedrooms",
-                  "Fully Renovated",
+                  "Hardwood Floors",
                   "Spa Bathrooms",
                   "Gourmet Kitchen",
                   "Turnkey Ready",
@@ -537,7 +568,7 @@ export function Overview() {
               </Link>
             </div>
             <div className="grid grid-cols-2 gap-3">
-              {[imgHg3, imgHg20, imgForest, imgHome].map((src, i) => (
+              {[am1, am2, am3, am4].map((src, i) => (
                 <div key={i} className="aspect-square overflow-hidden">
                   <ImageWithFallback
                     src={src}
@@ -558,28 +589,29 @@ export function Overview() {
             className="text-[10px] tracking-[0.3em] uppercase text-gray-400 mb-4"
             style={{ fontFamily: "Inter, sans-serif" }}
           >
-            RanchRetreat
+            North Pond Realty Trust
           </p>
           <h2
             className="text-5xl text-black mb-4"
             style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}
           >
-            Don't miss this
+            Discover Exceptional
             <br />
-            <em>renovated ranch gem</em>
+            <em>Properties Across Western Maine</em>
           </h2>
           <p
             className="text-gray-500 mb-3"
             style={{ fontFamily: "Inter, sans-serif" }}
           >
-            A rare opportunity to rent a move-in-ready home perfectly balancing
-            modern comfort, private nature-filled living, and four-season appeal.
+            A rare opportunity to lease a move-in-ready home perfectly balancing
+            modern comfort, white oak hardwood floors, private nature-filled
+            living, and four-season appeal.
           </p>
           <p
             className="text-sm text-gray-400 mb-8 italic"
             style={{ fontFamily: "Cormorant Garamond, serif", fontSize: "1.1rem" }}
           >
-            Norway, Maine · Oxford Hills · Contact for Pricing
+            Serving Western Maine Since 1975
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             {["3 Beds", "2 Baths", "2-Car Garage", "2 Acres"].map((s) => (
@@ -597,7 +629,7 @@ export function Overview() {
             className="inline-block px-10 py-4 bg-black text-white text-[13px] tracking-[0.2em] uppercase hover:bg-gray-900 transition-colors"
             style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}
           >
-            Schedule Your Private Showing
+            Browse Current Properties
           </Link>
         </div>
       </section>

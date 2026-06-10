@@ -2,12 +2,31 @@ import { Link } from "react-router";
 import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
-import imgH3 from "../../../imports/h3.jpeg";
-import imgH5 from "../../../imports/h5.jpg";
-import imgHg1 from "../../../imports/hg1.jpg";
-import imgHg3 from "../../../imports/hg3.jpg";
-import imgHg20 from "../../../imports/hg20.jpg";
-import imgKitchen from "../../../imports/livingrmkit.jpg";
+
+//hero
+import bd1 from "../../../imports/bedrooms/bd1.png";
+//3bedrooms
+import bd2 from "../../../imports/bedrooms/bd2.jpg";
+import bd3 from "../../../imports/bedrooms/bd3.jpg";
+import bd4 from "../../../imports/bedrooms/bd4.jpg";
+import bd5 from "../../../imports/bedrooms/bd5.jpg";
+import bd6 from "../../../imports/bedrooms/bd6.jpg";
+import bd7 from "../../../imports/bedrooms/bd7.jpg";
+import bd8 from "../../../imports/bedrooms/bd8.jpg";
+import bd9 from "../../../imports/bedrooms/bd9.jpg";
+import bd10 from "../../../imports/bedrooms/bd10.jpg";
+import bd11 from "../../../imports/bedrooms/bd11.jpg";
+import bd12 from "../../../imports/bedrooms/bd12.jpg";
+import bd13 from"../../../imports/bedrooms/bd13.jpg";
+import bd14 from"../../../imports/bedrooms/bd14.jpg";
+
+
+import imgH3 from "../../../imports/bedrooms/h3.jpeg";
+import imgH5 from "../../../imports/bedrooms/h5.jpg";
+import imgHg1 from "../../../imports/bedrooms/hg1.jpg";
+import imgHg3 from "../../../imports/bedrooms/hg3.jpg";
+import imgHg20 from "../../../imports/bedrooms/hg20.jpg";
+import imgKitchen from "../../../imports/bedrooms/livingrmkit.jpg";
 
 const bedrooms = [
   {
@@ -16,7 +35,7 @@ const bedrooms = [
     size: "King-Size",
     title: "King-Size Primary Suite with Spa-Inspired Ensuite",
     sublabel: "Primary Suite",
-    images: [imgH5, imgH3, imgHg3],
+    images: [bd6, bd7, bd8,bd9,bd10],
     body: "Retreat to a spacious primary suite designed for relaxation and comfort. The bedroom easily accommodates a king-size bed and features generous walk-in closet storage that will exceed your expectations. Natural light fills the room throughout the day, creating a warm, serene environment.\n\nThe luxurious ensuite bath is a private spa. A cast-iron soaking tub sits bathed in soft light. The ceramic marble shower offers a hotel-quality experience. Elegant modern fixtures, quartz vanity, and warm neutral finishes complete the picture of a true personal sanctuary.",
     bullets: [
       "King-size bed configuration",
@@ -35,7 +54,7 @@ const bedrooms = [
     size: "Queen-Size",
     title: "Spacious First Guest Bedroom",
     sublabel: "Guest Bedroom One",
-    images: [imgHg1, imgHg20, imgH3],
+    images: [bd2, bd3, bd4],
     body: "The first guest bedroom offers generous space for a queen-size bed with room to spare. Clean, well-organized closet space, fresh neutral finishes, and abundant natural light create an inviting environment — equally suited for a family member, guest, or home office.\n\nThe guest wing is served by a fully updated full bathroom with modern fixtures, bright design, and clean, contemporary finishes. Private, quiet, and comfortable — your guests will feel genuinely at home.",
     bullets: [
       "Queen-size bed configuration",
@@ -54,7 +73,7 @@ const bedrooms = [
     size: "Queen-Size",
     title: "Spacious Second Guest Bedroom",
     sublabel: "Guest Bedroom Two",
-    images: [imgHg3, imgHg1, imgHg20],
+    images: [bd11,bd12,bd13,bd14],
     body: "The second guest bedroom mirrors the same generous proportions, quality finishes, and natural light that define the rest of this home. Whether used for guests, family members, or as a dedicated home office or creative studio, this room provides real, usable space.\n\nBoth guest rooms share the updated guest full bathroom, which has been completely refreshed with new fixtures, bright design, and a clean contemporary style. This is a home designed for real living — not just for looking good in photographs.",
     bullets: [
       "Queen-size bed configuration",
@@ -149,13 +168,14 @@ export function Bedrooms() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative h-[55vh] min-h-[380px]">
+      <section className="relative h-[100svh] min-h-[500px]">
+    
         <ImageWithFallback
-          src={imgH5}
+          src={bd1}
           alt="Bedrooms — Ranch Retreat"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/60" />
+        
         <div className="absolute inset-0 flex flex-col items-start justify-end pb-16 px-6 sm:px-12 lg:px-20">
           <nav className="flex items-center gap-2 text-white/50 text-[11px] tracking-wider uppercase mb-4" style={{ fontFamily: "Inter, sans-serif" }}>
             <Link to="/" className="hover:text-white transition-colors">Home</Link>
