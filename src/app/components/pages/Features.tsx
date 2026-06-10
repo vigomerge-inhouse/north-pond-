@@ -11,6 +11,9 @@ import imgHg3 from "../../../imports/hg3.jpg";
 import imgHg20 from "../../../imports/hg20.jpg";
 import GarageImg from "../../../imports/AmentiesGarage.jpg";
 import OLImg from "../../../imports/OLHero1.jpg";
+import FSPAImg from "../../../imports/FBATHSPA.jpg";
+import FGRImg from "../../../imports/FGR.jpg";
+import FSUITESPAImg from "../../../imports/FSUITESPA.jpg";
 
 const features = [
   {
@@ -27,7 +30,7 @@ const features = [
     sub: "Private retreat",
     body: "Serene owner's oasis sized for a king bed with walk-in closet. Luxurious bath features a cast iron soaking tub and ceramic marble shower, bathed in soft natural light.",
     bullets: ["King-size space", "Walk-in closet", "Cast iron soaking tub", "Ceramic marble shower"],
-    img: imgH5,
+    img: FSUITESPAImg,
   },
   {
     num: "03",
@@ -35,7 +38,7 @@ const features = [
     sub: "Comfort spaces",
     body: "Two spacious guest bedrooms, each sized for a queen bed with generous clean closets. Updated full guest bath with bright, modern finishes.",
     bullets: ["Two queen-ready bedrooms", "Generous clean closets", "Updated full guest bath", "Bright modern finishes"],
-    img: imgH3,
+    img: FGRImg,
   },
   {
     num: "04",

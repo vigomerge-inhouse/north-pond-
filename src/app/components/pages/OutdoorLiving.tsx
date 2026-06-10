@@ -10,11 +10,16 @@ import AutumnImg from "../../../imports/DetailHero.png";
 import SpringImg from "../../../imports/OLSpring.jpg";
 import imgHome from "../../../imports/Neat_and_clean_home_with_peace-1.jpg";
 import imgH3 from "../../../imports/h3.jpeg";
+import PEImg from "../../../imports/OLPE.jpg";
 import imgH5 from "../../../imports/h5.jpg";
 import imgHg1 from "../../../imports/hg1.jpg";
 import imgHg3 from "../../../imports/hg3.jpg";
 import imgHg20 from "../../../imports/hg20.jpg";
 import imgKitchen from "../../../imports/livingrmkit.jpg";
+import GImg from "../../../imports/OLG.jpg";
+import OBImg from "../../../imports/OLOB.jpg";
+import OLNVImg from "../../../imports/OLNV.jpeg";
+import StorageImg from "../../../imports/OLStorage.jpg";
 
 const outdoorAmenities = [
   { name: "Wrap-around porch", sub: "Classic Maine porch living — morning coffee to evening sunset" },
@@ -57,14 +62,14 @@ const seasons = [
 ];
 
 const gallery = [
-  { src: imgH3, label: "Property Exterior" },
-  { src: imgHg3, label: "Grounds" },
-  { src: imgHg1, label: "Barn & Garage" },
-  { src: imgForest, label: "Storage" },
-  { src: imgHome, label: "Outbuilding" },
+  { src: PEImg, label: "Property Exterior" },
+  { src: GImg, label: "Grounds" },
+  { src: imgHg3, label: "Barn & Garage" },
+  { src: StorageImg, label: "Storage" },
+  { src: OBImg, label: "Outbuilding" },
   { src: imgKitchen, label: "Interior Access" },
   { src: imgH5, label: "Outdoor Space" },
-  { src: imgHg20, label: "Natural Views" },
+  { src: OLNVImg, label: "Natural Views" },
 ];
 
 export function OutdoorLiving() {
@@ -82,11 +87,11 @@ export function OutdoorLiving() {
         <div className="absolute left-0 top-0 h-full w-1/3 bg-gradient-to-r from-black/50 to-transparent" />
         <div className="absolute inset-0 flex flex-col items-start justify-end pb-16 px-6 sm:px-12 lg:px-20">
           <nav className="flex items-center gap-2 text-white/50 text-[11px] tracking-wider uppercase mb-4" style={{ fontFamily: "Inter, sans-serif" }}>
-            <Link to="/" className="hover:text-white transition-colors">Home</Link>
+            <Link to="/" className="font-semibold hover:text-white  transition-colors">Home</Link>
             <span>/</span>
             <span className="text-white">Outdoor Living</span>
           </nav>
-          <p className="text-[11px] tracking-[0.3em] uppercase text-white/60 mb-2" style={{ fontFamily: "Inter, sans-serif" }}>Wrap-Around Porch</p>
+          <p className="font-semobild text-[11px] tracking-[0.3em] uppercase text-white/60 mb-2" style={{ fontFamily: "Inter, sans-serif" }}>Wrap-Around Porch</p>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl text-white leading-none mb-3" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>
             Outdoor
           </h1>
@@ -222,9 +227,12 @@ export function OutdoorLiving() {
             </div>
           </div>
           <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex gap-4">
-              {gallery.map((img, i) => (
-                <div key={i} className="flex-[0_0_80%] sm:flex-[0_0_45%] lg:flex-[0_0_28%]">
+  <div className="flex -ml-4">
+    {gallery.map((img, i) => (
+      <div
+        key={i}
+        className="pl-4 flex-[0_0_80%] sm:flex-[0_0_45%] lg:flex-[0_0_28%]"
+      >
                   <div className="aspect-[3/4] overflow-hidden">
                     <ImageWithFallback src={img.src} alt={img.label} className="w-full h-full object-cover" />
                   </div>

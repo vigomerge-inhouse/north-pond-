@@ -138,7 +138,7 @@ export function Amenities() {
         <div className="absolute left-0 top-0 h-full w-1/3 bg-gradient-to-r from-black/50 to-transparent" />
         <div className="absolute inset-0 flex flex-col items-start justify-end pb-16 px-6 sm:px-12 lg:px-20">
           <nav className="flex items-center gap-2 text-white/50 text-[11px] tracking-wider uppercase mb-4" style={{ fontFamily: "Inter, sans-serif" }}>
-            <Link to="/" className="hover:text-white transition-colors">Home</Link>
+            <Link to="/" className="font-semibold hover:text-white transition-colors">Home</Link>
             <span>/</span>
             <span className="text-white">Amenities</span>
           </nav>
