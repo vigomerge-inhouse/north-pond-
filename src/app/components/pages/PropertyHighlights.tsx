@@ -29,7 +29,7 @@ const stats = [
   { value: "2", label: "Car Garage", sub: "Detached" },
   { value: "2", label: "Private Acres", sub: "Wooded lot" },
   { value: "300ft", label: "to Road", sub: "Crockett Ridge" },
-  { value: "2mi", label: "to Lake", sub: "North Pond" },
+  { value: "2min", label: "to Lake", sub: "North Pond" },
 ];
 
 const cards = [
