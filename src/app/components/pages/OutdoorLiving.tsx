@@ -2,11 +2,11 @@ import { Link } from "react-router";
 import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
-import imgForest from "../../../imports/Private_Forest-1.jpg";
+import imgForest from "../../../imports/OutdoorLiving/PrivateForest1.jpg";
 import HeroImg from "../../../imports/OutdoorLiving/OutdoorLivingHero.png";
 import Hero1Img from "../../../imports/OutdoorLiving/OLHero1.jpg"; // ⚠️ REPLACE with nicer porch photo
 import WinterImg from "../../../imports/Details/DetailPF.png";
-import AutumnImg from "../../../imports/Details/DetailHero.png"; // ⚠️ REPLACE with rich fall colors photo
+import AutumnImg from "../../../imports/OutdoorLiving/autumn.jpg"; // ⚠️ REPLACE with rich fall colors photo
 import SpringImg from "../../../imports/OutdoorLiving/OLSpring.jpg";
 import imgHome from "../../../imports/Neat_and_clean_home_with_peace-1.jpg";
 import imgH3 from "../../../imports/h3.jpeg";
@@ -48,7 +48,7 @@ const seasons = [
     name: "Summer",
     color: "bg-blue-50",
     body: "Relax on the wrap-around porch, entertain on the deck, and take a short 2-mile drive to North Pond or Norway Lake for boating, swimming, and paddling.",
-    img: imgH3,
+    img: imgForest ,
   },
   {
     name: "Autumn",
@@ -72,7 +72,7 @@ const gallery = [
   { src: OBImg, label: "Outbuilding" },
   { src: imgKitchen, label: "Interior Access" },
   { src: OSImg, label: "Outdoor Space" },
-  { src: OLNVImg, label: "Natural Views" },
+  //{ src: OLNVImg, label: "Natural Views" },
 ];
 
 export function OutdoorLiving() {
