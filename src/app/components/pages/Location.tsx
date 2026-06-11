@@ -235,7 +235,7 @@ export function Location() {
             <em>peace without sacrificing convenience.</em>
           </h2>
           <p className="text-sm text-gray-500 mb-8" style={{ fontFamily: "Inter, sans-serif" }}>
-            RanchRetreat — Norway, Maine · Long-Term Rental · Oxford Hills · Immediately Available
+            Maine Retreat — Norway, Maine · Long-Term Rental · Oxford Hills · Immediately Available
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link to="/schedule-showing" className="px-8 py-3 bg-black text-white text-[12px] tracking-[0.15em] uppercase hover:bg-gray-900 transition-colors" style={{ fontFamily: "Inter, sans-serif", fontWeight: 500 }}>
