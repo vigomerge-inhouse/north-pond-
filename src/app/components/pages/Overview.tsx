@@ -16,7 +16,7 @@ import H52 from "../../../imports/hero/h52.png";
 import imgHg20 from "../../../imports/hg20.jpg";
 // ── PROPERTY HIGHLIGHTS STRIP IMAGE IMPORTS ───────────────────────────────────────
 import io from "../../../imports/hero/io.jpg";
-import pf from "../../../imports/hero/pf.jpeg";
+import pf1 from "../../../imports/hero/pf1.jpg";
 import ps from "../../../imports/hero/ps.jpg";
 //----view highlights strip images --------------
 import am1 from "../../../imports/hero/am1.jpg";
@@ -459,7 +459,7 @@ Today we offer carefully selected:
                 path: "/outdoor-living",
               },
               {
-                img: pf,
+                img: pf1,
                 label: "Private Forest",
                 desc: "2 Wooded Acres · Wildlife & Privacy",
                 path: "/location",
