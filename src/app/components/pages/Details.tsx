@@ -14,7 +14,8 @@ const specs: SpecGroup[] = [
     title: "Property",
     rows: [
       { label: "Property type", value: "Masterfully renovated ranch — single story" },
-      { label: "Bedrooms", value: "3 Bedrooms (1 king primary + 2 queen guest)" },
+      // CHANGED: clarified "master" label for king bedroom
+      { label: "Bedrooms", value: "3 Bedrooms (1 king master primary + 2 queen guest)" },
       { label: "Bathrooms", value: "2 Full Baths" },
       { label: "Garage", value: "Two-car detached with ample storage" },
       { label: "Lot size", value: "Private 2-acre parcel" },
@@ -26,10 +27,12 @@ const specs: SpecGroup[] = [
     title: "Interior",
     rows: [
       { label: "Kitchen", value: "High-end stainless appliances, spacious island, quartz countertops" },
-      { label: "Primary suite", value: "King-sized with walk-in closet; cast iron soaking tub & ceramic marble shower" },
+      { label: "Master suite", value: "King-sized with walk-in closet; cast iron soaking tub & ceramic marble shower" },
       { label: "Guest bedrooms", value: "Two spacious queen-sized rooms with generous closets" },
-      { label: "Flooring", value: "Brand-new throughout entire home" },
-      { label: "Living & dining", value: "Open-concept, abundant windows, private acreage views" },
+      // CHANGED: "Brand-new throughout" → "Hardwood floors throughout entire home"
+      { label: "Flooring", value: "Hardwood floors throughout entire home" },
+      // CHANGED: added Skylights to living & dining
+      { label: "Living & dining", value: "Open-concept, abundant windows, skylights, private acreage views" },
       { label: "Laundry", value: "Dedicated laundry room with pantry storage" },
       { label: "Finishes", value: "Designer lighting, contemporary fixtures, fresh neutral palette" },
     ],
@@ -41,7 +44,8 @@ const specs: SpecGroup[] = [
       { label: "Electricity", value: "Tenant responsibility — easily activated" },
       { label: "Heating", value: "Tenant responsibility — easily activated" },
       { label: "Internet", value: "Tenant responsibility — easily activated" },
-      { label: "Trash", value: "Municipal services available" },
+      // CHANGED: updated trash info from screenshot
+      { label: "Trash", value: "Municipal service — Dump only 3 miles away" },
     ],
   },
   {
@@ -53,6 +57,7 @@ const specs: SpecGroup[] = [
       { label: "Yard maintenance", value: "Landlord-maintained year-round" },
       { label: "Snowplowing", value: "Winter snowplowing included — landlord provided" },
       { label: "Dog fence", value: "Dog-friendly perimeter fence planned for installation" },
+      // CHANGED: wildlife note kept, "f/ulo" unclear — keeping original + note
       { label: "Wildlife", value: "Active wildlife — deer, birds, Maine forest fauna" },
     ],
   },
@@ -62,7 +67,8 @@ const specs: SpecGroup[] = [
       { label: "Road access", value: "300 ft from Crockett Ridge Road" },
       { label: "Water access", value: "Norway Lake & North Pond — 2 miles (public boat ramps)" },
       { label: "Nearest town", value: "Norway, Maine (est. 1797) — 10 minutes" },
-      { label: "Portland", value: "1 hour" },
+      // CHANGED: "1 hour" → "3½ hours" from screenshot
+      { label: "Portland", value: "3½ hours" },
       { label: "Boston", value: "3 hours" },
       { label: "Ski areas & Golf", value: "45 minutes (Sunday River, Shawnee Peak)" },
       { label: "Oxford Hills region", value: "Hiking, canoeing, fishing, mountain biking nearby" },
@@ -76,7 +82,11 @@ const specs: SpecGroup[] = [
       { label: "Pets", value: "Dog-friendly · perimeter fence planned" },
       { label: "Landlord support", value: "Amenable to working with you to make this your home" },
       { label: "Lease", value: "Contact for terms and pricing details" },
+<<<<<<< HEAD
       { label: "Price", value: "3000$/month with utility fees" },
+=======
+      // REMOVED: Price row — crossed out in screenshot
+>>>>>>> a8b65c9b753ecd7e4d6e49d62c0b23acd3f76c98
     ],
   },
 ];
@@ -100,12 +110,22 @@ export function Details() {
         />
         <div className="absolute left-0 top-0 h-full w-1/3 bg-gradient-to-r from-black/50 to-transparent" />
         <div className="absolute inset-0 flex flex-col items-start justify-end pb-14 px-6 sm:px-12 lg:px-20">
+<<<<<<< HEAD
           <nav className="flex items-center gap-2 text-white/90 text-[11px] tracking-wider uppercase mb-4" style={{ fontFamily: "Inter, sans-serif" }}>
+=======
+          {/* FONT FIX: text-[11px] → text-[13px] */}
+          <nav className="flex items-center gap-2 text-white/50 text-[13px] tracking-wider uppercase mb-4" style={{ fontFamily: "Inter, sans-serif" }}>
+>>>>>>> a8b65c9b753ecd7e4d6e49d62c0b23acd3f76c98
             <Link to="/" className="hover:text-white transition-colors">Home</Link>
             <span>/</span>
             <span className="text-white">Details</span>
           </nav>
+<<<<<<< HEAD
           <p className="text-[11px] tracking-[0.3em] uppercase text-white/90 mb-2" style={{ fontFamily: "Inter, sans-serif" }}>Property</p>
+=======
+          {/* FONT FIX: text-[11px] → text-[13px] */}
+          <p className="text-[13px] tracking-[0.3em] uppercase text-white/60 mb-2" style={{ fontFamily: "Inter, sans-serif" }}>Property</p>
+>>>>>>> a8b65c9b753ecd7e4d6e49d62c0b23acd3f76c98
           <h1 className="text-5xl sm:text-6xl text-white leading-none" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>
             Property Details · Full Specifications
           </h1>
@@ -115,7 +135,12 @@ export function Details() {
       {/* Specs Tables */}
       <section className="py-16 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto">
         <div className="mb-10">
+<<<<<<< HEAD
           <p className="text-[13px] tracking-[0.3em] uppercase text-gray-700 mb-3" style={{ fontFamily: "Inter, sans-serif" }}>Complete</p>
+=======
+          {/* FONT FIX: text-[10px] → text-[13px] */}
+          <p className="text-[13px] tracking-[0.3em] uppercase text-gray-400 mb-3" style={{ fontFamily: "Inter, sans-serif" }}>Complete</p>
+>>>>>>> a8b65c9b753ecd7e4d6e49d62c0b23acd3f76c98
           <h2 className="text-4xl text-black" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>
             Property Specifications
           </h2>
@@ -124,7 +149,12 @@ export function Details() {
           {specs.map((group) => (
             <div key={group.title} className="border border-gray-100">
               <div className="bg-black text-white px-6 py-3">
+<<<<<<< HEAD
                 <h3 className="text-[15px] tracking-[0.2em] uppercase" style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}>{group.title}</h3>
+=======
+                {/* FONT FIX: text-[12px] → text-[14px] */}
+                <h3 className="text-[14px] tracking-[0.2em] uppercase" style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}>{group.title}</h3>
+>>>>>>> a8b65c9b753ecd7e4d6e49d62c0b23acd3f76c98
               </div>
               <table className="w-full">
                 <tbody>
@@ -133,14 +163,20 @@ export function Details() {
                       key={row.label}
                       className={`border-b border-gray-50 ${i % 2 === 0 ? "bg-white" : "bg-gray-50/50"}`}
                     >
+                      {/* FONT FIX: text-[12px] → text-[14px] */}
                       <td
+<<<<<<< HEAD
                         className="px-6 py-3 text-[14px] text-gray-700 w-2/5"
+=======
+                        className="px-6 py-3 text-[14px] text-gray-500 w-2/5"
+>>>>>>> a8b65c9b753ecd7e4d6e49d62c0b23acd3f76c98
                         style={{ fontFamily: "Inter, sans-serif" }}
                       >
                         {row.label}
                       </td>
+                      {/* FONT FIX: text-sm → text-base */}
                       <td
-                        className="px-6 py-3 text-sm text-black"
+                        className="px-6 py-3 text-base text-black"
                         style={{ fontFamily: "Inter, sans-serif", fontWeight: 500 }}
                       >
                         {row.value}
@@ -157,9 +193,17 @@ export function Details() {
       {/* Photo Gallery */}
       <section className="py-10 px-6 sm:px-12 lg:px-20 bg-gray-50">
         <div className="max-w-7xl mx-auto">
+<<<<<<< HEAD
           <p className="text-[13px] tracking-[0.3em] uppercase text-gray-600 mb-3" style={{ fontFamily: "Inter, sans-serif" }}>All Photos</p>
           <h2 className="text-2xl text-black mb-6" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>Complete Property Gallery</h2>
           <p className="text-[14px] text-gray-600 mb-6" style={{ fontFamily: "Inter, sans-serif" }}>4 photos — interior, exterior & grounds</p>
+=======
+          {/* FONT FIX: text-[10px] → text-[13px] */}
+          <p className="text-[13px] tracking-[0.3em] uppercase text-gray-400 mb-3" style={{ fontFamily: "Inter, sans-serif" }}>All Photos</p>
+          <h2 className="text-2xl text-black mb-6" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>Complete Property Gallery</h2>
+          {/* FONT FIX: text-[11px] → text-[13px] */}
+          <p className="text-[13px] text-gray-400 mb-6" style={{ fontFamily: "Inter, sans-serif" }}>4 photos — interior, exterior & grounds</p>
+>>>>>>> a8b65c9b753ecd7e4d6e49d62c0b23acd3f76c98
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
             {galleryImages.map((img) => (
               <div key={img.label} className="group">
@@ -170,7 +214,12 @@ export function Details() {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                 </div>
+<<<<<<< HEAD
                 <p className="text-[13px] tracking-[0.08em] uppercase text-gray-700 mt-2 text-center" style={{ fontFamily: "Inter, sans-serif" }}>{img.label}</p>
+=======
+                {/* FONT FIX: text-[11px] → text-[13px] */}
+                <p className="text-[13px] tracking-[0.08em] uppercase text-gray-500 mt-2 text-center" style={{ fontFamily: "Inter, sans-serif" }}>{img.label}</p>
+>>>>>>> a8b65c9b753ecd7e4d6e49d62c0b23acd3f76c98
               </div>
             ))}
           </div>
@@ -180,24 +229,34 @@ export function Details() {
       {/* CTA */}
       <section className="py-20 px-6 text-center">
         <div className="max-w-2xl mx-auto">
+<<<<<<< HEAD
           <p className="text-[12.6px] tracking-[0.3em] uppercase text-gray-600 mb-4" style={{ fontFamily: "Inter, sans-serif" }}>Don't miss this renovated ranch gem</p>
           <h2 className="text-4xl text-black mb-4" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>
             A rare opportunity —<br /><em>move-in ready, immediately available.</em>
           </h2>
           <p className="text-gray-600 mb-8" style={{ fontFamily: "Inter, sans-serif" }}>
+=======
+          {/* FONT FIX: text-[10px] → text-[13px] */}
+          <p className="text-[13px] tracking-[0.3em] uppercase text-gray-400 mb-4" style={{ fontFamily: "Inter, sans-serif" }}>Don't miss this renovated ranch gem</p>
+          <h2 className="text-4xl text-black mb-4" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>
+            A rare opportunity —<br /><em>move-in ready, immediately available.</em>
+          </h2>
+          {/* FONT FIX: text-sm → text-base */}
+          <p className="text-base text-gray-500 mb-8" style={{ fontFamily: "Inter, sans-serif" }}>
+>>>>>>> a8b65c9b753ecd7e4d6e49d62c0b23acd3f76c98
             Landlord is amenable to working with you to make this house your home. Schedule your private showing today.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               to="/schedule-showing"
-              className="px-10 py-4 bg-black text-white text-[13px] tracking-[0.2em] uppercase hover:bg-gray-900 transition-colors"
+              className="px-10 py-4 bg-black text-white text-[14px] tracking-[0.2em] uppercase hover:bg-gray-900 transition-colors"
               style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}
             >
               Schedule Your Private Showing
             </Link>
             <Link
               to="/"
-              className="px-8 py-4 border border-black text-black text-[13px] tracking-[0.2em] uppercase hover:bg-black hover:text-white transition-colors"
+              className="px-8 py-4 border border-black text-black text-[14px] tracking-[0.2em] uppercase hover:bg-black hover:text-white transition-colors"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
               Back to Overview

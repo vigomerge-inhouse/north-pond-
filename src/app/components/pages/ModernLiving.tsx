@@ -109,7 +109,7 @@ export function ModernLiving() {
       {/* Intro */}
       <section className="py-20 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto">
         <div className="max-w-3xl">
-          <p className="text-[10px] tracking-[0.3em] uppercase text-gray-400 mb-3" style={{ fontFamily: "Inter, sans-serif" }}>The Experience</p>
+          <p className="text-bold[18px] tracking-[0.3em] uppercase text-gray-400 mb-3" style={{ fontFamily: "Inter, sans-serif" }}>The Experience</p>
           <h2 className="text-4xl text-black mb-6" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>
             Modern Living<br /><em>Elevated by Design</em>
           </h2>
@@ -208,7 +208,7 @@ export function ModernLiving() {
             "This is not your average rental. This is a masterfully renovated home that lives, breathes, and feels like a permanent residence — designed for a life well-lived in Maine's finest landscape."
           </p>
           <p className="text-[11px] tracking-[0.25em] uppercase text-gray-400" style={{ fontFamily: "Inter, sans-serif" }}>
-            Ranch Retreat · Norway, Maine
+            Maine Retreat · Norway, Maine
           </p>
         </div>
       </section>
@@ -221,7 +221,7 @@ export function ModernLiving() {
             Modern living starts with<br /><em>a single showing.</em>
           </h2>
           <p className="text-sm text-gray-500 mb-8" style={{ fontFamily: "Inter, sans-serif" }}>
-            Ranch Retreat — Norway, Maine · Long-Term Rental · Oxford Hills · Immediately Available
+            Maine Retreat — Norway, Maine · Long-Term Rental · Oxford Hills · Immediately Available
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link

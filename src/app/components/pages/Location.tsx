@@ -22,14 +22,14 @@ const driveTimes = [
   { value: "1hr", label: "Portland, ME", sub: "Maine's largest city" },
   { value: "45min", label: "Ski Areas & Golf", sub: "Sunday River, Shawnee Peak" },
   { value: "3hrs", label: "Boston, MA", sub: "Major metro access" },
-  { value: "2mi", label: "Lake Boat Ramps", sub: "Norway Lake & North Pond" },
+  { value: "2min", label: "Public Boat Ramps", sub: "Norway Lake & North Pond" },
   { value: "300ft", label: "Crockett Ridge Rd", sub: "Road access from driveway" },
   { value: "10min", label: "Downtown Norway", sub: "Shops, dining & services" },
 ];
 
 const areaHighlights = [
   {
-    title: "Waterfront Access",
+    title: "Public Boat Ramps",
     sub: "Norway Lake & North Pond",
     body: "Two public boat ramps just 2 miles from the driveway. Norway Lake and North Pond offer boating, fishing, swimming, kayaking, and paddleboarding through all warm-weather months. This is Maine lake country at its finest.",
     stat: "2 miles away",
@@ -180,7 +180,7 @@ export function Location() {
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-2xl mx-auto">
             {[
-              { v: "2 mi", l: "to Lake" },
+              { v: "2 min", l: "to Lake" },
               { v: "10 min", l: "to Norway" },
               { v: "45 min", l: "to Skiing" },
               { v: "1 hr", l: "to Portland" },
@@ -235,7 +235,7 @@ export function Location() {
             <em>peace without sacrificing convenience.</em>
           </h2>
           <p className="text-sm text-gray-500 mb-8" style={{ fontFamily: "Inter, sans-serif" }}>
-            RanchRetreat — Norway, Maine · Long-Term Rental · Oxford Hills · Immediately Available
+            Maine Retreat — Norway, Maine · Long-Term Rental · Oxford Hills · Immediately Available
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link to="/schedule-showing" className="px-8 py-3 bg-black text-white text-[12px] tracking-[0.15em] uppercase hover:bg-gray-900 transition-colors" style={{ fontFamily: "Inter, sans-serif", fontWeight: 500 }}>

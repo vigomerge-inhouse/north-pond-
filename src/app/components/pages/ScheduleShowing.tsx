@@ -99,7 +99,7 @@ const [form, setForm] = useState<FormData>({
           </p>
           <Link
             to="/"
-            className="inline-block px-8 py-3 bg-black text-white text-[12px] tracking-[0.15em] uppercase hover:bg-gray-900 transition-colors"
+            className="inline-block px-8 py-3 bg-black text-white text-[13px] tracking-[0.15em] uppercase hover:bg-gray-900 transition-colors"
             style={{ fontFamily: "Inter, sans-serif", fontWeight: 500 }}
           >
             Return to Property
@@ -120,12 +120,13 @@ const [form, setForm] = useState<FormData>({
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/70" />
         <div className="absolute inset-0 flex flex-col items-start justify-end pb-14 px-6 sm:px-12 lg:px-20">
-          <nav className="flex items-center gap-2 text-white/50 text-[11px] tracking-wider uppercase mb-4" style={{ fontFamily: "Inter, sans-serif" }}>
+          <nav className="flex items-center gap-2 text-white/50 text-[13px] tracking-wider uppercase mb-4" style={{ fontFamily: "Inter, sans-serif" }}>
             <Link to="/" className="hover:text-white transition-colors">Home</Link>
             <span>/</span>
             <span className="text-white">Schedule Showing</span>
           </nav>
-          <p className="text-[11px] tracking-[0.3em] uppercase text-white/60 mb-2" style={{ fontFamily: "Inter, sans-serif" }}>Schedule Showing</p>
+          {/* CHANGE 1: text-[11px] → text-[13px] */}
+          <p className="text-[13px] tracking-[0.3em] uppercase text-white/60 mb-2" style={{ fontFamily: "Inter, sans-serif" }}>Schedule Showing</p>
           <h1 className="text-4xl sm:text-5xl text-white leading-none" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>
             Schedule a Private Showing
           </h1>
@@ -145,7 +146,8 @@ const [form, setForm] = useState<FormData>({
                 />
               </div>
               <div className="border border-gray-100 p-6 mb-6">
-                <p className="text-[10px] tracking-[0.3em] uppercase text-gray-400 mb-1" style={{ fontFamily: "Inter, sans-serif" }}>Ranch Retreat</p>
+                {/* CHANGE 1: text-[10px] → text-[13px] */}
+                <p className="text-[13px] tracking-[0.3em] uppercase text-gray-400 mb-1" style={{ fontFamily: "Inter, sans-serif" }}>Ranch Retreat</p>
                 <h3 className="text-xl text-black mb-3" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>Norway, Maine</h3>
                 <div className="grid grid-cols-2 gap-3 mb-4">
                   {[
@@ -153,16 +155,21 @@ const [form, setForm] = useState<FormData>({
                     { v: "2", l: "Bathrooms" },
                     { v: "2", l: "Car Garage" },
                     { v: "2", l: "Acres" },
+                    // CHANGE 4: added hardwood floors + skylights
+                    { v: "✓", l: "Hardwood Floors" },
+                    { v: "✓", l: "Skylights" },
                   ].map((s) => (
                     <div key={s.l} className="text-center p-3 bg-gray-50">
                       <p className="text-xl text-black" style={{ fontFamily: "Playfair Display, serif" }}>{s.v}</p>
-                      <p className="text-[10px] tracking-[0.15em] uppercase text-gray-400" style={{ fontFamily: "Inter, sans-serif" }}>{s.l}</p>
+                      {/* CHANGE 1: text-[10px] → text-[13px] */}
+                      <p className="text-[13px] tracking-[0.15em] uppercase text-gray-400" style={{ fontFamily: "Inter, sans-serif" }}>{s.l}</p>
                     </div>
                   ))}
                 </div>
                 <div className="flex items-center gap-2 mb-2">
                   <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-                  <span className="text-[11px] tracking-[0.1em] uppercase text-green-600" style={{ fontFamily: "Inter, sans-serif" }}>Available Now · Move-In Ready</span>
+                  {/* CHANGE 1: text-[11px] → text-[13px] */}
+                  <span className="text-[13px] tracking-[0.1em] uppercase text-green-600" style={{ fontFamily: "Inter, sans-serif" }}>Available Now · Move-In Ready</span>
                 </div>
               </div>
               <div className="space-y-3">
@@ -185,7 +192,8 @@ const [form, setForm] = useState<FormData>({
           {/* Form */}
           <div className="lg:col-span-2">
             <div className="mb-8">
-              <p className="text-[10px] tracking-[0.3em] uppercase text-gray-400 mb-2" style={{ fontFamily: "Inter, sans-serif" }}>North Pond Realty Trust</p>
+              {/* CHANGE 1: text-[10px] → text-[13px] */}
+              <p className="text-[13px] tracking-[0.3em] uppercase text-gray-400 mb-2" style={{ fontFamily: "Inter, sans-serif" }}>North Pond Realty Trust</p>
               <h2 className="text-3xl text-black" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>
                 Schedule a Private Showing
               </h2>
@@ -195,9 +203,11 @@ const [form, setForm] = useState<FormData>({
               {/* Name Row */}
               <div className="grid sm:grid-cols-2 gap-5">
                 <div>
-                  <label className="block text-[11px] tracking-[0.15em] uppercase text-gray-700 mb-1.5" style={{ fontFamily: "Inter, sans-serif" }}>
+                  {/* CHANGE 1: text-[11px] → text-[13px] */}
+                  <label className="block text-[13px] tracking-[0.15em] uppercase text-gray-700 mb-1.5" style={{ fontFamily: "Inter, sans-serif" }}>
                     First Name
                   </label>
+                  {/* CHANGE 2: text-sm → text-base */}
                   <input
                     type="text"
                     name="firstName"
@@ -205,12 +215,12 @@ const [form, setForm] = useState<FormData>({
                     onChange={handleChange}
                     placeholder="Jane"
                     required
-                    className="w-full border border-gray-200 px-4 py-3 text-sm text-black placeholder-gray-300 focus:outline-none focus:border-black transition-colors"
+                    className="w-full border border-gray-200 px-4 py-3 text-base text-black placeholder-gray-300 focus:outline-none focus:border-black transition-colors"
                     style={{ fontFamily: "Inter, sans-serif" }}
                   />
                 </div>
                 <div>
-                  <label className="block text-[11px] tracking-[0.15em] uppercase text-gray-700 mb-1.5" style={{ fontFamily: "Inter, sans-serif" }}>
+                  <label className="block text-[13px] tracking-[0.15em] uppercase text-gray-700 mb-1.5" style={{ fontFamily: "Inter, sans-serif" }}>
                     Last Name
                   </label>
                   <input
@@ -220,7 +230,7 @@ const [form, setForm] = useState<FormData>({
                     onChange={handleChange}
                     placeholder="Smith"
                     required
-                    className="w-full border border-gray-200 px-4 py-3 text-sm text-black placeholder-gray-300 focus:outline-none focus:border-black transition-colors"
+                    className="w-full border border-gray-200 px-4 py-3 text-base text-black placeholder-gray-300 focus:outline-none focus:border-black transition-colors"
                     style={{ fontFamily: "Inter, sans-serif" }}
                   />
                 </div>
@@ -229,7 +239,7 @@ const [form, setForm] = useState<FormData>({
               {/* Contact Row */}
               <div className="grid sm:grid-cols-2 gap-5">
                 <div>
-                  <label className="block text-[11px] tracking-[0.15em] uppercase text-gray-700 mb-1.5" style={{ fontFamily: "Inter, sans-serif" }}>
+                  <label className="block text-[13px] tracking-[0.15em] uppercase text-gray-700 mb-1.5" style={{ fontFamily: "Inter, sans-serif" }}>
                     Email Address
                   </label>
                   <input
@@ -239,12 +249,12 @@ const [form, setForm] = useState<FormData>({
                     onChange={handleChange}
                     placeholder="jane@email.com"
                     required
-                    className="w-full border border-gray-200 px-4 py-3 text-sm text-black placeholder-gray-300 focus:outline-none focus:border-black transition-colors"
+                    className="w-full border border-gray-200 px-4 py-3 text-base text-black placeholder-gray-300 focus:outline-none focus:border-black transition-colors"
                     style={{ fontFamily: "Inter, sans-serif" }}
                   />
                 </div>
                 <div>
-                  <label className="block text-[11px] tracking-[0.15em] uppercase text-gray-700 mb-1.5" style={{ fontFamily: "Inter, sans-serif" }}>
+                  <label className="block text-[13px] tracking-[0.15em] uppercase text-gray-700 mb-1.5" style={{ fontFamily: "Inter, sans-serif" }}>
                     Phone Number
                   </label>
                   <input
@@ -253,7 +263,7 @@ const [form, setForm] = useState<FormData>({
                     value={form.phone}
                     onChange={handleChange}
                     placeholder="+1 (555) 000-0000"
-                    className="w-full border border-gray-200 px-4 py-3 text-sm text-black placeholder-gray-300 focus:outline-none focus:border-black transition-colors"
+                    className="w-full border border-gray-200 px-4 py-3 text-base text-black placeholder-gray-300 focus:outline-none focus:border-black transition-colors"
                     style={{ fontFamily: "Inter, sans-serif" }}
                   />
                 </div>
@@ -262,7 +272,7 @@ const [form, setForm] = useState<FormData>({
               {/* Date & Time */}
               <div className="grid sm:grid-cols-2 gap-5">
                 <div>
-                  <label className="block text-[11px] tracking-[0.15em] uppercase text-gray-700 mb-1.5" style={{ fontFamily: "Inter, sans-serif" }}>
+                  <label className="block text-[13px] tracking-[0.15em] uppercase text-gray-700 mb-1.5" style={{ fontFamily: "Inter, sans-serif" }}>
                     Preferred Date
                   </label>
                   <input
@@ -270,19 +280,19 @@ const [form, setForm] = useState<FormData>({
                     name="preferredDate"
                     value={form.preferredDate}
                     onChange={handleChange}
-                    className="w-full border border-gray-200 px-4 py-3 text-sm text-black focus:outline-none focus:border-black transition-colors"
+                    className="w-full border border-gray-200 px-4 py-3 text-base text-black focus:outline-none focus:border-black transition-colors"
                     style={{ fontFamily: "Inter, sans-serif" }}
                   />
                 </div>
                 <div>
-                  <label className="block text-[11px] tracking-[0.15em] uppercase text-gray-700 mb-1.5" style={{ fontFamily: "Inter, sans-serif" }}>
+                  <label className="block text-[13px] tracking-[0.15em] uppercase text-gray-700 mb-1.5" style={{ fontFamily: "Inter, sans-serif" }}>
                     Preferred Time
                   </label>
                   <select
                     name="preferredTime"
                     value={form.preferredTime}
                     onChange={handleChange}
-                    className="w-full border border-gray-200 px-4 py-3 text-sm text-black focus:outline-none focus:border-black transition-colors bg-white appearance-none"
+                    className="w-full border border-gray-200 px-4 py-3 text-base text-black focus:outline-none focus:border-black transition-colors bg-white appearance-none"
                     style={{ fontFamily: "Inter, sans-serif" }}
                   >
                     <option value="">Select...</option>
@@ -295,7 +305,7 @@ const [form, setForm] = useState<FormData>({
 
               {/* Household */}
               <div>
-                <label className="block text-[11px] tracking-[0.15em] uppercase text-gray-700 mb-1.5" style={{ fontFamily: "Inter, sans-serif" }}>
+                <label className="block text-[13px] tracking-[0.15em] uppercase text-gray-700 mb-1.5" style={{ fontFamily: "Inter, sans-serif" }}>
                   How many people in your household?
                 </label>
                 <input
@@ -305,14 +315,14 @@ const [form, setForm] = useState<FormData>({
                   onChange={handleChange}
                   min="1"
                   max="20"
-                  className="w-full sm:w-32 border border-gray-200 px-4 py-3 text-sm text-black focus:outline-none focus:border-black transition-colors"
+                  className="w-full sm:w-32 border border-gray-200 px-4 py-3 text-base text-black focus:outline-none focus:border-black transition-colors"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 />
               </div>
 
               {/* Message */}
               <div>
-                <label className="block text-[11px] tracking-[0.15em] uppercase text-gray-700 mb-1.5" style={{ fontFamily: "Inter, sans-serif" }}>
+                <label className="block text-[13px] tracking-[0.15em] uppercase text-gray-700 mb-1.5" style={{ fontFamily: "Inter, sans-serif" }}>
                   Message / Questions (optional)
                 </label>
                 <textarea
@@ -321,7 +331,7 @@ const [form, setForm] = useState<FormData>({
                   onChange={handleChange}
                   placeholder="Tell us a bit about yourself and any questions you have…"
                   rows={5}
-                  className="w-full border border-gray-200 px-4 py-3 text-sm text-black placeholder-gray-300 focus:outline-none focus:border-black transition-colors resize-none"
+                  className="w-full border border-gray-200 px-4 py-3 text-base text-black placeholder-gray-300 focus:outline-none focus:border-black transition-colors resize-none"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 />
               </div>
@@ -345,7 +355,7 @@ const [form, setForm] = useState<FormData>({
                       {form.hasPets && <Check size={11} className="text-white" />}
                     </div>
                   </div>
-                  <span className="text-sm text-gray-700" style={{ fontFamily: "Inter, sans-serif" }}>
+                  <span className="text-base text-gray-700" style={{ fontFamily: "Inter, sans-serif" }}>
                     I have pets (dog-friendly property — perimeter fence planned)
                   </span>
                 </label>
@@ -355,12 +365,13 @@ const [form, setForm] = useState<FormData>({
               <div className="pt-4">
                 <button
                   type="submit"
-                  className="w-full sm:w-auto px-12 py-4 bg-black text-white text-[13px] tracking-[0.2em] uppercase hover:bg-gray-900 transition-colors"
+                  className="w-full sm:w-auto px-12 py-4 bg-black text-white text-[14px] tracking-[0.2em] uppercase hover:bg-gray-900 transition-colors"
                   style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}
                 >
                   Send Request
                 </button>
-                <p className="text-[11px] text-gray-400 mt-3" style={{ fontFamily: "Inter, sans-serif" }}>
+                {/* CHANGE 1: text-[11px] → text-[13px] */}
+                <p className="text-[13px] text-gray-400 mt-3" style={{ fontFamily: "Inter, sans-serif" }}>
                   We'll confirm your showing within 24 hours.
                 </p>
               </div>
@@ -379,8 +390,9 @@ const [form, setForm] = useState<FormData>({
           ].map((item) => (
             <div key={item.title}>
               <p className="text-3xl mb-2">{item.icon}</p>
-              <p className="text-[12px] tracking-[0.15em] uppercase text-white mb-1" style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}>{item.title}</p>
-              <p className="text-[12px] text-gray-500" style={{ fontFamily: "Inter, sans-serif" }}>{item.sub}</p>
+              {/* CHANGE 1: text-[12px] → text-[14px] */}
+              <p className="text-[14px] tracking-[0.15em] uppercase text-white mb-1" style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}>{item.title}</p>
+              <p className="text-[14px] text-gray-500" style={{ fontFamily: "Inter, sans-serif" }}>{item.sub}</p>
             </div>
           ))}
         </div>
