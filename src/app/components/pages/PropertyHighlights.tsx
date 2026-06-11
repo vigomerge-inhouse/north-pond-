@@ -80,7 +80,7 @@ const galleryImages = [
   //{ src: imgKitchen,  },
   { src: imgH5,  },
   { src: imgHome, },
-  { src: imgForest,  },
+  //{ src: imgForest,  },
   { src: imgH3,  },
   { src: g8,  },
   { src: g9,  },
