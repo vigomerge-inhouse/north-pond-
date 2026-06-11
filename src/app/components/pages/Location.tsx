@@ -173,7 +173,7 @@ export function Location() {
       {/* Area Map Placeholder */}
       <section className="px-6 sm:px-12 lg:px-20 pb-10 max-w-7xl mx-auto">
         <div className="bg-gray-900 text-white p-10 text-center">
-          <p className="text-[10px] tracking-[0.3em] uppercase text-gray-500 mb-3" style={{ fontFamily: "Inter, sans-serif" }}>Oxford County · Est. 1797 · Lakes District</p>
+          <p className="text-[12px] tracking-[0.3em] uppercase text-gray-300 mb-3" style={{ fontFamily: "Inter, sans-serif" }}>Oxford County · Est. 1797 · Lakes District</p>
           <h2 className="text-3xl mb-2" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>Norway, Maine</h2>
           <p className="text-gray-400 mb-6 max-w-xl mx-auto" style={{ fontFamily: "Inter, sans-serif" }}>
             Crockett Ridge Road · Norway, Maine 04268 · Oxford Hills · 300 ft from road · 2 acres private
@@ -187,7 +187,7 @@ export function Location() {
             ].map((s) => (
               <div key={s.l} className="text-center">
                 <p className="text-2xl text-white" style={{ fontFamily: "Playfair Display, serif" }}>{s.v}</p>
-                <p className="text-[10px] tracking-[0.2em] uppercase text-gray-500 mt-0.5" style={{ fontFamily: "Inter, sans-serif" }}>{s.l}</p>
+                <p className="text-[12px] tracking-[0.2em] uppercase text-gray-300 mt-0.5" style={{ fontFamily: "Inter, sans-serif" }}>{s.l}</p>
               </div>
             ))}
           </div>
@@ -199,7 +199,7 @@ export function Location() {
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center justify-between mb-8">
             <div>
-              <p className="text-[10px] tracking-[0.3em] uppercase text-gray-400 mb-1" style={{ fontFamily: "Inter, sans-serif" }}>Area Photos</p>
+              <p className="text-[13px] tracking-[0.3em] uppercase text-gray-700 mb-1" style={{ fontFamily: "Inter, sans-serif" }}>Area Photos</p>
               <h2 className="text-2xl text-black" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>The Oxford Hills Region</h2>
             </div>
             <div className="flex gap-2">
@@ -218,7 +218,7 @@ export function Location() {
                   <div className="aspect-[4/3] overflow-hidden">
                     <ImageWithFallback src={img.src} alt={img.label} className="w-full h-full object-cover" />
                   </div>
-                  <p className="text-[11px] tracking-[0.1em] uppercase text-gray-500 mt-2 text-center" style={{ fontFamily: "Inter, sans-serif" }}>{img.label}</p>
+                  <p className="text-[14px] tracking-[0.1em] uppercase text-gray-700 mt-2 text-center" style={{ fontFamily: "Inter, sans-serif" }}>{img.label}</p>
                 </div>
               ))}
             </div>
@@ -229,19 +229,19 @@ export function Location() {
       {/* CTA */}
       <section className="py-20 px-6 text-center">
         <div className="max-w-xl mx-auto">
-          <p className="text-[10px] tracking-[0.3em] uppercase text-gray-400 mb-4" style={{ fontFamily: "Inter, sans-serif" }}>Visit this remarkable retreat</p>
+          <p className="text-[13px] tracking-[0.3em] uppercase text-gray-600 mb-4" style={{ fontFamily: "Inter, sans-serif" }}>Visit this remarkable retreat</p>
           <h2 className="text-3xl text-black mb-3" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>
             Ideally located for those seeking<br />
             <em>peace without sacrificing convenience.</em>
           </h2>
-          <p className="text-sm text-gray-500 mb-8" style={{ fontFamily: "Inter, sans-serif" }}>
+          <p className="text-2sm text-gray-600 mb-8" style={{ fontFamily: "Inter, sans-serif" }}>
             Maine Retreat — Norway, Maine · Long-Term Rental · Oxford Hills · Immediately Available
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/schedule-showing" className="px-8 py-3 bg-black text-white text-[12px] tracking-[0.15em] uppercase hover:bg-gray-900 transition-colors" style={{ fontFamily: "Inter, sans-serif", fontWeight: 500 }}>
+            <Link to="/schedule-showing" className="px-8 py-3 bg-black text-white text-[14px] tracking-[0.15em] uppercase hover:bg-gray-900 transition-colors" style={{ fontFamily: "Inter, sans-serif", fontWeight: 500 }}>
               Schedule a Showing
             </Link>
-            <Link to="/details" className="px-8 py-3 border border-black text-black text-[12px] tracking-[0.15em] uppercase hover:bg-black hover:text-white transition-colors" style={{ fontFamily: "Inter, sans-serif" }}>
+            <Link to="/details" className="px-8 py-3 border border-black text-black text-[14px] tracking-[0.15em] uppercase hover:bg-black hover:text-white transition-colors" style={{ fontFamily: "Inter, sans-serif" }}>
               Full Specifications
             </Link>
           </div>
