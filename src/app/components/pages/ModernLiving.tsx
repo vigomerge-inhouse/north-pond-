@@ -10,7 +10,7 @@ import imgH5 from "../../../imports/modernliving/h5.jpg";
 import imgHg1 from "../../../imports/modernliving/hg1.jpg";
 import imgHg3 from "../../../imports/modernliving/hg3.jpg";
 import inot from "../../../imports/modernliving/inot.jpg";
-import relax from "../../../imports/modernliving/relax.jpg";
+import relax from "../../../imports/modernliving/relax.png";
 import GallImg from "../../../imports/modernliving/MLGallery.jpg";
 
 
@@ -48,17 +48,7 @@ const sections = [
     imgAlt: "Wrap-around porch and outdoor living",
     reverse: false,
   },
-  {
-    label: "Country Comfort",
-    sublabel: "Single-Story Ranch",
-    title: "Country Comfort",
-    body: "This is not an apartment dressed up as a house. It is a genuine, spacious single-family home with the space, privacy, and character that defines exceptional country living. Ranch-style single-story design means no stairs — pure ease and comfort, all on one level.",
-    cta: "Schedule a Showing",
-    ctaPath: "/schedule-showing",
-    img: imgForest,
-    imgAlt: "Private two-acre wooded property",
-    reverse: true,
-  },
+  
 ];
 
 const highlights = [

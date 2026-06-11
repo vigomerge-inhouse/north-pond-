@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
 
 //hero
-import bd1 from "../../../imports/bedrooms/bd1.png";
+import bd1 from "../../../imports/bedrooms/bd1.jpg";
 //3bedrooms
 import bd2 from "../../../imports/bedrooms/bd2.jpg";
 import bd3 from "../../../imports/bedrooms/bd3.jpg";
@@ -53,8 +53,8 @@ const bedrooms = [
     type: "Guest Bedroom",
     size: "Queen-Size",
     title: "Spacious First Guest Bedroom",
-    sublabel: "Den or Office",
-    images: [bd2, bd3, bd4],
+    sublabel: "Guest Bedroom",
+    images: [ bd3, ],
     body: "The first guest bedroom offers generous space for a queen-size bed with room to spare. Clean, well-organized closet space, fresh neutral finishes, and abundant natural light create an inviting environment — equally suited for a family member, guest, or home office.\n\nThe guest wing is served by a fully updated full bathroom with modern fixtures, bright design, and clean, contemporary finishes. Private, quiet, and comfortable — your guests will feel genuinely at home.",
     bullets: [
       "Queen-size bed configuration",
@@ -72,8 +72,8 @@ const bedrooms = [
     type: "Guest Bedroom",
     size: "Queen-Size",
     title: "Spacious Second Guest Bedroom",
-    sublabel: "Living Room",
-    images: [bd11,bd12,bd13,bd14],
+    sublabel: "Guest Bedroom ",
+    images: [bd4],
     body: "The second guest bedroom mirrors the same generous proportions, quality finishes, and natural light that define the rest of this home. Whether used for guests, family members, or as a dedicated home office or creative studio, this room provides real, usable space.\n\nBoth guest rooms share the updated guest full bathroom, which has been completely refreshed with new fixtures, bright design, and a clean contemporary style. This is a home designed for real living — not just for looking good in photographs.",
     bullets: [
       "Queen-size bed configuration",
