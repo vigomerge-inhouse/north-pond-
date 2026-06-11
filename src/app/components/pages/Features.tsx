@@ -17,17 +17,17 @@ import FSUITESPAImg from "../../../imports/FSUITESPA.jpg";
 
 const features = [
   {
-    num: "01",
-    title: "Modern Gourmet Kitchen",
-    sub: "Heart of the home",
-    body: "Sleek kitchen with high-end stainless appliances, spacious island, and abundant storage. Large windows overlook the private yard and wrap-around porch — perfect for casual meals and four-season views.",
-    bullets: ["Brand-new stainless steel appliances", "Stunning quartz countertops", "Spacious island", "Large windows with yard views"],
-    img: imgKitchen,
-  },
+  num: "01",
+  title: "Modern Gourmet Kitchen",
+  sub: "Heart of the home",
+  body: "",
+  bullets: [],
+  img: imgKitchen,
+},
   {
     num: "02",
-    title: "Primary Suite with Spa-Like Bath",
-    sub: "Private retreat",
+   title: "Master Bedroom with Spa-Like Bath",
+sub: "Private retreat",
     body: "Serene owner's oasis sized for a king bed with walk-in closet. Luxurious bath features a cast iron soaking tub and ceramic marble shower, bathed in soft natural light.",
     bullets: ["King-size space", "Walk-in closet", "Cast iron soaking tub", "Ceramic marble shower"],
     img: FSUITESPAImg,
@@ -115,9 +115,7 @@ export function Features() {
       {/* Intro */}
       <section className="py-16 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto">
         <div className="max-w-3xl">
-          <p className="text-gray-600 leading-relaxed text-base mb-4" style={{ fontFamily: "Inter, sans-serif" }}>
-            Brand-new stainless-steel appliances, stunning quartz countertops, elegant fixtures, and beautiful new flooring throughout. Clean, bright spaces with four-season views of your private acreage. This is not your average rental — every corner of this home has been masterfully updated.
-          </p>
+        
           <p className="text-gray-600 leading-relaxed text-base" style={{ fontFamily: "Inter, sans-serif" }}>
             Designed for comfort and convenience, this beautifully updated ranch offers effortless single-story living with bright, open spaces and exceptional functionality. New flooring throughout, fresh neutral finishes, and abundant natural light create a warm and inviting atmosphere while showcasing views of the surrounding private acreage.
           </p>
