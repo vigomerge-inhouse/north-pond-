@@ -3,7 +3,7 @@ import { Link } from "react-router";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
 import imgForest from "../../../imports/Private_Forest-1.jpg";
 import imgHome from "../../../imports/Neat_and_clean_home_with_peace-1.jpg";
-import imgKitchen from "../../../imports/livingrmkit.jpg";
+import imgKitchen from "../../../imports/Features/livingrmkit.jpg";
 import imgH3 from "../../../imports/h3.jpeg";
 import imgH5 from "../../../imports/h5.jpg";
 import imgHg1 from "../../../imports/hg1.jpg";
@@ -102,7 +102,7 @@ export function Features() {
             <span>/</span>
             <span className="text-white">Features</span>
           </nav>
-          <p className="text-[13px] tracking-[0.3em] uppercase text-white/60 mb-2" style={{ fontFamily: "Inter, sans-serif" }}>Home Features</p>
+          <p className="text-[13px] tracking-[0.3em] uppercase text-white/80 mb-2" style={{ fontFamily: "Inter, sans-serif" }}>Home Features</p>
           <h1 className="text-5xl sm:text-6xl text-white leading-none mb-3" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>
             Every detail
           </h1>

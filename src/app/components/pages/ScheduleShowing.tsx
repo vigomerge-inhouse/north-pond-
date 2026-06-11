@@ -3,7 +3,7 @@ import { Link } from "react-router";
 import { Check, Phone, Mail, MapPin } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
 import emailjs from "@emailjs/browser";
-import img1 from "../../../imports/schedule/img1.png";
+import img1 from "../../../imports/schedule/img1.jpg";
 import img2 from "../../../imports/schedule/img2.jpg";
 
 type FormData = {
@@ -118,7 +118,7 @@ const [form, setForm] = useState<FormData>({
           alt="Schedule a Showing — Ranch Retreat"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/70" />
+        
         <div className="absolute inset-0 flex flex-col items-start justify-end pb-14 px-6 sm:px-12 lg:px-20">
           <nav className="flex items-center gap-2 text-white text-[13px] tracking-wider uppercase mb-4" style={{ fontFamily: "Inter, sans-serif" }}>
             <Link to="/" className="hover:text-white transition-colors">Home</Link>
@@ -126,7 +126,7 @@ const [form, setForm] = useState<FormData>({
             <span className="text-white">Schedule Showing</span>
           </nav>
           {/* CHANGE 1: text-[11px] → text-[13px] */}
-          <p className="text-[13px] tracking-[0.3em] uppercase text-white/60 mb-2" style={{ fontFamily: "Inter, sans-serif" }}>Schedule Showing</p>
+          <p className="text-[15px] tracking-[0.3em] uppercase text-white/100 mb-2" style={{ fontFamily: "Inter, sans-serif" }}>Schedule Showing</p>
           <h1 className="text-4xl sm:text-5xl text-white leading-none" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>
             Schedule a Private Showing
           </h1>
