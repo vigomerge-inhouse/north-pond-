@@ -28,6 +28,16 @@ import imgHg3 from "../../../imports/bedrooms/hg3.jpg";
 import imgHg20 from "../../../imports/bedrooms/hg20.jpg";
 import imgKitchen from "../../../imports/bedrooms/livingrmkit.jpg";
 
+const TYPO = {
+  number: "text-4xl text-gray-400 font-serif",
+  type: "font-semibold text-[13px] tracking-[0.25em] uppercase text-gray-700",
+  size: "text-[14px] tracking-[0.1em] uppercase text-black font-semibold",
+  title: "text-2xl lg:text-3xl text-black font-serif font-medium mb-5",
+  body: "text-gray-600 leading-relaxed text-[18px]",
+  bullet: "text-[17px] text-gray-700",
+  sublabel: "text-[11px] tracking-[0.2em] uppercase text-white"
+};
+
 const bedrooms = [
   {
     num: "01",
@@ -130,26 +140,32 @@ function BedroomSection({ room }: { room: typeof bedrooms[0] }) {
           {/* Content */}
           <div>
             <div className="flex items-center gap-3 mb-3">
-              <span className="text-4xl text-gray-100" style={{ fontFamily: "Playfair Display, serif" }}>{room.num}</span>
+              <span className={TYPO.number}>
+  {room.num}
+</span>
               <div>
-                <p className="text-[10px] tracking-[0.25em] uppercase text-gray-400" style={{ fontFamily: "Inter, sans-serif" }}>{room.type}</p>
-                <p className="text-[12px] tracking-[0.1em] uppercase text-black" style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}>{room.size}</p>
+                <p className={TYPO.type}>{room.type}</p>
+                <p className={TYPO.size}>{room.size}</p>
               </div>
             </div>
-            <h2 className="text-2xl lg:text-3xl text-black mb-5" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>
+            <h2 className={TYPO.title}>
               {room.title}
             </h2>
-            {room.body.split("\n\n").map((para, i) => (
-              <p key={i} className="text-gray-600 leading-relaxed mb-4" style={{ fontFamily: "Inter, sans-serif" }}>{para}</p>
-            ))}
+           {room.body.split("\n\n").map((para, i) => (
+  <p key={i} className={TYPO.body}>
+    {para}
+  </p>
+))}
             <div className="grid grid-cols-2 gap-x-6 gap-y-2 mt-5 mb-6">
-              {room.bullets.map((b) => (
-                <div key={b} className="flex items-start gap-2">
-                  <span className="w-1 h-1 bg-black rounded-full mt-2 shrink-0" />
-                  <span className="text-sm text-gray-700" style={{ fontFamily: "Inter, sans-serif" }}>{b}</span>
-                </div>
-              ))}
-            </div>
+  {room.bullets.map((b) => (
+    <div key={b} className="flex items-start gap-2">
+      <span className="w-1 h-1 bg-black rounded-full mt-2 shrink-0" />
+      <span className={TYPO.bullet}>
+        {b}
+      </span>
+    </div>
+  ))}
+</div>
             <Link
               to="/schedule-showing"
               className="inline-flex items-center gap-2 text-[12px] tracking-[0.15em] uppercase text-black border-b border-black pb-0.5 hover:gap-4 transition-all"
@@ -177,12 +193,12 @@ export function Bedrooms() {
         />
         
         <div className="absolute inset-0 flex flex-col items-start justify-end pb-16 px-6 sm:px-12 lg:px-20">
-          <nav className="flex items-center gap-2 text-white/50 text-[11px] tracking-wider uppercase mb-4" style={{ fontFamily: "Inter, sans-serif" }}>
+          <nav className="flex items-center gap-2 text-white/90 text-[12px] tracking-wider uppercase mb-4" style={{ fontFamily: "Inter, sans-serif" }}>
             <Link to="/" className="hover:text-white transition-colors">Home</Link>
             <span>/</span>
             <span className="text-white">Bedrooms</span>
           </nav>
-          <p className="text-[11px] tracking-[0.3em] uppercase text-white/60 mb-2" style={{ fontFamily: "Inter, sans-serif" }}>Bedrooms</p>
+          <p className="text-[11px] tracking-[0.3em] uppercase text-white/90 mb-2" style={{ fontFamily: "Inter, sans-serif" }}>Bedrooms</p>
           <h1 className="text-5xl sm:text-6xl text-white leading-none mb-3" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>
             Rest, privacy,
           </h1>
@@ -201,14 +217,14 @@ export function Bedrooms() {
             { v: "✓", l: "Natural light in every room" },
           ].map((s) => (
             <div key={s.l} className="text-center text-white">
-              <p className="text-xl" style={{ fontFamily: "Playfair Display, serif" }}>{s.v}</p>
-              <p className="text-[10px] tracking-[0.2em] uppercase text-gray-400 mt-0.5" style={{ fontFamily: "Inter, sans-serif" }}>{s.l}</p>
+              <p className="text-2xl" style={{ fontFamily: "Playfair Display, serif" }}>{s.v}</p>
+              <p className="text-[12px] tracking-[0.2em] uppercase text-gray-300 mt-0.5" style={{ fontFamily: "Inter, sans-serif" }}>{s.l}</p>
             </div>
           ))}
           <div className="ml-6">
             <Link
               to="/schedule-showing"
-              className="inline-block px-5 py-2.5 bg-white text-black text-[11px] tracking-[0.15em] uppercase hover:bg-gray-100 transition-colors"
+              className="inline-block px-5 py-2.5 bg-white text-black text-[13px] tracking-[0.15em] uppercase hover:bg-gray-100 transition-colors"
               style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}
             >
               Schedule a Showing
@@ -220,7 +236,7 @@ export function Bedrooms() {
       {/* Intro */}
       <section className="py-16 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto">
         <div className="max-w-3xl">
-          <p className="text-[10px] tracking-[0.3em] uppercase text-gray-400 mb-3" style={{ fontFamily: "Inter, sans-serif" }}>Bedrooms</p>
+          <p className="text-[13px] tracking-[0.3em] uppercase text-gray-600 mb-3" style={{ fontFamily: "Inter, sans-serif" }}>Bedrooms</p>
           <h2 className="text-4xl text-black mb-4" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>
             Three Bedrooms,<br /><em>Designed for Comfort</em>
           </h2>
@@ -240,19 +256,19 @@ export function Bedrooms() {
       {/* CTA */}
       <section className="py-20 px-6 text-center bg-black text-white">
         <div className="max-w-2xl mx-auto">
-          <p className="text-[10px] tracking-[0.3em] uppercase text-gray-500 mb-4" style={{ fontFamily: "Inter, sans-serif" }}>Three rooms. One exceptional home.</p>
+          <p className="text-[13px] tracking-[0.3em] uppercase text-gray-300 mb-4" style={{ fontFamily: "Inter, sans-serif" }}>Three rooms. One exceptional home.</p>
           <h2 className="text-4xl mb-4" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>
             See the primary suite, guest rooms,<br />
             <em>and the full home in person.</em>
           </h2>
-          <p className="text-gray-400 mb-8" style={{ fontFamily: "Inter, sans-serif" }}>
+          <p className="text-gray-200 mb-8" style={{ fontFamily: "Inter, sans-serif" }}>
             Schedule your private showing today.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/schedule-showing" className="px-8 py-3 bg-white text-black text-[12px] tracking-[0.15em] uppercase hover:bg-gray-100 transition-colors" style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}>
+            <Link to="/schedule-showing" className="px-8 py-3 bg-white text-black text-[14px] tracking-[0.15em] uppercase hover:bg-gray-100 transition-colors" style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}>
               Schedule a Showing
             </Link>
-            <Link to="/amenities" className="px-8 py-3 border border-gray-700 text-white text-[12px] tracking-[0.15em] uppercase hover:border-white transition-colors" style={{ fontFamily: "Inter, sans-serif" }}>
+            <Link to="/amenities" className="px-8 py-3 border border-gray-700 text-white text-[14px] tracking-[0.15em] uppercase hover:border-white transition-colors" style={{ fontFamily: "Inter, sans-serif" }}>
               View Amenities
             </Link>
           </div>
