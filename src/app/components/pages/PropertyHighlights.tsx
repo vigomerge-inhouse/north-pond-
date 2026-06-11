@@ -78,19 +78,19 @@ const checklist = [
 
 const galleryImages = [
   //{ src: imgKitchen,  },
-  { src: imgH5,  },
-  { src: imgHome, },
+  //{ src: imgH5,  },
+  //{ src: imgHome, },
   //{ src: imgForest,  },
-  { src: imgH3,  },
-  { src: g8,  },
+  //{ src: imgH3,  },
+ // { src: g8,  },
   { src: g9,  },
-  { src: g1,  },
-  { src: g2,  },
-  { src: g3,  },
+  //{ src: g1,  },
+  //{ src: g2,  },
+  //{ src: g3,  },
   { src: g4,  },
   { src: g5,  },
   { src: g6,  },
-  { src: g7,  },
+  //{ src: g7,  },
   { src: g10,  },
 ];
 
