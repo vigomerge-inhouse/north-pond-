@@ -77,7 +77,7 @@ const galleryImages = [
   { src: OBImg, label: "Forest Views" },
   //{ src: imgH3, label: "Nature Trails" },
   { src: SpringImg, label: "Woodland Edge" },
-  { src: imgHg3, label: "Country Access Road" },
+  //{ src: imgHg3, label: "Country Access Road" },
   { src: Hero1Img, label: "Secluded Acres" },
   //{ src: imgH5, label: "Nature Escape" },
 ];
