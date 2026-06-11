@@ -20,15 +20,15 @@ export function Footer() {
   </div>
 </div>
             <p
-              className="text-gray-200 text-sm leading-relaxed max-w-xs"
+              className="text-gray-200 text-2sm leading-relaxed max-w-xs"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
-              Presenting Ranch Retreat — a masterfully renovated single-story
+              Presenting Maine Retreat — a masterfully renovated single-story
               home on a private 2-acre parcel in the scenic Oxford Hills of
               Norway, Maine. Immediately available for long-term rental.
             </p>
             <div className="mt-4">
-              <span className="inline-flex items-center gap-2 text-[11px] tracking-[0.1em] uppercase text-green-400">
+              <span className="inline-flex items-center gap-2 text-[14px] tracking-[0.1em] uppercase text-green-400">
                 <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
                 Available Now · Move-In Ready
               </span>
@@ -38,7 +38,7 @@ export function Footer() {
           {/* Property Pages */}
           <div>
             <p
-              className="text-[12px] tracking-[0.25em] uppercase text-white mb-4 font-semibold"
+              className="text-[14px] tracking-[0.25em] uppercase text-white mb-4 font-semibold"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
               Property Pages
@@ -54,7 +54,7 @@ export function Footer() {
                 <li key={item.path}>
                   <Link
                     to={item.path}
-                    className="text-[13px] tracking-wide text-white hover:text-yellow-400 transition-colors font-semibold"
+                    className="text-[14px] tracking-wide text-white hover:text-yellow-400 transition-colors font-semibold"
                     style={{ fontFamily: "Inter, sans-serif" }}
                   >
                     {item.label}
@@ -64,7 +64,7 @@ export function Footer() {
               <li>
                 <Link
                   to="/schedule-showing"
-                  className="text-[13px] tracking-wide text-white hover:text-yellow-400 transition-colors font-semibold"
+                  className="text-[16px] tracking-wide text-white hover:text-yellow-400 transition-colors font-semibold"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
                   Schedule Showing →
@@ -76,7 +76,7 @@ export function Footer() {
           {/* Contact */}
           <div>
             <p
-              className="text-[10px] tracking-[0.25em] uppercase text-white mb-4 font-semibold"
+              className="text-[14px] tracking-[0.25em] uppercase text-white mb-4 font-semibold"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
               Contact
@@ -85,7 +85,7 @@ export function Footer() {
               <li className="flex items-start gap-2.5">
                 <MapPin size={14} className="text-gray-500 mt-0.5 shrink-0" />
                 <span
-                  className="text-[12px] text-gray-200"
+                  className="text-[14px] text-gray-200"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
                   Crockett Ridge Road
@@ -97,7 +97,7 @@ export function Footer() {
                 <Mail size={14} className="text-gray-500 shrink-0" />
                 <a
                   href="mailto:contact@northpondrealty.com"
-                  className="text-[12px] text-gray-200 hover:text-yellow-400 transition-colors"
+                  className="text-[16px] text-gray-200 hover:text-yellow-400 transition-colors"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
                   contact@northpondrealty.com
@@ -107,7 +107,7 @@ export function Footer() {
                 <Phone size={14} className="text-gray-500 shrink-0" />
                 <a
                   href="tel:12022583575"
-                  className="text-[12px] text-gray-200 hover:text-yellow-400 transition-colors"
+                  className="text-[16px] text-gray-200 hover:text-yellow-400 transition-colors"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
                   +1 (202) 258-3575
@@ -117,7 +117,7 @@ export function Footer() {
             <div className="mt-5">
               <Link
                 to="/schedule-showing"
-                className="inline-block px-5 py-2.5 bg-white text-black text-[11px] tracking-[0.15em] uppercase hover:bg-gray-100 transition-colors"
+                className="inline-block px-5 py-2.5 bg-white text-black text-[12.6px] tracking-[0.15em] uppercase hover:bg-gray-100 transition-colors"
                 style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}
               >
                 Schedule Private Showing
@@ -128,13 +128,13 @@ export function Footer() {
 
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p
-            className="text-[11px] text-yellow-400 font-medium"
+            className="text-[13px] text-yellow-400 font-medium"
             style={{ fontFamily: "Inter, sans-serif" }}
           >
             © 2026 North Pond Realty Trust · Developed By Vigomerge Inc
           </p>
           <p
-            className="text-[11px] text-yellow-400 font-medium"
+            className="text-[13px] text-yellow-400 font-medium"
             style={{ fontFamily: "Inter, sans-serif" }}
           >
             All photography and content © North Pond Realty Trust

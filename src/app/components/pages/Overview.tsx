@@ -4,8 +4,9 @@ import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight, ArrowDown } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
 // ── HERO IMAGE IMPORTS ───────────────────────────────────────
+import HeroImg from "../../../imports/HM_HE1.jpg";
 import hero3 from "../../../imports/hero/hero3.jpg";
-import h52 from "../../../imports/hero/h52.png";
+//import h52 from "../../../imports/hero/h52.png";
 import hero2 from "../../../imports/hero/hero2.png";
 // ── GALLERY IMAGE IMPORTS ───────────────────────────────────────
 import lvkt from "../../../imports/hero/lvkt.jpg";
@@ -22,13 +23,15 @@ import am1 from "../../../imports/hero/am1.jpg";
 import am2 from "../../../imports/hero/am2.jpg";
 import am3 from "../../../imports/hero/am3.jpg";
 import am4 from "../../../imports/hero/am4.png";
+//before footer image
+import EndImg from "../../../imports/end.jpg";
 
 
 
 const heroSlides = [
   { src: hero3, alt: "Gourmet kitchen", label: "Brand New Kitchen" },
-  { src: h52, alt: "Private forest — Maine Retreat", label: "Exceptional Country Living" },
-  { src: hero2, alt: "Ranch home exterior", label: "Move-In Ready" },
+  { src: HeroImg, alt: "Private forest — Maine Retreat", label: "Exceptional Country Living" },
+  //{ src: hero2, alt: "Ranch home exterior", label: "Move-In Ready" },
 ];
 
 const stats = [
@@ -116,7 +119,7 @@ export function Overview() {
         <div className="absolute inset-0 flex flex-col items-start justify-end pb-16 px-6 sm:px-10 lg:px-16">
           <div className="max-w-2xl">
             <p
-              className="text-[11px] tracking-[0.3em] uppercase text-white/70 mb-3"
+              className="text-[13px] tracking-[0.3em] uppercase text-white/80 mb-3"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
               North Pond Realty Trust · Norway, Maine · Oxford Hills
@@ -128,13 +131,13 @@ export function Overview() {
              Welcome to North Pond Realty Trust
             </h1>
             <p
-              className="text-xl sm:text-2xl text-white/80 mb-1 italic"
+              className="text-xl sm:text-2xl text-white/90 mb-1 italic"
               style={{ fontFamily: "Cormorant Garamond, serif" }}
             >
               Exceptional Land & Recreational Properties Since 1975
             </p>
             <p
-              className="text-[12px] tracking-[0.2em] uppercase text-white/60 mb-8"
+              className="text-[12px] tracking-[0.2em] uppercase text-white/80 mb-8"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
               Serving Western Maine Since 1975
@@ -216,7 +219,7 @@ export function Overview() {
                 {stat.value}
               </p>
               <p
-                className="text-[10px] tracking-[0.2em] uppercase text-gray-400 mt-0.5"
+                className="text-[12px] tracking-[0.2em] uppercase text-gray-300 mt-0.5"
                 style={{ fontFamily: "Inter, sans-serif" }}
               >
                 {stat.label}
@@ -227,11 +230,11 @@ export function Overview() {
       </section>
 
       {/* Property Summary */}
-      <section className="py-20 px-6 sm:px-10 lg:px-16 max-w-7xl mx-auto">
+      <section className="pt-20 pb-8 px-6 sm:px-10 lg:px-16 max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
            <p
-              className="text-bold[20px] tracking-[0.3em] uppercase text-gray-400 mb-3"
+              className="text-semibold[20px] tracking-[0.3em] uppercase text-gray-700 mb-3"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
               North Pond Realty Trust
@@ -247,25 +250,18 @@ export function Overview() {
               <em>Since 1975</em>
             </h2>
             <p
-              className="text-gray-600 leading-relaxed text-base mb-8"
+              className="text-gray-600 leading-relaxed text-2sm mb-8"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
-             Our story begins in 1975 when North Pond Realty Trust quietly started acquiring and curating exceptional properties across Oxford County, Maine.
-
-It began with the purchase of land in the Norway, Maine drainage of North Pond—the 273-acre spring-fed pond that flows into Lake Pennesseewassee (Norway Lake).
-
-The second acquisition was a stunning mountain-view parcel in Andover, Maine, just 30 minutes from Sunday River Ski and Golf Resort.
-
-The rest is history.
-
-Today we offer carefully selected recreational properties, buildable shorefront lots, mountain-view parcels, timberland, farmland, and woodlots throughout the beautiful Oxford Hills of Western Maine.
+             Our story begins in 1975 when North Pond Realty Trust quietly started acquiring and curating exceptional properties across Oxford County, Maine.It began with the purchase of land in the Norway, Maine at North Pond—the 273-acre spring-fed drainage that feeds Lake Pennesseewassee (Norway Lake).The second acquisition was a stunning mountain parcel in Andover, Maine, just 30 minutes from Sunday River Ski and Golf Resort.The rest is history.
+Today we offer carefully selected:
             </p>
             <div className="grid grid-cols-2 gap-x-8 gap-y-2 mb-8">
               {features.map((f) => (
                 <div key={f} className="flex items-center gap-2">
                   <span className="w-1 h-1 bg-black rounded-full shrink-0" />
                   <span
-                    className="text-sm text-gray-700"
+                    className="text-2sm text-gray-700"
                     style={{ fontFamily: "Inter, sans-serif" }}
                   >
                     {f}
@@ -275,10 +271,10 @@ Today we offer carefully selected recreational properties, buildable shorefront 
             </div>
             <Link
               to="/features"
-              className="inline-flex items-center gap-2 text-[12px] tracking-[0.15em] uppercase text-black border-b border-black pb-0.5 hover:gap-4 transition-all"
+              className="inline-flex items-center gap-2 text-[15px] tracking-[0.15em] uppercase text-black border-b border-black pb-0.5 hover:gap-4 transition-all"
               style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}
             >
-              See All Features
+               Featured Property:
             </Link>
           </div>
 
@@ -303,7 +299,7 @@ Today we offer carefully selected recreational properties, buildable shorefront 
                   {stat.label}
                 </p>
                 <p
-                  className="text-[11px] text-gray-400"
+                  className="text-[14px] text-gray-600"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
                   {stat.sub}
@@ -315,7 +311,7 @@ Today we offer carefully selected recreational properties, buildable shorefront 
       </section>
 
       {/* Photo Gallery */}
-      <section className="px-6 sm:px-10 lg:px-16 pb-20 max-w-7xl mx-auto">
+      {/*<section className="px-10 xl:px-2 lg:px-8 pb-20 max-w-7xl mx-auto">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
           {galleryImages.map((img, i) => (
             <div key={i} className="relative group overflow-hidden aspect-square">
@@ -337,9 +333,10 @@ Today we offer carefully selected recreational properties, buildable shorefront 
           ))}
         </div>
       </section>
+      */}
 
       {/* Modern Living Preview */}
-      <section className="bg-gray-50 py-20 px-6 sm:px-10 lg:px-16">
+      {/*<section className="bg-gray-50 py-20 px-6 sm:px-10 lg:px-16">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <div className="relative">
             <div className="aspect-[4/3] overflow-hidden">
@@ -422,11 +419,12 @@ Today we offer carefully selected recreational properties, buildable shorefront 
           </div>
         </div>
       </section>
+      */}
 
       {/* Property Highlights Strip */}
-      <section className="py-20 px-6 sm:px-10 lg:px-16">
+      <section className="pt-4 pb-12 px-6 sm:px-10 lg:px-16">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-6">
             <p
               className="text-bold[49px] tracking-[0.2em] uppercase text-gray-400 mb-3"
               style={{ fontFamily: "Inter, sans-serif" }}
@@ -510,9 +508,19 @@ Today we offer carefully selected recreational properties, buildable shorefront 
           </div>
         </div>
       </section>
+      {/*end image*/}
+      <section className="relative h-[100svh] min-h-[600px]">
+  <div className="max-w-full mx-full overflow-hidden rounded-xl">
+    <ImageWithFallback
+      src={EndImg}
+      alt="Featured Property"
+      className="w-full h-full md:h-[650px] object-cover"
+    />
+  </div>
+</section>
 
       {/* Amenities Preview */}
-      <section className="bg-black text-white py-20 px-6 sm:px-10 lg:px-16">
+     {/* <section className="bg-black text-white py-20 px-6 sm:px-10 lg:px-16">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -583,10 +591,10 @@ Today we offer carefully selected recreational properties, buildable shorefront 
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 px-6 text-center">
+      {/*<section className="py-24 px-6 text-center">
         <div className="max-w-2xl mx-auto">
           <p
-            className="text-[10px] tracking-[0.3em] uppercase text-gray-400 mb-4"
+            className="text-[14px] tracking-[0.3em] uppercase text-gray-600 mb-4"
             style={{ fontFamily: "Inter, sans-serif" }}
           >
             North Pond Realty Trust
@@ -600,7 +608,7 @@ Today we offer carefully selected recreational properties, buildable shorefront 
             <em>Properties Across Western Maine</em>
           </h2>
           <p
-            className="text-gray-500 mb-3"
+            className="text-gray-700 mb-3"
             style={{ fontFamily: "Inter, sans-serif" }}
           >
             A rare opportunity to lease a move-in-ready home perfectly balancing
@@ -608,7 +616,7 @@ Today we offer carefully selected recreational properties, buildable shorefront 
             living, and four-season appeal.
           </p>
           <p
-            className="text-sm text-gray-400 mb-8 italic"
+            className="font-semibold text-[12px] text-gray-700 mb-8 italic"
             style={{ fontFamily: "Cormorant Garamond, serif", fontSize: "1.1rem" }}
           >
             Serving Western Maine Since 1975
@@ -632,7 +640,7 @@ Today we offer carefully selected recreational properties, buildable shorefront 
             Browse Current Properties
           </Link>
         </div>
-      </section>
+      </section>*/}
     </div>
   );
 }

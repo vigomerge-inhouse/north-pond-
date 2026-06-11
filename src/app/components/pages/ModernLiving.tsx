@@ -11,6 +11,8 @@ import imgHg1 from "../../../imports/modernliving/hg1.jpg";
 import imgHg3 from "../../../imports/modernliving/hg3.jpg";
 import inot from "../../../imports/modernliving/inot.jpg";
 import relax from "../../../imports/modernliving/relax.jpg";
+import GallImg from "../../../imports/modernliving/MLGallery.jpg";
+
 
 const sections = [
   {
@@ -66,7 +68,7 @@ const highlights = [
   { title: "Move-In Ready", body: "Brand-new appliances, fresh finishes, new flooring, and updated systems mean you walk in, unpack, and start living. No projects. No waiting. Just home." },
 ];
 
-const sliderImages = [imgH3, imgHg1, imgHg3, imgKitchen];
+const sliderImages = [GallImg, imgKitchen];
 
 export function ModernLiving() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
@@ -131,7 +133,7 @@ export function ModernLiving() {
           <div className="overflow-hidden" ref={emblaRef}>
             <div className="flex gap-4">
               {sliderImages.map((src, i) => (
-                <div key={i} className="flex-[0_0_85%] sm:flex-[0_0_45%] lg:flex-[0_0_30%]">
+                <div key={i} className="flex-[0_0_100%] sm:flex-[0_0_50%] lg:flex-[0_0_50%]">
                   <div className="aspect-[3/4] overflow-hidden">
                     <ImageWithFallback src={src} alt={`Modern living ${i + 1}`} className="w-full h-full object-cover" />
                   </div>
