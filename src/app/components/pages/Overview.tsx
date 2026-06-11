@@ -61,7 +61,7 @@ const driveStats = [
   { value: "1 hr", label: "to Portland" },
   { value: "45 min", label: "Ski & Golf" },
   { value: "3 hrs", label: "to Boston" },
-  { value: "2 mi", label: "Boat Ramps" },
+  { value: "2 min", label: "Boat Ramps" },
 ];
 const features = [
 "Recreational Properties",

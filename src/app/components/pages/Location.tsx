@@ -96,16 +96,16 @@ export function Location() {
         />
         <div className="absolute left-0 top-0 h-full w-1/3 bg-gradient-to-r from-black/50 to-transparent" />
         <div className="absolute inset-0 flex flex-col items-start justify-end pb-16 px-6 sm:px-12 lg:px-20">
-          <nav className="flex items-center gap-2 text-white/50 text-[11px] tracking-wider uppercase mb-4" style={{ fontFamily: "Inter, sans-serif" }}>
+          <nav className="flex items-center gap-2 text-white/90 text-[11px] tracking-wider uppercase mb-4" style={{ fontFamily: "Inter, sans-serif" }}>
             <Link to="/" className="hover:text-white transition-colors">Home</Link>
             <span>/</span>
             <span className="text-white">Location</span>
           </nav>
-          <p className="text-[11px] tracking-[0.3em] uppercase text-white/60 mb-2" style={{ fontFamily: "Inter, sans-serif" }}>Two Wooded Acres</p>
+          <p className="text-[11px] tracking-[0.3em] uppercase text-white/90 mb-2" style={{ fontFamily: "Inter, sans-serif" }}>Two Wooded Acres</p>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl text-white leading-none mb-3" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>
-            Location · Norway, Maine
+            Location ·Norway, Maine
           </h1>
-          <p className="text-3xl text-white/80 italic" style={{ fontFamily: "Cormorant Garamond, serif" }}>
+          <p className="text-3xl text-white/90 italic" style={{ fontFamily: "Cormorant Garamond, serif" }}>
             Close to everything, private by nature
           </p>
         </div>
@@ -114,19 +114,19 @@ export function Location() {
       {/* Drive Times */}
       <section className="bg-black py-10">
         <div className="max-w-6xl mx-auto px-6">
-          <p className="text-[10px] tracking-[0.3em] uppercase text-gray-500 text-center mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
+          <p className="text-[14px] tracking-[0.3em] uppercase text-gray-200 text-center mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
             At a Glance · Drive Times from Property
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-px bg-gray-800">
             {driveTimes.map((dt) => (
               <div key={dt.label} className="bg-black py-8 px-4 text-center">
                 <p className="text-2xl text-white" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>{dt.value}</p>
-                <p className="text-[11px] tracking-[0.1em] uppercase text-gray-300 mt-1" style={{ fontFamily: "Inter, sans-serif" }}>{dt.label}</p>
-                <p className="text-[10px] text-gray-600 mt-0.5" style={{ fontFamily: "Inter, sans-serif" }}>{dt.sub}</p>
+                <p className="text-[14px] tracking-[0.1em] uppercase text-gray-300 mt-1" style={{ fontFamily: "Inter, sans-serif" }}>{dt.label}</p>
+                <p className="text-[13px] text-gray-300 mt-0.5" style={{ fontFamily: "Inter, sans-serif" }}>{dt.sub}</p>
               </div>
             ))}
           </div>
-          <p className="text-center text-gray-500 text-[11px] mt-6" style={{ fontFamily: "Inter, sans-serif" }}>
+          <p className="text-center text-gray-300 text-[14px] mt-6" style={{ fontFamily: "Inter, sans-serif" }}>
             Set 300 feet from Crockett Ridge Road on a private 2-acre parcel — worlds away yet conveniently close. Minutes from Norway, Maine (est. 1797) in the scenic Oxford Hills.
           </p>
         </div>
