@@ -10,10 +10,10 @@ import imgHg1 from "../../../imports/hg1.jpg";
 import imgHg3 from "../../../imports/hg3.jpg";
 import imgHg20 from "../../../imports/hg20.jpg";
 import GarageImg from "../../../imports/AmentiesGarage.jpg";
-import OLImg from "../../../imports/OLHero1.jpg";
-import FSPAImg from "../../../imports/FBATHSPA.jpg";
-import FGRImg from "../../../imports/FGR.jpg";
-import FSUITESPAImg from "../../../imports/FSUITESPA.jpg";
+import OLImg from "../../../imports/OutdoorLiving/OLHero1.jpg";
+import FSPAImg from "../../../imports/Features/FBATHSPA.jpg";
+import FGRImg from "../../../imports/Features/FGR.jpg";
+import FSUITESPAImg from "../../../imports/Features/FSUITESPA.jpg";
 
 const features = [
   {

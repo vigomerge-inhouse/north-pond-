@@ -24,7 +24,7 @@ import am2 from "../../../imports/hero/am2.jpg";
 import am3 from "../../../imports/hero/am3.jpg";
 import am4 from "../../../imports/hero/am4.png";
 //before footer image
-import EndImg from "../../../imports/end.jpg";
+import EndImg from "../../../imports/HomePageEnd.jpg";
 
 
 

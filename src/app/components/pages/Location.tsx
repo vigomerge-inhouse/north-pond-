@@ -10,13 +10,13 @@ import imgHg1 from "../../../imports/hg1.jpg";
 import imgHg3 from "../../../imports/hg3.jpg";
 import imgHg20 from "../../../imports/hg20.jpg";
 import imgKitchen from "../../../imports/livingrmkit.jpg";
-import WinterImg from "../../../imports/DetailPF.png";
-import HeroImg from "../../../imports/OutdoorLivingHero.png";
-import GImg from "../../../imports/DetailG.png";
-import WAImg from "../../../imports/LOCWA.jpg";
-import Hero1Img from "../../../imports/OLHero1.jpg";
-import OBImg from "../../../imports/OLOB.jpg";
-import SpringImg from "../../../imports/OLSpring.jpg";
+import WinterImg from "../../../imports/Details/DetailPF.png";
+import HeroImg from "../../../imports/OutdoorLiving/OutdoorLivingHero.png";
+import GImg from "../../../imports/Details/DetailG.png";
+import WAImg from "../../../imports/Location/LOCWA.jpg";
+import Hero1Img from "../../../imports/OutdoorLiving/OLHero1.jpg";
+import OBImg from "../../../imports/OutdoorLiving/OLOB.jpg";
+import SpringImg from "../../../imports/OutdoorLiving/OLSpring.jpg";
 
 const driveTimes = [
   { value: "1hr", label: "Portland, ME", sub: "Maine's largest city" },
@@ -136,11 +136,11 @@ export function Location() {
       <section className="py-20 px-6 sm:px-12 lg:px-20">
         <div className="max-w-7xl mx-auto">
           <div className="mb-12">
-            <p className="text-[10px] tracking-[0.3em] uppercase text-gray-400 mb-3" style={{ fontFamily: "Inter, sans-serif" }}>Oxford Hills · Norway, Maine</p>
+            <p className="text-[13px] tracking-[0.3em] uppercase text-gray-600 mb-3" style={{ fontFamily: "Inter, sans-serif" }}>Oxford Hills · Norway, Maine</p>
             <h2 className="text-4xl text-black" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>
               Area Highlights
             </h2>
-            <p className="text-gray-500 italic mt-2" style={{ fontFamily: "Cormorant Garamond, serif", fontSize: "1.2rem" }}>
+            <p className="text-gray-900 italic mt-2" style={{ fontFamily: "Cormorant Garamond, serif", fontSize: "1.3rem" }}>
               Everything Maine has to offer
             </p>
           </div>
@@ -157,7 +157,7 @@ export function Location() {
                 <div className="flex items-start justify-between mb-2">
                   <div>
                     <h3 className="text-lg text-black" style={{ fontFamily: "Playfair Display, serif", fontWeight: 600 }}>{item.title}</h3>
-                    <p className="text-[11px] tracking-[0.1em] uppercase text-gray-400" style={{ fontFamily: "Inter, sans-serif" }}>{item.sub}</p>
+                    <p className="text-[12px] tracking-[0.1em] uppercase text-gray-700" style={{ fontFamily: "Inter, sans-serif" }}>{item.sub}</p>
                   </div>
                   <span className="shrink-0 text-[11px] tracking-[0.1em] uppercase text-black bg-gray-100 px-2 py-1 ml-3" style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}>
                     {item.stat}

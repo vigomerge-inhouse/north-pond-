@@ -3,24 +3,24 @@ import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
 import imgForest from "../../../imports/Private_Forest-1.jpg";
-import HeroImg from "../../../imports/OutdoorLivingHero.png";
-import Hero1Img from "../../../imports/OLHero1.jpg"; // ⚠️ REPLACE with nicer porch photo
-import WinterImg from "../../../imports/DetailPF.png";
-import AutumnImg from "../../../imports/DetailHero.png"; // ⚠️ REPLACE with rich fall colors photo
-import SpringImg from "../../../imports/OLSpring.jpg";
+import HeroImg from "../../../imports/OutdoorLiving/OutdoorLivingHero.png";
+import Hero1Img from "../../../imports/OutdoorLiving/OLHero1.jpg"; // ⚠️ REPLACE with nicer porch photo
+import WinterImg from "../../../imports/Details/DetailPF.png";
+import AutumnImg from "../../../imports/Details/DetailHero.png"; // ⚠️ REPLACE with rich fall colors photo
+import SpringImg from "../../../imports/OutdoorLiving/OLSpring.jpg";
 import imgHome from "../../../imports/Neat_and_clean_home_with_peace-1.jpg";
 import imgH3 from "../../../imports/h3.jpeg";
-import PEImg from "../../../imports/OLPE.jpg";
+import PEImg from "../../../imports/OutdoorLiving/OLPE.jpg";
 import imgH5 from "../../../imports/h5.jpg";
 import imgHg1 from "../../../imports/hg1.jpg";
 import imgHg3 from "../../../imports/hg3.jpg";
 import imgHg20 from "../../../imports/hg20.jpg";
 import imgKitchen from "../../../imports/livingrmkit.jpg";
-import GImg from "../../../imports/OLG.jpg";
-import OBImg from "../../../imports/OLOB.jpg";
-import OSImg from "../../../imports/OLOS.jpg"
-import OLNVImg from "../../../imports/OLNV.jpeg";
-import StorageImg from "../../../imports/OLStorage.jpg";
+import GImg from "../../../imports/OutdoorLiving/OLG.jpg";
+import OBImg from "../../../imports/OutdoorLiving/OLOB.jpg";
+import OSImg from "../../../imports/OutdoorLiving/OLOS.jpg"
+import OLNVImg from "../../../imports/OutdoorLiving/OLNV.jpeg";
+import StorageImg from "../../../imports/OutdoorLiving/OLStorage.jpg";
 
 const outdoorAmenities = [
   { name: "Wrap-around porch", sub: "Classic Maine porch living — morning coffee to evening sunset" },

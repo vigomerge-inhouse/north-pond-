@@ -1,10 +1,10 @@
 import { Link } from "react-router";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
-import PVImg from "../../../imports/DetailPV.png";
-import IntImg from "../../../imports/DetailInt.png";
-import GImg from "../../../imports/DetailG.png";
-import PFImg from "../../../imports/DetailPF.png";
-import HeroImg from "../../../imports/DetailHero.png";
+import PVImg from "../../../imports/Details/DetailPV.png";
+import IntImg from "../../../imports/Details/DetailInt.png";
+import GImg from "../../../imports/Details/DetailG.png";
+import PFImg from "../../../imports/Details/DetailPF.png";
+import HeroImg from "../../../imports/Details/DetailHero.png";
 
 type SpecRow = { label: string; value: string };
 type SpecGroup = { title: string; rows: SpecRow[] };
