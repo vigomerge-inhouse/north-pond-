@@ -107,16 +107,16 @@ export function PremiumFeatures() {
         />
        
         <div className="absolute inset-0 flex flex-col items-start justify-end pb-16 px-6 sm:px-12 lg:px-20">
-          <nav className="flex items-center gap-2 text-white/50 text-[11px] tracking-wider uppercase mb-4" style={{ fontFamily: "Inter, sans-serif" }}>
+          <nav className="flex items-center gap-2 text-white/90 text-[13px] tracking-wider uppercase mb-4" style={{ fontFamily: "Inter, sans-serif" }}>
             <Link to="/" className="hover:text-white transition-colors">Home</Link>
             <span>/</span>
             <span className="text-white">Premium Features</span>
           </nav>
-          <p className="text-[11px] tracking-[0.3em] uppercase text-white/60 mb-2" style={{ fontFamily: "Inter, sans-serif" }}>Premium Features</p>
+          <p className="text-[13px] tracking-[0.3em] uppercase text-white/90 mb-2" style={{ fontFamily: "Inter, sans-serif" }}>Premium Features</p>
           <h1 className="text-5xl sm:text-6xl text-white leading-none mb-3" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>
             Luxury at every turn,
           </h1>
-          <p className="text-3xl text-white/80 italic" style={{ fontFamily: "Cormorant Garamond, serif" }}>
+          <p className="text-3xl text-white/90 italic" style={{ fontFamily: "Cormorant Garamond, serif" }}>
             in every detail
           </p>
         </div>
@@ -125,11 +125,11 @@ export function PremiumFeatures() {
       {/* Intro */}
       <section className="py-16 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto">
         <div className="max-w-3xl">
-          <p className="text-[10px] tracking-[0.3em] uppercase text-gray-400 mb-3" style={{ fontFamily: "Inter, sans-serif" }}>Premium Features</p>
+          <p className="text-[13px] tracking-[0.3em] uppercase text-gray-700 mb-3" style={{ fontFamily: "Inter, sans-serif" }}>Premium Features</p>
           <h2 className="text-4xl text-black mb-4" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>
             Exceptional Quality<br /><em>Throughout Every Room</em>
           </h2>
-          <p className="text-gray-600 leading-relaxed" style={{ fontFamily: "Inter, sans-serif" }}>
+          <p className="text-[17px] text-gray-800 leading-relaxed" style={{ fontFamily: "Inter, sans-serif" }}>
             Enjoy luxury at every turn with high-end materials, designer finishes, thoughtfully curated upgrades, and carefully selected details that elevate everyday living from ordinary to extraordinary. This is what a truly premium rental looks like.
           </p>
         </div>
@@ -144,7 +144,7 @@ export function PremiumFeatures() {
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
             <div className={i % 2 === 1 ? "lg:order-2" : ""}>
               <span
-                className="inline-block px-3 py-1 text-[10px] tracking-[0.25em] uppercase bg-black text-white mb-4"
+                className="inline-block px-3 py-1 text-[14px] tracking-[0.25em] uppercase bg-black text-white mb-4"
                 style={{ fontFamily: "Inter, sans-serif" }}
               >
                 {sec.label}
@@ -159,7 +159,7 @@ export function PremiumFeatures() {
                 {sec.bullets.map((b) => (
                   <div key={b} className="flex items-start gap-2">
                     <span className="w-1 h-1 bg-black rounded-full mt-2 shrink-0" />
-                    <span className="text-sm text-gray-700" style={{ fontFamily: "Inter, sans-serif" }}>{b}</span>
+                    <span className="text-3sm text-gray-700" style={{ fontFamily: "Inter, sans-serif" }}>{b}</span>
                   </div>
                 ))}
               </div>
@@ -186,18 +186,18 @@ export function PremiumFeatures() {
       {/* CTA */}
       <section className="py-20 px-6 bg-black text-white text-center">
         <div className="max-w-2xl mx-auto">
-          <p className="text-[10px] tracking-[0.3em] uppercase text-gray-500 mb-4" style={{ fontFamily: "Inter, sans-serif" }}>Premium features deserve a personal visit.</p>
+          <p className="text-[13px] tracking-[0.3em] uppercase text-gray-300 mb-4" style={{ fontFamily: "Inter, sans-serif" }}>Premium features deserve a personal visit.</p>
           <h2 className="text-4xl mb-4" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>
             Photographs capture the beauty.
             <br />
             <em>A showing lets you feel the quality.</em>
           </h2>
-          <p className="text-gray-400 mb-8" style={{ fontFamily: "Inter, sans-serif" }}>Schedule yours today.</p>
+          <p className="text-gray-200 mb-8" style={{ fontFamily: "Inter, sans-serif" }}>Schedule yours today.</p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/schedule-showing" className="px-8 py-3 bg-white text-black text-[12px] tracking-[0.15em] uppercase hover:bg-gray-100 transition-colors" style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}>
+            <Link to="/schedule-showing" className="px-8 py-3 bg-white text-black text-[13px] tracking-[0.15em] uppercase hover:bg-gray-100 transition-colors" style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}>
               Schedule a Showing
             </Link>
-            <Link to="/bedrooms" className="px-8 py-3 border border-gray-700 text-white text-[12px] tracking-[0.15em] uppercase hover:border-white transition-colors" style={{ fontFamily: "Inter, sans-serif" }}>
+            <Link to="/bedrooms" className="px-8 py-3 border border-gray-700 text-white text-[13px] tracking-[0.15em] uppercase hover:border-white transition-colors" style={{ fontFamily: "Inter, sans-serif" }}>
               View Bedrooms
             </Link>
           </div>
