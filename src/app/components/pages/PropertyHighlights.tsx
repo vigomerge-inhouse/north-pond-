@@ -95,7 +95,7 @@ const galleryImages = [
 ];
 
 export function PropertyHighlights() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false });
 
   return (
     <div>
@@ -221,9 +221,10 @@ export function PropertyHighlights() {
             </div>
           </div>
           <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex gap-4">
+           <div className="flex -ml-4">
               {galleryImages.map((img, i) => (
-                <div key={i} className="flex-[0_0_80%] sm:flex-[0_0_45%] lg:flex-[0_0_28%]">
+                <div key={i} 
+        className="pl-4 flex-[0_0_80%] sm:flex-[0_0_45%] lg:flex-[0_0_28%]">
                   <div className="aspect-[3/4] overflow-hidden">
                     <ImageWithFallback src={img.src} alt={img.label} className="w-full h-full object-cover" />
                   </div>
