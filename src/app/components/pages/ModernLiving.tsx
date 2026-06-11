@@ -107,7 +107,7 @@ export function ModernLiving() {
       {/* Intro */}
       <section className="py-20 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto">
         <div className="max-w-3xl">
-          <p className="text-[10px] tracking-[0.3em] uppercase text-gray-400 mb-3" style={{ fontFamily: "Inter, sans-serif" }}>The Experience</p>
+          <p className="text-bold[18px] tracking-[0.3em] uppercase text-gray-400 mb-3" style={{ fontFamily: "Inter, sans-serif" }}>The Experience</p>
           <h2 className="text-4xl text-black mb-6" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>
             Modern Living<br /><em>Elevated by Design</em>
           </h2>
