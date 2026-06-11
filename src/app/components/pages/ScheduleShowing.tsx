@@ -147,8 +147,8 @@ const [form, setForm] = useState<FormData>({
               </div>
               <div className="border border-gray-100 p-6 mb-6">
                 {/* CHANGE 1: text-[10px] → text-[13px] */}
-                <p className="text-[13px] tracking-[0.3em] uppercase text-gray-400 mb-1" style={{ fontFamily: "Inter, sans-serif" }}>Ranch Retreat</p>
-                <h3 className="text-xl text-black mb-3" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>Norway, Maine</h3>
+                <p className="text-[13px] tracking-[0.3em] uppercase text-gray-600 mb-1" style={{ fontFamily: "Inter, sans-serif" }}>Ranch Retreat</p>
+                <h3 className="text-2xl text-black mb-3" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>Norway, Maine</h3>
                 <div className="grid grid-cols-2 gap-3 mb-4">
                   {[
                     { v: "3", l: "Bedrooms" },
@@ -162,7 +162,7 @@ const [form, setForm] = useState<FormData>({
                     <div key={s.l} className="text-center p-3 bg-gray-50">
                       <p className="text-xl text-black" style={{ fontFamily: "Playfair Display, serif" }}>{s.v}</p>
                       {/* CHANGE 1: text-[10px] → text-[13px] */}
-                      <p className="text-[13px] tracking-[0.15em] uppercase text-gray-400" style={{ fontFamily: "Inter, sans-serif" }}>{s.l}</p>
+                      <p className="text-[13px] tracking-[0.15em] uppercase text-gray-600" style={{ fontFamily: "Inter, sans-serif" }}>{s.l}</p>
                     </div>
                   ))}
                 </div>
@@ -173,15 +173,15 @@ const [form, setForm] = useState<FormData>({
                 </div>
               </div>
               <div className="space-y-3">
-                <a href="tel:12022583575" className="flex items-center gap-3 text-sm text-gray-700 hover:text-black transition-colors" style={{ fontFamily: "Inter, sans-serif" }}>
+                <a href="tel:12022583575" className="flex items-center gap-3 text-3sm text-gray-700 hover:text-black transition-colors" style={{ fontFamily: "Inter, sans-serif" }}>
                   <Phone size={14} className="text-gray-400" />
                   +1 12022583575
                 </a>
-                <a href="mailto:contact@northpondrealty.com" className="flex items-center gap-3 text-sm text-gray-700 hover:text-black transition-colors" style={{ fontFamily: "Inter, sans-serif" }}>
+                <a href="mailto:contact@northpondrealty.com" className="flex items-center gap-3 text-3sm text-gray-700 hover:text-black transition-colors" style={{ fontFamily: "Inter, sans-serif" }}>
                   <Mail size={14} className="text-gray-400" />
                   contact@northpondrealty.com
                 </a>
-                <div className="flex items-start gap-3 text-sm text-gray-500" style={{ fontFamily: "Inter, sans-serif" }}>
+                <div className="flex items-start gap-3 text-3sm text-gray-600" style={{ fontFamily: "Inter, sans-serif" }}>
                   <MapPin size={14} className="text-gray-400 mt-0.5 shrink-0" />
                   Crockett Ridge Road · Norway, Maine 04268
                 </div>
@@ -193,7 +193,7 @@ const [form, setForm] = useState<FormData>({
           <div className="lg:col-span-2">
             <div className="mb-8">
               {/* CHANGE 1: text-[10px] → text-[13px] */}
-              <p className="text-[13px] tracking-[0.3em] uppercase text-gray-400 mb-2" style={{ fontFamily: "Inter, sans-serif" }}>North Pond Realty Trust</p>
+              <p className="text-[13px] tracking-[0.3em] uppercase text-gray-700 mb-2" style={{ fontFamily: "Inter, sans-serif" }}>North Pond Realty Trust</p>
               <h2 className="text-3xl text-black" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>
                 Schedule a Private Showing
               </h2>
@@ -371,7 +371,7 @@ const [form, setForm] = useState<FormData>({
                   Send Request
                 </button>
                 {/* CHANGE 1: text-[11px] → text-[13px] */}
-                <p className="text-[13px] text-gray-400 mt-3" style={{ fontFamily: "Inter, sans-serif" }}>
+                <p className="text-[14px] text-gray-600 mt-3" style={{ fontFamily: "Inter, sans-serif" }}>
                   We'll confirm your showing within 24 hours.
                 </p>
               </div>
@@ -392,7 +392,7 @@ const [form, setForm] = useState<FormData>({
               <p className="text-3xl mb-2">{item.icon}</p>
               {/* CHANGE 1: text-[12px] → text-[14px] */}
               <p className="text-[14px] tracking-[0.15em] uppercase text-white mb-1" style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}>{item.title}</p>
-              <p className="text-[14px] text-gray-500" style={{ fontFamily: "Inter, sans-serif" }}>{item.sub}</p>
+              <p className="text-[13px] text-gray-400" style={{ fontFamily: "Inter, sans-serif" }}>{item.sub}</p>
             </div>
           ))}
         </div>

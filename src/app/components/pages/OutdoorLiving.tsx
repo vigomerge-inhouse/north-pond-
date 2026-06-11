@@ -89,19 +89,19 @@ export function OutdoorLiving() {
         />
         <div className="absolute left-0 top-0 h-full w-1/3 bg-gradient-to-r from-black/50 to-transparent" />
         <div className="absolute inset-0 flex flex-col items-start justify-end pb-16 px-6 sm:px-12 lg:px-20">
-          <nav className="flex items-center gap-2 text-white/50 text-[13px] tracking-wider uppercase mb-4" style={{ fontFamily: "Inter, sans-serif" }}> {/* ✅ font size up */}
+          <nav className="flex items-center gap-2 text-white/70 text-[13px] tracking-wider uppercase mb-4" style={{ fontFamily: "Inter, sans-serif" }}> {/* ✅ font size up */}
             <Link to="/" className="font-semibold hover:text-white transition-colors">Home</Link>
             <span>/</span>
             <span className="text-white">Outdoor Living</span>
           </nav>
-          <p className="text-[14px] tracking-[0.3em] uppercase text-white/60 mb-2" style={{ fontFamily: "Inter, sans-serif" }}>Wrap-Around Porch</p> {/* ✅ font size up */}
-          <h1 className="text-6xl sm:text-7xl lg:text-8xl text-white leading-none mb-3" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}> {/* ✅ font size up */}
-            Outdoor
-          </h1>
-          <p className="text-4xl text-white/80 italic mb-6" style={{ fontFamily: "Cormorant Garamond, serif" }}> {/* ✅ font size up */}
+          <p className="text-[14px] tracking-[0.3em] uppercase text-white/90 mb-2" style={{ fontFamily: "Inter, sans-serif" }}>Wrap-Around Porch</p> {/* ✅ font size up */}
+         {/* <h1 className="text-6xl sm:text-7xl lg:text-8xl text-white leading-none mb-3" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}> {/* ✅ font size up 
+        Outdoor
+          </h1>*/}
+          <p className="text-5xl sm:text-6xl text-white leading-none" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}> {/* ✅ font size up */}
             Outdoor Living
           </p>
-          <p className="text-2xl text-white/70 italic" style={{ fontFamily: "Cormorant Garamond, serif" }}> {/* ✅ font size up */}
+          <p className="text-2xl text-white/90 italic" style={{ fontFamily: "Cormorant Garamond, serif" }}> {/* ✅ font size up */}
             Two private acres,<br />yours to enjoy
           </p>
         </div>
@@ -111,10 +111,10 @@ export function OutdoorLiving() {
       <section className="py-20 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <p className="text-gray-600 leading-relaxed mb-6 text-base" style={{ fontFamily: "Inter, sans-serif" }}> {/* ✅ text-base for readability */}
+            <p className="text-gray-600 leading-relaxed mb-6 text-3sm" style={{ fontFamily: "Inter, sans-serif" }}> {/* ✅ text-base for readability */}
               True seclusion on two private acres with a charming wrap-around porch and spacious deck. Whether watching wildlife, stargazing, or simply breathing in the fresh Maine air, this private oasis celebrates every season of the year.
             </p>
-            <p className="text-gray-600 leading-relaxed text-base" style={{ fontFamily: "Inter, sans-serif" }}> {/* ✅ text-base */}
+            <p className="text-gray-600 leading-relaxed text-3sm" style={{ fontFamily: "Inter, sans-serif" }}> {/* ✅ text-base */}
               The landlord maintains the yard, provides professional winter snowplowing, and will install a dog-friendly perimeter fence. The property's generous acreage offers countless possibilities — create flower gardens, nooks, picnic spots, gathering spaces, or natural meadows. {/* ✅ added nooks + picnic */}
             </p>
           </div>
@@ -139,15 +139,15 @@ export function OutdoorLiving() {
       {/* Outdoor Amenities */}
       <section className="py-16 px-6 sm:px-12 lg:px-20 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <p className="text-[12px] tracking-[0.3em] uppercase text-gray-400 mb-3" style={{ fontFamily: "Inter, sans-serif" }}>Included</p> {/* ✅ font size up */}
+          <p className="text-[13px] tracking-[0.3em] uppercase text-gray-700 mb-3" style={{ fontFamily: "Inter, sans-serif" }}>Included</p> {/* ✅ font size up */}
           <h2 className="text-4xl text-black mb-8" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>Outdoor Amenities</h2> {/* ✅ font size up */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-4">
             {outdoorAmenities.map((item) => (
               <div key={item.name} className="flex items-start gap-3 py-3 border-b border-gray-200">
                 <span className="w-1.5 h-1.5 bg-black rounded-full mt-2 shrink-0" />
                 <div>
-                  <p className="text-base text-black" style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}>{item.name}</p> {/* ✅ text-base up from text-sm */}
-                  <p className="text-sm text-gray-500" style={{ fontFamily: "Inter, sans-serif" }}>{item.sub}</p> {/* ✅ text-sm up from text-[12px] */}
+                  <p className="text-4sm text-black" style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}>{item.name}</p> {/* ✅ text-base up from text-sm */}
+                  <p className="text-2sm text-gray-500" style={{ fontFamily: "Inter, sans-serif" }}>{item.sub}</p> {/* ✅ text-sm up from text-[12px] */}
                 </div>
               </div>
             ))}
@@ -159,7 +159,7 @@ export function OutdoorLiving() {
       <section className="py-20 px-6 sm:px-12 lg:px-20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[12px] tracking-[0.3em] uppercase text-gray-400 mb-3" style={{ fontFamily: "Inter, sans-serif" }}>Four Seasons of Beauty</p>
+            <p className="text-[13px] tracking-[0.3em] uppercase text-gray-700 mb-3" style={{ fontFamily: "Inter, sans-serif" }}>Four Seasons of Beauty</p>
             <h2 className="text-3xl text-black" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>
               Maine's finest seasons at your door
             </h2>
@@ -176,7 +176,7 @@ export function OutdoorLiving() {
                 </div>
                 <div className="p-5">
                   <h3 className="text-xl text-black mb-2" style={{ fontFamily: "Playfair Display, serif", fontWeight: 600 }}>{season.name}</h3> {/* ✅ text-xl up from text-lg */}
-                  <p className="text-sm text-gray-600 leading-relaxed" style={{ fontFamily: "Inter, sans-serif" }}>{season.body}</p>
+                  <p className="text-2sm text-gray-600 leading-relaxed" style={{ fontFamily: "Inter, sans-serif" }}>{season.body}</p>
                 </div>
               </div>
             ))}
@@ -188,16 +188,16 @@ export function OutdoorLiving() {
       <section className="py-16 px-6 sm:px-12 lg:px-20 bg-black text-white">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-[12px] tracking-[0.3em] uppercase text-gray-500 mb-3" style={{ fontFamily: "Inter, sans-serif" }}>Pet Friendly Property</p> {/* ✅ changed from Dog to Pet */}
+            <p className="text-[13px] tracking-[0.3em] uppercase text-gray-300 mb-3" style={{ fontFamily: "Inter, sans-serif" }}>Pet Friendly Property</p> {/* ✅ changed from Dog to Pet */}
             <h2 className="text-3xl mb-5" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>
               A genuinely pet-friendly property. {/* ✅ updated */}
             </h2>
-            <p className="text-gray-400 leading-relaxed mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
+            <p className="text-gray-300 leading-relaxed mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
               The landlord plans to install a perimeter fence to create a safe, secure space for your pets. With 2 private wooded acres, your dogs and cats will have space to roam, explore, and thrive in a true Maine country setting. If you have a dog or a cat, this is the property for you. {/* ✅ added cats */}
             </p>
             <Link
               to="/schedule-showing"
-              className="inline-block px-6 py-3 bg-white text-black text-[12px] tracking-[0.15em] uppercase hover:bg-gray-100 transition-colors"
+              className="inline-block px-6 py-3 bg-white text-black text-[14px] tracking-[0.15em] uppercase hover:bg-gray-100 transition-colors"
               style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}
             >
               Schedule Showing
@@ -218,7 +218,7 @@ export function OutdoorLiving() {
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center justify-between mb-8">
             <div>
-              <p className="text-[12px] tracking-[0.3em] uppercase text-gray-400 mb-1" style={{ fontFamily: "Inter, sans-serif" }}>Outdoor Gallery</p>
+              <p className="text-[13px] tracking-[0.3em] uppercase text-gray-600 mb-1" style={{ fontFamily: "Inter, sans-serif" }}>Outdoor Gallery</p>
               <h2 className="text-2xl text-black" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>All Seasons</h2>
             </div>
             <div className="flex gap-2">
@@ -240,7 +240,7 @@ export function OutdoorLiving() {
                   <div className="aspect-[3/4] overflow-hidden">
                     <ImageWithFallback src={img.src} alt={img.label} className="w-full h-full object-cover" />
                   </div>
-                  <p className="text-[11px] tracking-[0.1em] uppercase text-gray-500 mt-2 text-center" style={{ fontFamily: "Inter, sans-serif" }}>{img.label}</p>
+                  <p className="text-[14px] tracking-[0.1em] uppercase text-gray-700 mt-2 text-center" style={{ fontFamily: "Inter, sans-serif" }}>{img.label}</p>
                 </div>
               ))}
             </div>
@@ -251,15 +251,15 @@ export function OutdoorLiving() {
       {/* CTA */}
       <section className="py-16 px-6 bg-gray-50 text-center">
         <div className="max-w-xl mx-auto">
-          <p className="text-gray-700 mb-2 text-base" style={{ fontFamily: "Inter, sans-serif" }}>Experience it yourself</p>
-          <p className="text-gray-500 text-sm mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
+          <p className="text-gray-700 mb-2 text-xl" style={{ fontFamily: "Inter, sans-serif" }}>Experience it yourself</p>
+          <p className="text-gray-600 text-2sm mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
             Schedule a private showing and see why this outdoor retreat is truly one-of-a-kind.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/schedule-showing" className="px-8 py-3 bg-black text-white text-[12px] tracking-[0.15em] uppercase hover:bg-gray-900 transition-colors" style={{ fontFamily: "Inter, sans-serif", fontWeight: 500 }}>
+            <Link to="/schedule-showing" className="px-8 py-3 bg-black text-white text-[13px] tracking-[0.15em] uppercase hover:bg-gray-900 transition-colors" style={{ fontFamily: "Inter, sans-serif", fontWeight: 500 }}>
               Book a Showing
             </Link>
-            <Link to="/location" className="px-8 py-3 border border-black text-black text-[12px] tracking-[0.15em] uppercase hover:bg-black hover:text-white transition-colors" style={{ fontFamily: "Inter, sans-serif" }}>
+            <Link to="/location" className="px-8 py-3 border border-black text-black text-[13px] tracking-[0.15em] uppercase hover:bg-black hover:text-white transition-colors" style={{ fontFamily: "Inter, sans-serif" }}>
               Explore Location
             </Link>
           </div>
