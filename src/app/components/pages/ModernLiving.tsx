@@ -85,12 +85,12 @@ export function ModernLiving() {
         />
         
         <div className="absolute inset-0 flex flex-col items-start justify-end pb-16 px-6 sm:px-12 lg:px-20">
-          <nav className="flex items-center gap-2 text-white/50 text-[11px] tracking-wider uppercase mb-4" style={{ fontFamily: "Inter, sans-serif" }}>
+          <nav className="flex items-center gap-2 text-white/90 text-[11px] tracking-wider uppercase mb-4" style={{ fontFamily: "Inter, sans-serif" }}>
             <Link to="/" className="hover:text-white transition-colors">Home</Link>
             <span>/</span>
             <span className="text-white">Modern Living</span>
           </nav>
-          <p className="text-[11px] tracking-[0.3em] uppercase text-white/60 mb-2" style={{ fontFamily: "Inter, sans-serif" }}>Modern Living</p>
+          <p className="text-[11px] tracking-[0.3em] uppercase text-white mb-2" style={{ fontFamily: "Inter, sans-serif" }}>Modern Living</p>
           <h1
             className="text-5xl sm:text-6xl lg:text-7xl text-white leading-none mb-3"
             style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}
@@ -98,7 +98,7 @@ export function ModernLiving() {
             Contemporary comfort,
           </h1>
           <p
-            className="text-3xl sm:text-4xl text-white/80 italic"
+            className="text-3xl sm:text-4xl text-white/90 italic"
             style={{ fontFamily: "Cormorant Garamond, serif", fontWeight: 400 }}
           >
             beautifully crafted
@@ -109,7 +109,7 @@ export function ModernLiving() {
       {/* Intro */}
       <section className="py-20 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto">
         <div className="max-w-3xl">
-          <p className="text-bold[18px] tracking-[0.3em] uppercase text-gray-400 mb-3" style={{ fontFamily: "Inter, sans-serif" }}>The Experience</p>
+          <p className="text-bold[18px] tracking-[0.3em] uppercase text-gray-700 mb-3" style={{ fontFamily: "Inter, sans-serif" }}>The Experience</p>
           <h2 className="text-4xl text-black mb-6" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>
             Modern Living<br /><em>Elevated by Design</em>
           </h2>
@@ -120,8 +120,8 @@ export function ModernLiving() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-14">
           {highlights.map((h) => (
             <div key={h.title} className="border-t-2 border-black pt-5">
-              <h3 className="text-base text-black mb-3" style={{ fontFamily: "Playfair Display, serif", fontWeight: 600 }}>{h.title}</h3>
-              <p className="text-sm text-gray-600 leading-relaxed" style={{ fontFamily: "Inter, sans-serif" }}>{h.body}</p>
+              <h3 className="text-4sm text-black mb-3" style={{ fontFamily: "Playfair Display, serif", fontWeight: 600 }}>{h.title}</h3>
+              <p className="text-2sm text-gray-600 leading-relaxed" style={{ fontFamily: "Inter, sans-serif" }}>{h.body}</p>
             </div>
           ))}
         </div>
@@ -142,17 +142,18 @@ export function ModernLiving() {
             </div>
           </div>
           <button
-            onClick={() => emblaApi?.scrollPrev()}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-3 w-10 h-10 flex items-center justify-center bg-white border border-gray-200 shadow-md hover:bg-gray-50 transition-colors z-10"
-          >
-            <ChevronLeft size={18} />
-          </button>
-          <button
-            onClick={() => emblaApi?.scrollNext()}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-3 w-10 h-10 flex items-center justify-center bg-white border border-gray-200 shadow-md hover:bg-gray-50 transition-colors z-10"
-          >
-            <ChevronRight size={18} />
-          </button>
+  onClick={() => emblaApi?.scrollPrev()}
+  className="absolute left-[-20px] sm:left-[-30px] top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white border border-gray-200 shadow-md hover:bg-gray-50 transition-colors z-10"
+>
+  <ChevronLeft size={18} />
+</button>
+
+<button
+  onClick={() => emblaApi?.scrollNext()}
+  className="absolute right-[-20px] sm:right-[-30px] top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white border border-gray-200 shadow-md hover:bg-gray-50 transition-colors z-10"
+>
+  <ChevronRight size={18} />
+</button>
         </div>
       </section>
 
@@ -166,7 +167,7 @@ export function ModernLiving() {
             className={`max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center ${sec.reverse ? "lg:grid-flow-dense" : ""}`}
           >
             <div className={sec.reverse ? "lg:col-start-2" : ""}>
-              <p className="text-[10px] tracking-[0.3em] uppercase text-gray-400 mb-2" style={{ fontFamily: "Inter, sans-serif" }}>{sec.sublabel}</p>
+              <p className="text-[14px] tracking-[0.3em] uppercase text-gray-700 mb-2" style={{ fontFamily: "Inter, sans-serif" }}>{sec.sublabel}</p>
               <h2 className="text-3xl lg:text-4xl text-black mb-5" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>{sec.title}</h2>
               <p className="text-gray-600 leading-relaxed mb-8 text-base" style={{ fontFamily: "Inter, sans-serif" }}>{sec.body}</p>
               <Link
@@ -207,7 +208,7 @@ export function ModernLiving() {
           <p className="text-3xl sm:text-4xl italic leading-relaxed mb-6" style={{ fontFamily: "Cormorant Garamond, serif", fontWeight: 400 }}>
             "This is not your average rental. This is a masterfully renovated home that lives, breathes, and feels like a permanent residence — designed for a life well-lived in Maine's finest landscape."
           </p>
-          <p className="text-[11px] tracking-[0.25em] uppercase text-gray-400" style={{ fontFamily: "Inter, sans-serif" }}>
+          <p className="text-[13px] tracking-[0.25em] uppercase text-gray-200" style={{ fontFamily: "Inter, sans-serif" }}>
             Maine Retreat · Norway, Maine
           </p>
         </div>
@@ -216,11 +217,11 @@ export function ModernLiving() {
       {/* CTA */}
       <section className="py-20 px-6 text-center">
         <div className="max-w-xl mx-auto">
-          <p className="text-[10px] tracking-[0.3em] uppercase text-gray-400 mb-4" style={{ fontFamily: "Inter, sans-serif" }}>Ready to experience it in person?</p>
+          <p className="text-[12px] tracking-[0.3em] uppercase text-gray-600 mb-4" style={{ fontFamily: "Inter, sans-serif" }}>Ready to experience it in person?</p>
           <h2 className="text-3xl text-black mb-3" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>
             Modern living starts with<br /><em>a single showing.</em>
           </h2>
-          <p className="text-sm text-gray-500 mb-8" style={{ fontFamily: "Inter, sans-serif" }}>
+          <p className="text-3sm text-gray-700 mb-8" style={{ fontFamily: "Inter, sans-serif" }}>
             Maine Retreat — Norway, Maine · Long-Term Rental · Oxford Hills · Immediately Available
           </p>
           <div className="flex flex-wrap justify-center gap-4">
