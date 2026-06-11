@@ -10,7 +10,7 @@ import imgHg1 from "../../../imports/hg1.jpg";
 import imgHg3 from "../../../imports/hg3.jpg";
 import imgHg20 from "../../../imports/hg20.jpg";
 import imgKitchen from "../../../imports/livingrmkit.jpg";
-import WinterImg from "../../../imports/Details/DetailPF.png";
+import locationhero from "../../../imports/Location/locationhero.jpg";
 import HeroImg from "../../../imports/OutdoorLiving/OutdoorLivingHero.png";
 import GImg from "../../../imports/Details/DetailG.png";
 import WAImg from "../../../imports/Location/LOCWA.jpg";
@@ -73,13 +73,13 @@ const areaHighlights = [
 ];
 
 const galleryImages = [
-  { src: imgForest, label: "Private Woods" },
+ // { src: imgForest, label: "Private Woods" },
   { src: OBImg, label: "Forest Views" },
-  { src: imgH3, label: "Nature Trails" },
+  //{ src: imgH3, label: "Nature Trails" },
   { src: SpringImg, label: "Woodland Edge" },
   { src: imgHg3, label: "Country Access Road" },
   { src: Hero1Img, label: "Secluded Acres" },
-  { src: imgH5, label: "Nature Escape" },
+  //{ src: imgH5, label: "Nature Escape" },
 ];
 
 export function Location() {
@@ -90,7 +90,7 @@ export function Location() {
       {/* Hero */}
       <section className="relative h-[100svh] min-h-[600px]">
         <ImageWithFallback
-          src={WinterImg}
+          src={locationhero}
           alt="Location — Norway, Maine"
           className="w-full h-full object-cover"
         />

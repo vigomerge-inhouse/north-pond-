@@ -1,10 +1,10 @@
 import { Link } from "react-router";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
-import imgForest from "../../../imports/Private_Forest-1.jpg";
+import hero1 from "../../../imports/ameneties/hero1.jpg";
 import imgHome from "../../../imports/Neat_and_clean_home_with_peace-1.jpg";
 import imgKitchen from "../../../imports/livingrmkit.jpg";
 import imgHg1 from "../../../imports/hg1.jpg";
-import imgH5 from "../../../imports/h5.jpg";
+//import imgH5 from "../../../imports/h5.jpg";
 import GarageImg from "../../../imports/AmentiesGarage.jpg";
 
 const amenityGroups = [
@@ -120,7 +120,7 @@ const amenityGroups = [
   },
 ];
 
-const showcaseImages = [imgKitchen, imgH5, imgHg1, GarageImg].map((src, i) => ({
+const showcaseImages = [imgKitchen,  imgHg1, GarageImg].map((src, i) => ({
   src,
   alt: ["Gourmet Kitchen", "Spa Bathroom", "Outdoor Living", "Ranch Exterior"][i],
 }));
@@ -131,7 +131,7 @@ export function Amenities() {
       {/* Hero */}
       <section className="relative h-[100svh] min-h-[600px]">
         <ImageWithFallback
-          src={imgForest}
+          src={hero1}
           alt="Amenities — Ranch Retreat"
           className="w-full h-full object-cover"
         />
