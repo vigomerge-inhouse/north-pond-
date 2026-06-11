@@ -22,14 +22,14 @@ const driveTimes = [
   { value: "1hr", label: "Portland, ME", sub: "Maine's largest city" },
   { value: "45min", label: "Ski Areas & Golf", sub: "Sunday River, Shawnee Peak" },
   { value: "3hrs", label: "Boston, MA", sub: "Major metro access" },
-  { value: "2mi", label: "Lake Boat Ramps", sub: "Norway Lake & North Pond" },
+  { value: "2min", label: "Public Boat Ramps", sub: "Norway Lake & North Pond" },
   { value: "300ft", label: "Crockett Ridge Rd", sub: "Road access from driveway" },
   { value: "10min", label: "Downtown Norway", sub: "Shops, dining & services" },
 ];
 
 const areaHighlights = [
   {
-    title: "Waterfront Access",
+    title: "Public Boat Ramps",
     sub: "Norway Lake & North Pond",
     body: "Two public boat ramps just 2 miles from the driveway. Norway Lake and North Pond offer boating, fishing, swimming, kayaking, and paddleboarding through all warm-weather months. This is Maine lake country at its finest.",
     stat: "2 miles away",
@@ -180,7 +180,7 @@ export function Location() {
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-2xl mx-auto">
             {[
-              { v: "2 mi", l: "to Lake" },
+              { v: "2 min", l: "to Lake" },
               { v: "10 min", l: "to Norway" },
               { v: "45 min", l: "to Skiing" },
               { v: "1 hr", l: "to Portland" },
