@@ -19,6 +19,7 @@ import imgKitchen from "../../../imports/livingrmkit.jpg";
 import GImg from "../../../imports/OutdoorLiving/OLG.jpg";
 import OBImg from "../../../imports/OutdoorLiving/OLOB.jpg";
 import OSImg from "../../../imports/OutdoorLiving/OLOS.jpg"
+import OLBaseImg from "../../../imports/OutdoorLiving/OLBase.jpg"
 import OLNVImg from "../../../imports/OutdoorLiving/OLNV.jpeg";
 import StorageImg from "../../../imports/OutdoorLiving/OLStorage.jpg";
 
@@ -65,12 +66,13 @@ const seasons = [
 ];
 
 const gallery = [
-  { src: PEImg, label: "Property Exterior" },
-  { src: GImg, label: "Grounds" },
-  { src: imgHg3, label: "Barn & Garage" },
+  //{ src: PEImg, label: "Property Exterior" },
+  //{ src: GImg, label: "Grounds" },
+  //{ src: imgHg3, label: "Barn & Garage" },
+  {src: OLBaseImg, label:"Basement"},
   { src: StorageImg, label: "Storage" },
   { src: OBImg, label: "Outbuilding" },
-  { src: imgKitchen, label: "Interior Access" },
+  //{ src: imgKitchen, label: "Interior Access" },
   { src: OSImg, label: "Outdoor Space" },
   //{ src: OLNVImg, label: "Natural Views" },
 ];
@@ -222,22 +224,19 @@ export function OutdoorLiving() {
               <p className="text-[13px] tracking-[0.3em] uppercase text-gray-600 mb-1" style={{ fontFamily: "Inter, sans-serif" }}>Outdoor Gallery</p>
               <h2 className="text-2xl text-black" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>All Seasons</h2>
             </div>
-            <div className="flex gap-2">
+           {/* <div className="flex gap-2">
               <button onClick={() => emblaApi?.scrollPrev()} className="w-10 h-10 flex items-center justify-center border border-gray-200 hover:bg-black hover:text-white transition-colors">
                 <ChevronLeft size={18} />
               </button>
               <button onClick={() => emblaApi?.scrollNext()} className="w-10 h-10 flex items-center justify-center border border-gray-200 hover:bg-black hover:text-white transition-colors">
                 <ChevronRight size={18} />
               </button>
-            </div>
+            </div>*/}
           </div>
-          <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex -ml-4">
+         <div>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {gallery.map((img, i) => (
-                <div
-                  key={i}
-                  className="pl-4 flex-[0_0_80%] sm:flex-[0_0_45%] lg:flex-[0_0_28%]"
-                >
+                <div key={i}>
                   <div className="aspect-[3/4] overflow-hidden">
                     <ImageWithFallback src={img.src} alt={img.label} className="w-full h-full object-cover" />
                   </div>

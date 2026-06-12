@@ -142,7 +142,7 @@ export function Location() {
     >
       <div className="flex items-center justify-between mb-6">
         <span
-          className="text-[11px] tracking-[0.15em] uppercase text-gray-600"
+          className="text-[13px] tracking-[0.15em] uppercase text-gray-700"
           style={{ fontFamily: "Inter, sans-serif" }}
         >
           {item.sub}
@@ -169,7 +169,7 @@ export function Location() {
       <div className="w-12 h-px bg-black mb-5"></div>
 
       <p
-        className="text-gray-600 leading-relaxed"
+        className="text-gray-800 leading-relaxed"
         style={{ fontFamily: "Inter, sans-serif" }}
       >
         {item.body}
