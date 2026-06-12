@@ -99,7 +99,7 @@ export function Overview() {
   return (
     <div>
       {/* Hero Slider */}
-      <section className="relative h-[100svh] min-h-[600px]">
+      <section className="relative h-[90svh] min-h-[550px]">
         <div className="overflow-hidden h-full" ref={emblaRef}>
           <div className="flex h-full">
             {heroSlides.map((slide, i) => (

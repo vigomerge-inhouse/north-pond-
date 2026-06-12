@@ -98,7 +98,7 @@ export function PremiumFeatures() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative h-[100svh] min-h-[500px]">
+      <section className="relative h-[90svh] min-h-[450px]">
     
         <ImageWithFallback
           src={imgKitchen}

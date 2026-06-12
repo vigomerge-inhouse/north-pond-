@@ -184,7 +184,7 @@ export function Bedrooms() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative h-[100svh] min-h-[500px]">
+      <section className="relative h-[90svh] min-h-[450px]">
     
         <ImageWithFallback
           src={bd1}
@@ -210,28 +210,37 @@ export function Bedrooms() {
 
       {/* Stats */}
       <section className="bg-black py-6">
-        <div className="max-w-3xl mx-auto px-6 flex flex-wrap justify-center gap-10">
-          {[
-            { v: "3", l: "Bedrooms Total" },
-            { v: "1 King", l: "Primary + 2 Queen Guest" },
-            { v: "✓", l: "Natural light in every room" },
-          ].map((s) => (
-            <div key={s.l} className="text-center text-white">
-              <p className="text-2xl" style={{ fontFamily: "Playfair Display, serif" }}>{s.v}</p>
-              <p className="text-[12px] tracking-[0.2em] uppercase text-gray-300 mt-0.5" style={{ fontFamily: "Inter, sans-serif" }}>{s.l}</p>
-            </div>
-          ))}
-          <div className="ml-6">
-            <Link
-              to="/schedule-showing"
-              className="inline-block px-5 py-2.5 bg-white text-black text-[13px] tracking-[0.15em] uppercase hover:bg-gray-100 transition-colors"
-              style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}
-            >
-              Schedule a Showing
-            </Link>
-          </div>
-        </div>
-      </section>
+  <div className="max-w-5xl mx-auto px-6 flex items-center justify-center gap-10">
+    {[
+      { v: "3", l: "Bedrooms Total" },
+      { v: "1 King", l: "Primary + 2 Queen Guest" },
+      { v: "✓", l: "Natural light in every room" },
+    ].map((s) => (
+      <div key={s.l} className="text-center text-white">
+        <p
+          className="text-2xl"
+          style={{ fontFamily: "Playfair Display, serif" }}
+        >
+          {s.v}
+        </p>
+        <p
+          className="text-[12px] tracking-[0.2em] uppercase text-gray-300 mt-0.5"
+          style={{ fontFamily: "Inter, sans-serif" }}
+        >
+          {s.l}
+        </p>
+      </div>
+    ))}
+
+    <Link
+      to="/schedule-showing"
+      className="inline-block px-5 py-2.5 bg-white text-black text-[13px] tracking-[0.15em] uppercase hover:bg-gray-100 transition-colors"
+      style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}
+    >
+      Schedule a Showing
+    </Link>
+  </div>
+</section>
 
       {/* Intro */}
       <section className="py-16 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto">

@@ -89,7 +89,7 @@ export function Features() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative h-[100svh] min-h-[600px]">
+      <section className="relative h-[90svh] min-h-[550px]">
         <ImageWithFallback
           src={imgKitchen}
           alt="Home Features — Ranch Retreat"

@@ -100,7 +100,7 @@ export function PropertyHighlights() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative h-[100svh] min-h-[500px]">
+      <section className="relative h-[90svh] min-h-[450px]">
         <ImageWithFallback
           src={g8}
           alt="Property Highlights — Ranch Retreat"
@@ -129,7 +129,7 @@ export function PropertyHighlights() {
           {stats.map((stat, i) => (
             <div
               key={stat.label}
-              className={`py-8 px-4 text-center text-white ${i < stats.length - 1 ? "border-r border-gray-800" : ""}`}
+              className={`py-2 px-4 text-center text-white ${i < stats.length - 1 ? "border-r border-gray-800" : ""}`}
             >
               <p className="text-2xl sm:text-3xl" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>{stat.value}</p>
               <p className="text-[14px] tracking-[0.2em] uppercase text-gray-300 mt-1" style={{ fontFamily: "Inter, sans-serif" }}>{stat.label}</p>

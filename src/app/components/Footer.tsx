@@ -5,7 +5,7 @@ import logo2 from "../../imports/logo/logo2.png";
 export function Footer() {
   return (
     <footer className="bg-black text-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-2">
@@ -114,7 +114,7 @@ export function Footer() {
                 </a>
               </li>
             </ul>
-            <div className="mt-5">
+            {/*<div className="mt-5">
               <Link
                 to="/schedule-showing"
                 className="inline-block px-5 py-2.5 bg-white text-black text-[12.6px] tracking-[0.15em] uppercase hover:bg-gray-100 transition-colors"
@@ -122,24 +122,26 @@ export function Footer() {
               >
                 Schedule Private Showing
               </Link>
-            </div>
+            </div>*/}
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p
-            className="text-[13px] text-yellow-400 font-medium"
-            style={{ fontFamily: "Inter, sans-serif" }}
-          >
-            © 2026 North Pond Realty Trust · Developed By Vigomerge Inc
-          </p>
-          <p
-            className="text-[13px] text-yellow-400 font-medium"
-            style={{ fontFamily: "Inter, sans-serif" }}
-          >
-            All photography and content © North Pond Realty Trust
-          </p>
-        </div>
+       <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row items-center justify-center gap-4">
+  <p
+    className="text-[13px] text-yellow-400 font-medium"
+    style={{ fontFamily: "Inter, sans-serif" }}
+  >
+    © 2026 North Pond Realty Trust · {" "}
+    <a
+      href="https://www.vigomerge.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className=" hover:text-white transition-colors"
+    >
+      Developed By Vigomerge Inc
+    </a>
+  </p>
+</div>
       </div>
     </footer>
   );

@@ -88,7 +88,7 @@ export function Location() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative h-[100svh] min-h-[600px]">
+      <section className="relative h-[90svh] min-h-[550px]">
         <ImageWithFallback
           src={locationhero}
           alt="Location — Norway, Maine"
@@ -112,21 +112,21 @@ export function Location() {
       </section>
 
       {/* Drive Times */}
-      <section className="bg-black py-10">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="bg-black py-6">
+        <div className="max-w-6xl mx-auto px-2">
           <p className="text-[14px] tracking-[0.3em] uppercase text-gray-200 text-center mb-6" style={{ fontFamily: "Inter, sans-serif" }}>
             At a Glance · Drive Times from Property
           </p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-px bg-gray-800">
+          <div className="grid grid-cols-0 sm:grid-cols-2 lg:grid-cols-6 gap-px bg-gray-800">
             {driveTimes.map((dt) => (
-              <div key={dt.label} className="bg-black py-8 px-4 text-center">
+              <div key={dt.label} className="bg-black py-1 px-2 text-center">
                 <p className="text-2xl text-white" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>{dt.value}</p>
                 <p className="text-[14px] tracking-[0.1em] uppercase text-gray-300 mt-1" style={{ fontFamily: "Inter, sans-serif" }}>{dt.label}</p>
                 <p className="text-[13px] text-gray-300 mt-0.5" style={{ fontFamily: "Inter, sans-serif" }}>{dt.sub}</p>
               </div>
             ))}
           </div>
-          <p className="text-center text-gray-300 text-[14px] mt-6" style={{ fontFamily: "Inter, sans-serif" }}>
+          <p className="text-center text-gray-300 text-[14px] mt-2" style={{ fontFamily: "Inter, sans-serif" }}>
             Set 300 feet from Crockett Ridge Road on a private 2-acre parcel — worlds away yet conveniently close. Minutes from Norway, Maine (est. 1797) in the scenic Oxford Hills.
           </p>
         </div>
@@ -195,26 +195,26 @@ export function Location() {
       </section>
 
       {/* Gallery Slider */}
-      <section className="py-16 px-6 sm:px-12 lg:px-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
+      <section className="py-16 px-8 sm:px-15 lg:px-20 bg-gray-50">
+        <div className="max-w-8xl mx-auto">
           <div className="flex items-center justify-between mb-8">
             <div>
               <p className="text-[13px] tracking-[0.3em] uppercase text-gray-700 mb-1" style={{ fontFamily: "Inter, sans-serif" }}>Area Photos</p>
               <h2 className="text-2xl text-black" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>The Oxford Hills Region</h2>
             </div>
-            <div className="flex gap-2">
+          {/*  <div className="flex gap-2">
               <button onClick={() => emblaApi?.scrollPrev()} className="w-10 h-10 flex items-center justify-center border border-gray-200 hover:bg-black hover:text-white transition-colors">
                 <ChevronLeft size={18} />
               </button>
               <button onClick={() => emblaApi?.scrollNext()} className="w-10 h-10 flex items-center justify-center border border-gray-200 hover:bg-black hover:text-white transition-colors">
                 <ChevronRight size={18} />
               </button>
-            </div>
+            </div>*/}
           </div>
            <div className="overflow-hidden" ref={emblaRef}>
   <div className="flex -ml-4">
               {galleryImages.map((img, i) => (
-                <div key={i} className="pl-4 flex-[0_0_80%] sm:flex-[0_0_45%] lg:flex-[0_0_28%]">
+                <div key={i} className="pl-4 flex-[0_0_80%] sm:flex-[0_0_50%] lg:flex-[0_0_calc(33.333%-3px)]">
                   <div className="aspect-[4/3] overflow-hidden">
                     <ImageWithFallback src={img.src} alt={img.label} className="w-full h-full object-cover" />
                   </div>
