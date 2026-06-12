@@ -100,42 +100,66 @@ const bedrooms = [
 
 function BedroomSection({ room }: { room: typeof bedrooms[0] }) {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  const isSlider = room.images.length > 1;
 
   return (
     <section className="py-16 px-6 sm:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Slider */}
-          <div className="relative">
-            <div className="overflow-hidden" ref={emblaRef}>
-              <div className="flex">
-                {room.images.map((src, i) => (
-                  <div key={i} className="flex-[0_0_100%] aspect-[4/3] overflow-hidden">
-                    <ImageWithFallback
-                      src={src}
-                      alt={`${room.sublabel} ${i + 1}`}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
-            <button
-              onClick={() => emblaApi?.scrollPrev()}
-              className="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center bg-white/90 backdrop-blur-sm shadow hover:bg-white transition-colors"
+<div className="relative">
+  {isSlider ? (
+    <>
+      <div className="overflow-hidden" ref={emblaRef}>
+        <div className="flex">
+          {room.images.map((src, i) => (
+            <div
+              key={i}
+              className="flex-[0_0_100%] aspect-[4/3] overflow-hidden"
             >
-              <ChevronLeft size={16} />
-            </button>
-            <button
-              onClick={() => emblaApi?.scrollNext()}
-              className="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center bg-white/90 backdrop-blur-sm shadow hover:bg-white transition-colors"
-            >
-              <ChevronRight size={16} />
-            </button>
-            <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-sm px-3 py-1.5">
-              <p className="text-[11px] tracking-[0.2em] uppercase text-white" style={{ fontFamily: "Inter, sans-serif" }}>{room.sublabel}</p>
+              <ImageWithFallback
+                src={src}
+                alt={`${room.sublabel} ${i + 1}`}
+                className="w-full h-full object-cover"
+              />
             </div>
-          </div>
+          ))}
+        </div>
+      </div>
+
+      <button
+        onClick={() => emblaApi?.scrollPrev()}
+        className="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center bg-white/90 backdrop-blur-sm shadow hover:bg-white transition-colors"
+      >
+        <ChevronLeft size={16} />
+      </button>
+
+      <button
+        onClick={() => emblaApi?.scrollNext()}
+        className="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center bg-white/90 backdrop-blur-sm shadow hover:bg-white transition-colors"
+      >
+        <ChevronRight size={16} />
+      </button>
+    </>
+  ) : (
+    <div className="aspect-[4/3] overflow-hidden">
+      <ImageWithFallback
+        src={room.images[0]}
+        alt={room.sublabel}
+        className="w-full h-full object-cover"
+      />
+    </div>
+  )}
+
+  <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-sm px-3 py-1.5">
+    <p
+      className="text-[11px] tracking-[0.2em] uppercase text-white"
+      style={{ fontFamily: "Inter, sans-serif" }}
+    >
+      {room.sublabel}
+    </p>
+  </div>
+</div>
 
           {/* Content */}
           <div>
@@ -210,27 +234,29 @@ export function Bedrooms() {
 
       {/* Stats */}
       <section className="bg-black py-6">
-  <div className="max-w-5xl mx-auto px-6 flex items-center justify-center gap-10">
-    {[
-      { v: "3", l: "Bedrooms Total" },
-      { v: "1 King", l: "Primary + 2 Queen Guest" },
-      { v: "✓", l: "Natural light in every room" },
-    ].map((s) => (
-      <div key={s.l} className="text-center text-white">
-        <p
-          className="text-2xl"
-          style={{ fontFamily: "Playfair Display, serif" }}
-        >
-          {s.v}
-        </p>
-        <p
-          className="text-[12px] tracking-[0.2em] uppercase text-gray-300 mt-0.5"
-          style={{ fontFamily: "Inter, sans-serif" }}
-        >
-          {s.l}
-        </p>
-      </div>
-    ))}
+  <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10">
+    <div className="flex flex-wrap justify-center gap-8 md:gap-10">
+  {[
+    { v: "3", l: "Bedrooms Total" },
+    { v: "1 King", l: "Primary + 2 Queen Guest" },
+    { v: "✓", l: "Natural light in every room" },
+  ].map((s) => (
+    <div key={s.l} className="text-center text-white">
+      <p
+        className="text-2xl"
+        style={{ fontFamily: "Playfair Display, serif" }}
+      >
+        {s.v}
+      </p>
+      <p
+        className="text-[12px] tracking-[0.2em] uppercase text-gray-300 mt-0.5"
+        style={{ fontFamily: "Inter, sans-serif" }}
+      >
+        {s.l}
+      </p>
+    </div>
+  ))}
+</div>
 
     <Link
       to="/schedule-showing"

@@ -279,15 +279,15 @@ Today we offer carefully selected:
           </div>
 
           {/* Stats Grid */}
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-2 gap-4">
             {stats.map((stat) => (
               <div
                 key={stat.label}
-                className="border border-gray-100 p-8 text-center hover:shadow-lg transition-shadow duration-300"
+                className="border border-gray-100 p-6 sm:p-8 text-center hover:shadow-lg transition-shadow duration-300"
                 style={{ boxShadow: "0 2px 20px rgba(0,0,0,0.04)" }}
               >
                 <p
-                  className="text-5xl text-black mb-1"
+                  className="text-4xl sm:text-5xl text-black mb-1"
                   style={{ fontFamily: "Playfair Display, serif", fontWeight: 400 }}
                 >
                   {stat.value}
@@ -299,7 +299,7 @@ Today we offer carefully selected:
                   {stat.label}
                 </p>
                 <p
-                  className="text-[14px] text-gray-600"
+                  className="text-[13px] sm:text-[14px] text-gray-600"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
                   {stat.sub}
@@ -509,7 +509,7 @@ Today we offer carefully selected:
         </div>
       </section>
       {/*end image*/}
-      <section className="relative h-[100svh] min-h-[600px]">
+     <section className="relative mb-8 md:mb-12">
   <div className="max-w-full mx-full overflow-hidden rounded-xl">
     <ImageWithFallback
       src={EndImg}
