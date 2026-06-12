@@ -172,44 +172,46 @@ export function Location() {
 
       {/* Area Map */}
       <section className="px-6 sm:px-12 lg:px-20 pb-10 max-w-7xl mx-auto">
-        <div className="bg-gray-900 text-white p-10 text-center">
-          <p className="text-[12px] tracking-[0.3em] uppercase text-gray-300 mb-3" style={{ fontFamily: "Inter, sans-serif" }}>Oxford County · Est. 1797 · Lakes District</p>
-          <h2 className="text-3xl mb-2" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>Norway, Maine</h2>
-          <p className="text-gray-400 mb-6 max-w-xl mx-auto" style={{ fontFamily: "Inter, sans-serif" }}>
-            Crockett Ridge Road · Norway, Maine 04268 · Oxford Hills · 300 ft from road · 2 acres private
-          </p>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-2xl mx-auto mb-8">
-            {[
-              { v: "2 min", l: "to Lake" },
-              { v: "10 min", l: "to Norway" },
-              { v: "45 min", l: "to Skiing" },
-              { v: "1 hr", l: "to Portland" },
-            ].map((s) => (
-              <div key={s.l} className="text-center">
-                <p className="text-2xl text-white" style={{ fontFamily: "Playfair Display, serif" }}>{s.v}</p>
-                <p className="text-[12px] tracking-[0.2em] uppercase text-gray-300 mt-0.5" style={{ fontFamily: "Inter, sans-serif" }}>{s.l}</p>
-              </div>
-            ))}
+  <div className="bg-gray-900 text-white">
+    <div className="p-10 text-center">
+      <p className="text-[12px] tracking-[0.3em] uppercase text-gray-300 mb-3" style={{ fontFamily: "Inter, sans-serif" }}>Oxford County · Est. 1797 · Lakes District</p>
+      <h2 className="text-3xl mb-2" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>Norway, Maine</h2>
+      <p className="text-gray-400 mb-6 max-w-xl mx-auto" style={{ fontFamily: "Inter, sans-serif" }}>
+        Crockett Ridge Road · Norway, Maine 04268 · Oxford Hills · 300 ft from road · 2 acres private
+      </p>
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-2xl mx-auto">
+        {[
+          { v: "2 min", l: "to Lake" },
+          { v: "10 min", l: "to Norway" },
+          { v: "45 min", l: "to Skiing" },
+          { v: "1 hr", l: "to Portland" },
+        ].map((s) => (
+          <div key={s.l} className="text-center">
+            <p className="text-2xl text-white" style={{ fontFamily: "Playfair Display, serif" }}>{s.v}</p>
+            <p className="text-[12px] tracking-[0.2em] uppercase text-gray-300 mt-0.5" style={{ fontFamily: "Inter, sans-serif" }}>{s.l}</p>
           </div>
+        ))}
+      </div>
+    </div>
 
-          {/* Clickable map — opens Google Maps in a new tab */}
-          <a
-            href="https://www.google.com/maps/search/?api=1&query=44.265598,-70.576293"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block max-w-3xl mx-auto group relative overflow-hidden"
-            aria-label="Open property location in Google Maps"
-          >
-            <iframe
-              src="https://maps.google.com/maps?q=44.265598,-70.576293&z=15&output=embed"
-              className="w-full h-[400px] pointer-events-none"
-              loading="lazy"
-              style={{ border: 0 }}
-              title="Property location map"
-            />
-            <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/20 transition-colors">
-              <span className="opacity-0 group-hover:opacity-100 transition-opacity text-[13px] tracking-[0.2em] uppercase bg-white text-black px-5 py-2" style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}>
-                Open in Google Maps
+    {/* Clickable map — opens Google Maps in a new tab */}
+    <a
+      href="https://www.google.com/maps/search/?api=1&query=44.265598,-70.576293"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block w-full group relative overflow-hidden -mb-px"
+      aria-label="Open property location in Google Maps"
+    >
+      <iframe
+        src="https://maps.google.com/maps?q=44.265598,-70.576293&z=15&output=embed"
+        className="block w-full h-[500px] pointer-events-none border-0"
+        loading="lazy"
+        style={{ border: 0 }}
+        title="Property location map"
+      />
+      <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/20 transition-colors">
+        <span className="opacity-0 group-hover:opacity-100 transition-opacity text-[13px] tracking-[0.2em] uppercase bg-white text-black px-5 py-2" style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}>
+          Open in Google Maps
               </span>
             </div>
           </a>
