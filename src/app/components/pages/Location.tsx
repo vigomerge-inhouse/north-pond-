@@ -172,7 +172,7 @@ export function Location() {
 
       {/* Area Map */}
       <section className="px-6 sm:px-12 lg:px-20 pb-10 max-w-7xl mx-auto">
-        <div className="bg-gray-900 text-white p-10 text-center">
+        <div className="bg-gray-900 text-white">
           <p className="text-[12px] tracking-[0.3em] uppercase text-gray-300 mb-3" style={{ fontFamily: "Inter, sans-serif" }}>Oxford County · Est. 1797 · Lakes District</p>
           <h2 className="text-3xl mb-2" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>Norway, Maine</h2>
           <p className="text-gray-400 mb-6 max-w-xl mx-auto" style={{ fontFamily: "Inter, sans-serif" }}>
@@ -197,12 +197,12 @@ export function Location() {
             href="https://www.google.com/maps/search/?api=1&query=44.265598,-70.576293"
             target="_blank"
             rel="noopener noreferrer"
-            className="block max-w-3xl mx-auto group relative overflow-hidden"
+            className="block w-full group relative overflow-hidden -mb-px"
             aria-label="Open property location in Google Maps"
           >
             <iframe
               src="https://maps.google.com/maps?q=44.265598,-70.576293&z=15&output=embed"
-              className="w-full h-[400px] pointer-events-none"
+              className="block w-full h-[500px] pointer-events-none border-0"
               loading="lazy"
               style={{ border: 0 }}
               title="Property location map"
