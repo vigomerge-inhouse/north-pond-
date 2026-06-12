@@ -134,40 +134,49 @@ export function Location() {
 
       {/* Area Highlights */}
       <section className="py-20 px-6 sm:px-12 lg:px-20">
-        <div className="max-w-7xl mx-auto">
-          <div className="mb-12">
-            <p className="text-[13px] tracking-[0.3em] uppercase text-gray-600 mb-3" style={{ fontFamily: "Inter, sans-serif" }}>Oxford Hills · Norway, Maine</p>
-            <h2 className="text-4xl text-black" style={{ fontFamily: "Playfair Display, serif", fontWeight: 500 }}>
-              Area Highlights
-            </h2>
-            <p className="text-gray-900 italic mt-2" style={{ fontFamily: "Cormorant Garamond, serif", fontSize: "1.3rem" }}>
-              Everything Maine has to offer
-            </p>
-          </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {areaHighlights.map((item) => (
-              <div key={item.title} className="group">
-                <div className="aspect-[14/9] overflow-hidden mb-4">
-                  <ImageWithFallback
-                    src={item.img}
-                    alt={item.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
-                </div>
-                <div className="flex items-start justify-between mb-2">
-                  <div>
-                    <h3 className="text-lg text-black" style={{ fontFamily: "Playfair Display, serif", fontWeight: 600 }}>{item.title}</h3>
-                    <p className="text-[12px] tracking-[0.1em] uppercase text-gray-700" style={{ fontFamily: "Inter, sans-serif" }}>{item.sub}</p>
-                  </div>
-                  <span className="shrink-0 text-[11px] tracking-[0.1em] uppercase text-black bg-gray-100 px-2 py-1 ml-3" style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}>
-                    {item.stat}
-                  </span>
-                </div>
-                <p className="text-sm text-gray-600 leading-relaxed" style={{ fontFamily: "Inter, sans-serif" }}>{item.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+  {areaHighlights.map((item) => (
+    <div
+      key={item.title}
+      className="group bg-white border border-gray-200 p-8 hover:border-black transition-all duration-500 hover:-translate-y-1"
+    >
+      <div className="flex items-center justify-between mb-6">
+        <span
+          className="text-[11px] tracking-[0.15em] uppercase text-gray-600"
+          style={{ fontFamily: "Inter, sans-serif" }}
+        >
+          {item.sub}
+        </span>
+
+        <span
+          className="text-[11px] tracking-[0.1em] uppercase text-black bg-gray-100 px-3 py-1"
+          style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}
+        >
+          {item.stat}
+        </span>
+      </div>
+
+      <h3
+        className="text-2xl text-black mb-4"
+        style={{
+          fontFamily: "Playfair Display, serif",
+          fontWeight: 600,
+        }}
+      >
+        {item.title}
+      </h3>
+
+      <div className="w-12 h-px bg-black mb-5"></div>
+
+      <p
+        className="text-gray-600 leading-relaxed"
+        style={{ fontFamily: "Inter, sans-serif" }}
+      >
+        {item.body}
+      </p>
+    </div>
+  ))}
+</div>
       </section>
 
       {/* Area Map */}
@@ -235,10 +244,10 @@ export function Location() {
               </button>
             </div>*/}
           </div>
-           <div className="overflow-hidden" ref={emblaRef}>
-  <div className="flex -ml-4">
+           <div >
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {galleryImages.map((img, i) => (
-                <div key={i} className="pl-4 flex-[0_0_80%] sm:flex-[0_0_50%] lg:flex-[0_0_calc(33.333%-3px)]">
+                <div key={i}>
                   <div className="aspect-[4/3] overflow-hidden">
                     <ImageWithFallback src={img.src} alt={img.label} className="w-full h-full object-cover" />
                   </div>
