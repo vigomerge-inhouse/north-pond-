@@ -142,19 +142,7 @@ export function Overview() {
             >
               
             </p>
-            <div className="flex flex-wrap gap-3">
-              {["Recreational Properties", "Shorefront Lots", "Mountain Views", "Timberland", "Farmland", "Woodlots"].map(
-                (tag) => (
-                  <span
-                    key={tag}
-                    className="px-3 py-1 bg-white/15 backdrop-blur-sm text-white text-[11px] tracking-wider border border-white/30"
-                    style={{ fontFamily: "Inter, sans-serif" }}
-                  >
-                    {tag}
-                  </span>
-                )
-              )}
-            </div>
+            
             <div className="flex gap-4 mt-8">
               <Link
                 to="/property-highlights"
