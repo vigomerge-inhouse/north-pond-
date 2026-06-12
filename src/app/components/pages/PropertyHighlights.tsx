@@ -20,6 +20,7 @@ import g7 from "../../../imports/property/g7.jpg";
 import g8 from "../../../imports/property/g8.png";
 import g9 from "../../../imports/property/g9.png";
 import g10 from "../../../imports/property/g10.jpg";
+import g11 from "../../../imports/property/g11.jpg";
 
 
 
@@ -83,7 +84,8 @@ const galleryImages = [
   //{ src: imgForest,  },
   //{ src: imgH3,  },
  // { src: g8,  },
-  { src: g9,  },
+  //{ src: g9,  },
+  
   //{ src: g1,  },
   //{ src: g2,  },
   //{ src: g3,  },
@@ -92,6 +94,7 @@ const galleryImages = [
   { src: g6,  },
   //{ src: g7,  },
   { src: g10,  },
+  {src: g11,},
 ];
 
 export function PropertyHighlights() {

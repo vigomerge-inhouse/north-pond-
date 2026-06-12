@@ -14,6 +14,7 @@ import OLImg from "../../../imports/OutdoorLiving/OLHero1.jpg";
 import FSPAImg from "../../../imports/Features/FBATHSPA.jpg";
 import FGRImg from "../../../imports/Features/FGR.jpg";
 import FSUITESPAImg from "../../../imports/Features/FSUITESPA.jpg";
+import imageKitchen from "../../../imports/Features/ls.jpg";
 
 const features = [
   {
@@ -22,7 +23,7 @@ const features = [
   sub: "Heart of the home",
   body: "",
   bullets: [],
-  img: imgKitchen,
+  img: imageKitchen,
 },
   {
     num: "02",
@@ -30,7 +31,7 @@ const features = [
 sub: "Private retreat",
     body: "Serene owner's oasis sized for a king bed with walk-in closet. Luxurious bath features a cast iron soaking tub and ceramic marble shower, bathed in soft natural light.",
     bullets: ["King-size space", "Walk-in closet", "Cast iron soaking tub", "Ceramic marble shower"],
-    img: FSUITESPAImg,
+    img: imageKitchen,
   },
   {
     num: "03",
@@ -38,7 +39,7 @@ sub: "Private retreat",
     sub: "Comfort spaces",
     body: "Two spacious guest bedrooms, each sized for a queen bed with generous clean closets. Updated full guest bath with bright, modern finishes.",
     bullets: ["Two queen-ready bedrooms", "Generous clean closets", "Updated full guest bath", "Bright modern finishes"],
-    img: FGRImg,
+    img: imageKitchen,
   },
   {
     num: "04",
@@ -46,7 +47,7 @@ sub: "Private retreat",
     sub: "Open concept",
     body: "Open layout with gleaming new floors, fresh neutral palettes, and abundant windows that create clean, bright spaces framing stunning views of your private acreage.",
     bullets: ["Open floor plan", "Gleaming new floors", "Fresh neutral palettes", "Abundant natural light"],
-    img: imgHg3,
+    img: imageKitchen,
   },
   {
     num: "05",
@@ -54,7 +55,7 @@ sub: "Private retreat",
     sub: "Fully updated",
     body: "Modern bathrooms with elegant fixtures and a dedicated separate laundry room pantry for added convenience.",
     bullets: ["2 full bathrooms", "Elegant new fixtures", "Separate laundry room pantry", "Clean modern design"],
-    img: imgHg20,
+    img: imageKitchen,
   },
   {
     num: "06",
@@ -62,7 +63,7 @@ sub: "Private retreat",
     sub: "Outdoor living",
     body: "True seclusion on two private acres with wrap-around porch and spacious deck. Landlord maintains the yard, provides winter snowplowing, and will install a dog-friendly perimeter fence.",
     bullets: ["Two fully private acres", "Wrap-around porch", "Spacious outdoor deck", "Yard maintenance & snowplowing included"],
-    img: OLImg,
+    img:imageKitchen,
   },
   {
     num: "07",
@@ -70,7 +71,7 @@ sub: "Private retreat",
     sub: "Natural surroundings",
     body: "Create gardens, trails, or meadows that enhance the natural beauty. Mature trees and open space invite wildlife and seasonal color while supporting a peaceful outdoor lifestyle.",
     bullets: ["Create gardens & meadows", "Mature trees & open space", "Wildlife & seasonal color", "Walking trails potential"],
-    img: imgForest,
+    img: imageKitchen,
   },
   {
     num: "08",
@@ -78,7 +79,7 @@ sub: "Private retreat",
     sub: "Storage & parking",
     body: "Secure two-car garage with generous all-weather storage for tools, hobbies, or seasonal gear. Clean and updated, it complements the modern ranch style.",
     bullets: ["2-car parking", "Generous all-weather storage", "Secure updated structure", "Seasonal gear & hobby use"],
-    img: GarageImg,
+    img: imageKitchen,
   },
 ];
 

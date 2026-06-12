@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
-import hero1 from "../../../imports/ameneties/hero1.jpg";
+import hero1 from "../../../imports/ameneties/hero1.png";
 import imgHome from "../../../imports/Neat_and_clean_home_with_peace-1.jpg";
 import imgKitchen from "../../../imports/livingrmkit.jpg";
 import imgHg1 from "../../../imports/hg1.jpg";

@@ -4,7 +4,7 @@ import PVImg from "../../../imports/Details/DetailPV.png";
 import IntImg from "../../../imports/Details/DetailInt.png";
 import GImg from "../../../imports/Details/DetailG.png";
 import PFImg from "../../../imports/Details/DetailPF.png";
-import HeroImg from "../../../imports/Details/DetailHero.png";
+import HeroImg from "../../../imports/Details/DetailHero.jpg";
 
 type SpecRow = { label: string; value: string };
 type SpecGroup = { title: string; rows: SpecRow[] };
