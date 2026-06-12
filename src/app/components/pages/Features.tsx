@@ -115,7 +115,7 @@ export function Features() {
 
       {/* Intro */}
       <section className="py-16 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto">
-        <div className="max-w-3xl">
+        <div className="max-w-7xl">
         
           <p className="text-gray-600 leading-relaxed text-5sm" style={{ fontFamily: "Inter, sans-serif" }}>
             Designed for comfort and convenience, this beautifully updated ranch offers effortless single-story living with bright, open spaces and exceptional functionality. New flooring throughout, fresh neutral finishes, and abundant natural light create a warm and inviting atmosphere while showcasing views of the surrounding private acreage.

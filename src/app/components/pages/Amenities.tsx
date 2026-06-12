@@ -52,17 +52,17 @@ const amenityGroups = [
       { name: "Garden potential", sub: "Fertile land ready for your garden vision" },
     ],
   },
-  {
-    title: "Landlord Services",
-    items: [
-      { name: "Professional yard maintenance", sub: "Landlord-provided, year-round" },
-      { name: "Winter snowplowing", sub: "Driveway & access — included" },
-      { name: "Well water system", sub: "Recently tested drilled well — landlord provided" },
-      { name: "Dog-friendly fence", sub: "Perimeter fence planned for installation" },
-      { name: "Collaborative landlord", sub: "Amenable to personalizing your home" },
-      { name: "Immediate availability", sub: "Move-in ready — no waiting" },
-    ],
-  },
+//  {
+   // title: "Landlord Services",
+    //items: [
+      //{ name: "Professional yard maintenance", sub: "Landlord-provided, year-round" },
+      //{ name: "Winter snowplowing", sub: "Driveway & access — included" },
+      //{ name: "Well water system", sub: "Recently tested drilled well — landlord provided" },
+     // { name: "Pet-friendly fence", sub: "Perimeter fence planned for installation" },
+      //{ name: "Collaborative landlord", sub: "Amenable to personalizing your home" },
+      //{ name: "Immediate availability", sub: "Move-in ready — no waiting" },
+   // ],
+//  },
   {
     title: "Recreation & Access",
     items: [
