@@ -453,13 +453,13 @@ Today we offer carefully selected:
                 path: "/bedrooms",
               },
               {
-                img: io,
+                img: pf1,
                 label: "Wrap-Around Porch",
                 desc: "Indoor-Outdoor Living · Full Perimeter",
                 path: "/outdoor-living",
               },
               {
-                img: pf1,
+                img: io,
                 label: "Private Forest",
                 desc: "2 Wooded Acres · Wildlife & Privacy",
                 path: "/location",
