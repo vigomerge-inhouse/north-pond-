@@ -134,13 +134,13 @@ export function Overview() {
               className="text-xl sm:text-2xl text-white/90 mb-1 italic"
               style={{ fontFamily: "Cormorant Garamond, serif" }}
             >
-              Exceptional Land & Recreational Properties Since 1975
+              
             </p>
             <p
               className="text-[12px] tracking-[0.2em] uppercase text-white/80 mb-8"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
-              Serving Western Maine Since 1975
+              
             </p>
             <div className="flex flex-wrap gap-3">
               {["Recreational Properties", "Shorefront Lots", "Mountain Views", "Timberland", "Farmland", "Woodlots"].map(
