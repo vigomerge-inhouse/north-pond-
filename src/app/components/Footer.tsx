@@ -100,7 +100,7 @@ export function Footer() {
                   className="text-[16px] text-gray-200 hover:text-yellow-400 transition-colors"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
-                  contact@northpondrealty.com
+                  info@northpondrealtytrust.com
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
