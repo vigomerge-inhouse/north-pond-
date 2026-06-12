@@ -131,7 +131,7 @@ export function ModernLiving() {
               ))}
             </div>
           </div>
-          <button
+          {/*<button
   onClick={() => emblaApi?.scrollPrev()}
   className="absolute left-[-20px] sm:left-[-30px] top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white border border-gray-200 shadow-md hover:bg-gray-50 transition-colors z-10"
 >
@@ -143,7 +143,7 @@ export function ModernLiving() {
   className="absolute right-[-20px] sm:right-[-30px] top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white border border-gray-200 shadow-md hover:bg-gray-50 transition-colors z-10"
 >
   <ChevronRight size={18} />
-</button>
+</button>*/}
         </div>
       </section>
 
