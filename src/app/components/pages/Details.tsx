@@ -56,7 +56,7 @@ const specs: SpecGroup[] = [
       { label: "Private land", value: "2 full acres — mature trees, open green space" },
       { label: "Yard maintenance", value: "Landlord-maintained year-round" },
       { label: "Snowplowing", value: "Winter snowplowing included — landlord provided" },
-      { label: "Dog fence", value: "Dog-friendly perimeter fence planned for installation" },
+      { label: "Pet fence", value: "Pet-friendly perimeter fence planned for installation" },
       // CHANGED: wildlife note kept, "f/ulo" unclear — keeping original + note
       { label: "Wildlife", value: "Active wildlife — deer, birds, Maine forest fauna" },
     ],
@@ -79,7 +79,7 @@ const specs: SpecGroup[] = [
     rows: [
       { label: "Availability", value: "Immediately available — move-in ready" },
       { label: "Rental type", value: "Long-term rental" },
-      { label: "Pets", value: "Dog-friendly · perimeter fence planned" },
+      { label: "Pets", value: "Pet-friendly · perimeter fence planned" },
       { label: "Landlord support", value: "Amenable to working with you to make this your home" },
       { label: "Lease", value: "Contact for terms and pricing details" },
 //{ label: "Price", value: "3000$/month with utility fees" },

@@ -111,6 +111,7 @@ export function OutdoorLiving() {
       <section className="py-20 px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
+            <p className="text-[17px] tracking-[0.2em] uppercase text-gray-700 mb-3" style={{ fontFamily: "Inter, sans-serif" }}>Stairway to Natural Splendor</p>
             <p className="text-gray-600 leading-relaxed mb-6 text-3sm" style={{ fontFamily: "Inter, sans-serif" }}> {/* ✅ text-base for readability */}
               True seclusion on two private acres with a charming wrap-around porch and spacious deck. Whether watching wildlife, stargazing, or simply breathing in the fresh Maine air, this private oasis celebrates every season of the year.
             </p>
