@@ -58,7 +58,7 @@ const highlights = [
   { title: "Move-In Ready", body: "Brand-new appliances, fresh finishes, new flooring, and updated systems mean you walk in, unpack, and start living. No projects. No waiting. Just home." },
 ];
 
-const sliderImages = [GallImg, imgKitchen];
+
 
 export function ModernLiving() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
@@ -117,36 +117,7 @@ export function ModernLiving() {
         </div>
       </section>
 
-      {/* Image Slider */}
-      <section className="px-6 sm:px-12 lg:px-20 pb-6 max-w-7xl mx-auto">
-        <div className="relative">
-          <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex gap-4">
-              {sliderImages.map((src, i) => (
-                <div key={i} className="flex-[0_0_100%] sm:flex-[0_0_50%] lg:flex-[0_0_50%]">
-                  <div className="aspect-[3/4] overflow-hidden">
-                    <ImageWithFallback src={src} alt={`Modern living ${i + 1}`} className="w-full h-full object-cover" />
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-          {/*<button
-  onClick={() => emblaApi?.scrollPrev()}
-  className="absolute left-[-20px] sm:left-[-30px] top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white border border-gray-200 shadow-md hover:bg-gray-50 transition-colors z-10"
->
-  <ChevronLeft size={18} />
-</button>
-
-<button
-  onClick={() => emblaApi?.scrollNext()}
-  className="absolute right-[-20px] sm:right-[-30px] top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white border border-gray-200 shadow-md hover:bg-gray-50 transition-colors z-10"
->
-  <ChevronRight size={18} />
-</button>*/}
-        </div>
-      </section>
-
+      
       {/* Feature Sections */}
       {sections.map((sec, i) => (
         <section
