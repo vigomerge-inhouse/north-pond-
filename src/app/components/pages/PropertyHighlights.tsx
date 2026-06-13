@@ -21,6 +21,7 @@ import g8 from "../../../imports/property/g8.png";
 import g9 from "../../../imports/property/g9.png";
 import g10 from "../../../imports/property/g10.jpg";
 import g11 from "../../../imports/property/g11.jpg";
+import WaterImg from "../../../imports/property/Waterfront.jpeg";
 
 
 
@@ -47,7 +48,7 @@ const cards = [
   {
     title: "Waterfront Access Nearby",
     body: "Norway Lake and North Pond are just 2 miles from the driveway. Public boat ramps, swimming, fishing, kayaking, and paddleboarding are all within easy reach.",
-    img: g8,
+    img: WaterImg,
   },
   {
     title: "Premier Location",

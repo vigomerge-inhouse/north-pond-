@@ -45,7 +45,7 @@ const bedrooms = [
     size: "King-Size",
     title: "King-Size Master Suite with Spa-Inspired Ensuite",
     sublabel: "Primary Suite",
-    images: [bd6, bd7, bd8,bd9,bd10],
+    images: [bd8, bd7, bd6,bd9,bd10],
     body: "Retreat to a spacious primary suite designed for relaxation and comfort. The bedroom easily accommodates a king-size bed and features generous walk-in closet storage that will exceed your expectations. Natural light fills the room throughout the day, creating a warm, serene environment.\n\nThe luxurious ensuite bath is a private spa. A cast-iron soaking tub sits bathed in soft light. The ceramic marble shower offers a hotel-quality experience. Elegant modern fixtures, quartz vanity, and warm neutral finishes complete the picture of a true personal sanctuary.",
     bullets: [
       "King-size bed configuration",
